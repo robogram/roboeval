@@ -1,0 +1,1902 @@
+[
+  {
+    "item_id": "WEBCAM-AI-Q001",
+    "raw_id": "1-01",
+    "day": 1,
+    "order": 1,
+    "type": "객관식",
+    "content": "얼굴인식 실습의 진행 순서로 알맞은 것은?",
+    "choices": [
+      "모델 학습 → 웹캠 준비 → 실시간 인식 → 사진 수집",
+      "웹캠 준비 → 얼굴 사진 수집 → 모델 학습 → 실시간 인식",
+      "사진 수집 → 실시간 인식 → 웹캠 준비 → 모델 학습",
+      "실시간 인식 → 모델 학습 → 사진 수집 → 웹캠 준비"
+    ],
+    "answer": 1,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "교재는 웹캠을 먼저 확인하고 얼굴 사진을 모은 뒤 모델을 학습해 실시간 인식에 사용합니다. 사진을 모으기 전에 학습을 진행할 수는 없습니다.",
+    "reference": "face/index.html\n오늘 실습 흐름"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q002",
+    "raw_id": "1-02",
+    "day": 1,
+    "order": 2,
+    "type": "객관식",
+    "content": "얼굴 사진을 수집할 때 교재의 개인정보 약속에 맞는 행동은?",
+    "choices": [
+      "친구에게 알리지 않고 얼굴을 찍는다.",
+      "수집한 얼굴 사진을 단체 대화방에 올린다.",
+      "본인 또는 촬영을 허락한 사람의 얼굴만 찍는다.",
+      "수업 사진을 다른 용도로 자유롭게 사용한다."
+    ],
+    "answer": 2,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "교재는 본인 또는 허락받은 사람만 촬영하고 사진을 수업 실습용으로만 사용하도록 안내합니다. 촬영 허락과 사용 목적을 모두 지켜야 합니다.",
+    "reference": "face/index.html\n개인정보 약속"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q003",
+    "raw_id": "1-03",
+    "day": 1,
+    "order": 3,
+    "type": "객관식",
+    "content": "교재에서 Python 설치 첫 화면에 체크하도록 안내한 항목은?",
+    "choices": [
+      "Install Now 체크 해제",
+      "Add python.exe to PATH",
+      "모든 기존 Python 삭제",
+      "카메라 접근 차단"
+    ],
+    "answer": 1,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "Add python.exe to PATH를 체크하면 명령창에서 Python을 찾는 데 도움이 됩니다. 교재는 설치 후 새 CMD에서 버전을 확인하도록 안내합니다.",
+    "reference": "face/index.html\n수업 시작 전 · Python 3.12.10 설치"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q004",
+    "raw_id": "1-04",
+    "day": 1,
+    "order": 4,
+    "type": "객관식",
+    "content": "Python 3.12의 버전을 확인하는 교재의 명령은?",
+    "choices": [
+      "notepad 0_webcam_test.py",
+      "py -3.12 -m pip install numpy",
+      "mkdir dataset",
+      "py -3.12 --version"
+    ],
+    "answer": 3,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "py -3.12 --version은 지정한 Python의 버전을 보여줍니다. 나머지는 각각 패키지 설치, 폴더 생성, 파일 편집 명령입니다.",
+    "reference": "face/index.html\n2단계. Python과 OpenCV 설치/확인"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q005",
+    "raw_id": "1-05",
+    "day": 1,
+    "order": 5,
+    "type": "객관식",
+    "content": "얼굴 사진 데이터와 학습 결과를 담기 위해 만드는 두 폴더는?",
+    "choices": [
+      "static과 generated",
+      "obj_data와 model",
+      "templates와 gallery",
+      "dataset과 trainer"
+    ],
+    "answer": 3,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "얼굴인식 실습은 dataset에 사람별 사진을 저장하고 trainer에 학습한 얼굴 모델과 이름표를 저장합니다. obj_data와 model은 사물인식 단원의 폴더입니다.",
+    "reference": "face/index.html\n1단계. 실습 폴더 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q006",
+    "raw_id": "1-06",
+    "day": 1,
+    "order": 6,
+    "type": "객관식",
+    "content": "얼굴인식 기능을 위해 교재에서 설치하는 OpenCV 패키지는?",
+    "choices": [
+      "opencv-contrib-python==4.11.0.86",
+      "scikit-learn만 설치",
+      "requests만 설치",
+      "qrcode[pil]만 설치"
+    ],
+    "answer": 0,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "교재는 cv2.face 기능을 사용할 수 있도록 opencv-contrib-python 4.11.0.86을 설치합니다. 다른 보기의 패키지는 이 얼굴인식 기능을 대신하지 않습니다.",
+    "reference": "face/index.html\n2단계. Python과 OpenCV 설치/확인"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q007",
+    "raw_id": "1-07",
+    "day": 1,
+    "order": 7,
+    "type": "객관식",
+    "content": "설치 확인 결과 Face: True가 표시되면 무엇을 뜻하는가?",
+    "choices": [
+      "얼굴 사진 80장이 저장되었다.",
+      "웹캠에서 모든 사람을 정확히 인식했다.",
+      "cv2에 얼굴 학습 기능이 있다.",
+      "얼굴 모델 학습이 이미 끝났다."
+    ],
+    "answer": 2,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "이 확인은 hasattr(cv2, 'face')의 결과입니다. 기능의 존재 여부를 확인하는 것으로 사진 수집이나 모델 학습 완료를 뜻하지 않습니다.",
+    "reference": "face/index.html\n2단계. Python과 OpenCV 설치/확인"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q008",
+    "raw_id": "1-08",
+    "day": 1,
+    "order": 8,
+    "type": "객관식",
+    "content": "웹캠 테스트 화면을 종료하려면 교재에서 안내한 어떤 키를 누르는가?",
+    "choices": [
+      "s",
+      "r",
+      "q",
+      "Enter"
+    ],
+    "answer": 2,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "웹캠 테스트 코드는 q 키를 감지하면 반복문을 끝냅니다. 이어서 웹캠을 해제하고 열린 영상 창을 닫습니다.",
+    "reference": "face/index.html\n3단계. 웹캠 테스트 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q009",
+    "raw_id": "1-09",
+    "day": 1,
+    "order": 9,
+    "type": "객관식",
+    "content": "웹캠 화면이 열리지 않을 때 교재에서 먼저 확인하는 것은?",
+    "choices": [
+      "Windows 카메라 권한과 다른 카메라 사용 앱",
+      "얼굴 사진의 파일명을 모두 바꾸기",
+      "사물 이미지셋을 다시 다운로드하기",
+      "얼굴 모델의 이름표만 수정하기"
+    ],
+    "answer": 0,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "교재는 카메라 권한을 허용하고 Zoom, Teams, 카메라 앱 등을 닫도록 안내합니다. 카메라를 사용할 수 있어야 사진 수집을 시작할 수 있습니다.",
+    "reference": "face/index.html\n잘 안 될 때"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q010",
+    "raw_id": "1-10",
+    "day": 1,
+    "order": 10,
+    "type": "객관식",
+    "content": "수집 코드의 max_count = 80은 무엇을 정하는가?",
+    "choices": [
+      "설치할 패키지의 개수",
+      "수집 종료 기준이 되는 얼굴 사진 수",
+      "학습할 사람의 이름 길이",
+      "웹캠 화면의 가로 픽셀 수"
+    ],
+    "answer": 1,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "max_count는 수집한 얼굴 사진 수 count와 비교하는 종료 기준입니다. 교재 코드는 count가 80 이상이면 수집을 끝냅니다.",
+    "reference": "face/index.html\n4단계. 얼굴 사진 수집 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q011",
+    "raw_id": "1-11",
+    "day": 1,
+    "order": 11,
+    "type": "객관식",
+    "content": "cv2.COLOR_BGR2GRAY를 사용하는 목적은?",
+    "choices": [
+      "웹캠 좌우를 뒤집기",
+      "사람 이름을 숫자로 바꾸기",
+      "컬러 화면을 흑백 영상으로 바꾸기",
+      "얼굴 사진 폴더를 지우기"
+    ],
+    "answer": 2,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "cv2.cvtColor와 COLOR_BGR2GRAY는 컬러 영상을 흑백으로 변환합니다. 좌우 반전은 교재에서 별도로 cv2.flip을 사용합니다.",
+    "reference": "face/index.html\n4단계. 얼굴 사진 수집 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q012",
+    "raw_id": "1-12",
+    "day": 1,
+    "order": 12,
+    "type": "객관식",
+    "content": "교재의 수집 코드가 저장 전 얼굴 이미지를 맞추는 크기는?",
+    "choices": [
+      "96 × 96 픽셀",
+      "200 × 200 픽셀",
+      "30 × 30 픽셀",
+      "64 × 64 픽셀"
+    ],
+    "answer": 1,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "수집 코드는 검출한 얼굴 영역을 잘라 cv2.resize(face_img, (200, 200))으로 크기를 맞춥니다. 30 × 30은 얼굴 검출의 최소 크기 설정입니다.",
+    "reference": "face/index.html\n4단계. 얼굴 사진 수집 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q013",
+    "raw_id": "1-13",
+    "day": 1,
+    "order": 13,
+    "type": "객관식",
+    "content": "교재에서 학습한 얼굴 모델을 저장하는 파일은?",
+    "choices": [
+      "0_webcam_test.py",
+      "trainer/face_model.yml",
+      "trainer/labels.txt",
+      "dataset/student01/1.jpg"
+    ],
+    "answer": 1,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "recognizer.write로 학습 결과를 trainer/face_model.yml에 저장합니다. labels.txt는 이름표이고 JPG 파일은 수집한 사진입니다.",
+    "reference": "face/index.html\n5단계. 얼굴 모델 학습 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q014",
+    "raw_id": "1-14",
+    "day": 1,
+    "order": 14,
+    "type": "객관식",
+    "content": "trainer/labels.txt의 역할은?",
+    "choices": [
+      "얼굴 사진을 흑백으로 바꾼다.",
+      "웹캠 영상을 계속 녹화한다.",
+      "OpenCV를 설치한다.",
+      "숫자 라벨과 사람 이름을 연결한다."
+    ],
+    "answer": 3,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "학습 코드는 숫자 라벨과 이름을 함께 기록합니다. 실시간 인식 코드는 이 파일을 읽어 예측된 숫자 라벨에 해당하는 이름을 찾습니다.",
+    "reference": "face/index.html\n5단계. 얼굴 모델 학습 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q015",
+    "raw_id": "1-15",
+    "day": 1,
+    "order": 15,
+    "type": "객관식",
+    "content": "얼굴인식 화면에 표시되는 %의 의미로 알맞은 것은?",
+    "choices": [
+      "그 사람이 맞을 실제 확률",
+      "얼굴 사진 수집의 진행률만 의미하는 값",
+      "웹캠 배터리의 남은 비율",
+      "학습 이미지와의 유사도를 나타내는 점수"
+    ],
+    "answer": 3,
+    "domain": "얼굴인식",
+    "diff": "기초",
+    "explanation": "교재는 이 %가 실제 확률이 아니라 학습 이미지와의 유사도 점수라고 안내합니다. 표시된 숫자만으로 신원을 확정할 수는 없습니다.",
+    "reference": "face/index.html\n오늘 실습 흐름; 6단계. 실시간 얼굴 인식 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q016",
+    "raw_id": "1-16",
+    "day": 1,
+    "order": 16,
+    "type": "객관식",
+    "content": "등록된 이름표가 정상이고 confidence가 40일 때, 교재 코드가 표시하는 유사도 점수는? (100 - confidence 사용)",
+    "choices": [
+      "75%",
+      "100%",
+      "60%",
+      "40%"
+    ],
+    "answer": 2,
+    "domain": "얼굴인식",
+    "diff": "초중급",
+    "explanation": "confidence가 75보다 작으므로 등록된 이름을 표시하는 분기로 들어갑니다. 점수는 int(100 - 40)이므로 60%이며 실제 확률을 뜻하지 않습니다.",
+    "reference": "face/index.html\n6단계. 실시간 얼굴 인식 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q017",
+    "raw_id": "1-17",
+    "day": 1,
+    "order": 17,
+    "type": "객관식",
+    "content": "등록된 이름표가 있어도 confidence가 정확히 75이면 교재 코드가 표시하는 이름은? (조건: confidence < 75)",
+    "choices": [
+      "Unknown",
+      "아무 조건 없이 직전 이름",
+      "student01로 강제 변경",
+      "반드시 등록된 이름"
+    ],
+    "answer": 0,
+    "domain": "얼굴인식",
+    "diff": "초중급",
+    "explanation": "조건은 75 이하가 아니라 75 미만입니다. 정확히 75이면 조건이 거짓이므로 Unknown을 표시하는 else 분기로 들어갑니다.",
+    "reference": "face/index.html\n6단계. 실시간 얼굴 인식 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q018",
+    "raw_id": "1-18",
+    "day": 1,
+    "order": 18,
+    "type": "객관식",
+    "content": "실시간 인식 실행 시 학습된 모델 파일이 없다는 오류가 났다. 얼굴 사진은 이미 수집했다면 다음 할 일은?",
+    "choices": [
+      "2_train_model.py를 실행해 학습 결과를 만든다.",
+      "labels.txt를 빈 파일로 만든다.",
+      "모델 없이 인식 코드를 반복 실행한다.",
+      "dataset 폴더를 비운다."
+    ],
+    "answer": 0,
+    "domain": "얼굴인식",
+    "diff": "초중급",
+    "explanation": "실시간 인식에는 face_model.yml과 labels.txt가 필요합니다. 사진을 이미 모았다면 2_train_model.py로 학습해 두 파일을 생성해야 합니다.",
+    "reference": "face/index.html\n5단계. 얼굴 모델 학습 코드; 6단계. 실시간 얼굴 인식 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q019",
+    "raw_id": "1-19",
+    "day": 1,
+    "order": 19,
+    "type": "객관식",
+    "content": "수집 코드의 gray[y:y+h, x:x+w]가 선택하는 것은? (x, y, w, h는 검출된 얼굴 위치와 크기)",
+    "choices": [
+      "파일 이름에 들어갈 문자열",
+      "영상의 모든 픽셀",
+      "웹캠의 장치 번호",
+      "검출된 얼굴의 사각형 영역"
+    ],
+    "answer": 3,
+    "domain": "얼굴인식",
+    "diff": "초중급",
+    "explanation": "첫 번째 구간은 세로 y부터 y+h까지, 두 번째는 가로 x부터 x+w까지입니다. 얼굴 사각형만 잘라낸 뒤 크기를 맞춰 저장합니다.",
+    "reference": "face/index.html\n4단계. 얼굴 사진 수집 코드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q020",
+    "raw_id": "1-20",
+    "day": 1,
+    "order": 20,
+    "type": "객관식",
+    "content": "친구를 자꾸 다른 사람으로 인식할 때 교재의 개선 방법으로 알맞은 것은?",
+    "choices": [
+      "얼굴 사진을 더 다양하게 다시 수집하고 모델을 다시 학습한다.",
+      "실시간 코드의 이름만 친구 이름으로 고정한다.",
+      "유사도 숫자를 항상 100으로 표시한다.",
+      "웹캠 테스트만 반복하고 학습은 하지 않는다."
+    ],
+    "answer": 0,
+    "domain": "얼굴인식",
+    "diff": "초중급",
+    "explanation": "교재는 다양한 얼굴 사진을 다시 모아 재학습하도록 안내합니다. 표시 이름이나 점수만 바꾸면 실제 인식 결과는 개선되지 않습니다.",
+    "reference": "face/index.html\n잘 안 될 때"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q021",
+    "raw_id": "2-01",
+    "day": 2,
+    "order": 1,
+    "type": "객관식",
+    "content": "사물인식 단원에서 만드는 프로그램의 주된 목적은?",
+    "choices": [
+      "문장을 입력해 새 그림을 생성하기",
+      "이미지셋으로 모델을 학습하고 웹캠으로 사물 인식률을 측정하기",
+      "아두이노로 모터를 제어하기",
+      "웹캠으로 얼굴 이름표만 만들기"
+    ],
+    "answer": 1,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 사물 이미지셋 준비, 모델 학습, 웹캠 인식률 측정을 수행합니다. 이 단원에서는 아두이노 제어를 하지 않는다고 명시합니다.",
+    "reference": "object/index.html\n오늘 만들 프로그램"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q022",
+    "raw_id": "2-02",
+    "day": 2,
+    "order": 2,
+    "type": "객관식",
+    "content": "교재에서 사물 이미지셋을 구하는 저장소의 사이트는?",
+    "choices": [
+      "Google AI Studio",
+      "Netlify Drop",
+      "robogram.net",
+      "MyMemory 번역 API"
+    ],
+    "answer": 2,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 robogram.net의 데이터 저장소에서 안내받은 사물 이미지셋을 다운로드하도록 안내합니다. 다른 보기는 API 키 준비나 배포, 번역에 관련된 서비스입니다.",
+    "reference": "object/index.html\n3단계. robogram.net 데이터 저장소에서 이미지셋 다운로드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q023",
+    "raw_id": "2-03",
+    "day": 2,
+    "order": 3,
+    "type": "객관식",
+    "content": "학습용 사물 사진을 정리한 구조로 알맞은 것은?",
+    "choices": [
+      "trainer/face_model.yml",
+      "obj_data/사진.jpg만 모아 두기",
+      "model/mouse.py",
+      "obj_data/mouse/사진.jpg"
+    ],
+    "answer": 3,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재 코드는 obj_data 안의 사물별 폴더에서 이미지를 읽습니다. mouse 폴더 안에 사진을 넣어야 mouse 클래스의 데이터로 읽힙니다.",
+    "reference": "object/index.html\n3단계. robogram.net 데이터 저장소에서 이미지셋 다운로드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q024",
+    "raw_id": "2-04",
+    "day": 2,
+    "order": 4,
+    "type": "객관식",
+    "content": "obj_data 안에 있는 keyboard, mouse 같은 폴더 이름은 무엇으로 사용되는가?",
+    "choices": [
+      "모델이 맞혀야 할 사물의 정답 이름",
+      "설치할 Python 버전",
+      "카메라 장치의 번호",
+      "실시간 측정 간격"
+    ],
+    "answer": 0,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 폴더 이름을 사물의 정답 이름으로 사용합니다. 학습 코드도 class_name을 해당 이미지의 라벨로 기록합니다.",
+    "reference": "object/index.html\n3단계. robogram.net 데이터 저장소에서 이미지셋 다운로드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q025",
+    "raw_id": "2-05",
+    "day": 2,
+    "order": 5,
+    "type": "객관식",
+    "content": "교재가 사물별 이미지 수로 권장하는 준비 방식은?",
+    "choices": [
+      "사진 없이 사물 이름만 입력",
+      "모든 사물을 합쳐 사진 두 장만 준비",
+      "최소 20~30장 이상, 가능하면 30~50장의 다양한 사진",
+      "사물별 같은 사진 한 장만 준비"
+    ],
+    "answer": 2,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 각 사물의 이미지를 충분하고 다양하게 준비하라고 안내합니다. 사물별 최소 20~30장 이상, 가능하면 30~50장을 권장합니다.",
+    "reference": "object/index.html\n3단계. robogram.net 데이터 저장소에서 이미지셋 다운로드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q026",
+    "raw_id": "2-06",
+    "day": 2,
+    "order": 6,
+    "type": "객관식",
+    "content": "캡스톤에서 물건을 손에 들고 보여줄 예정이라면 어떤 학습 사진이 알맞은가?",
+    "choices": [
+      "책상 위의 같은 모습만 반복한 사진",
+      "물건 없이 손만 찍은 사진",
+      "책상 위 모습과 손에 든 모습을 섞은 사진",
+      "물건 이름이 적힌 글자 화면만 찍은 사진"
+    ],
+    "answer": 2,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 책상 위 사진과 손에 든 사진을 절반 정도씩 섞도록 안내합니다. 실제 사용할 장면과 비슷한 데이터를 포함하면 인식에 도움이 됩니다.",
+    "reference": "object/index.html\n3단계. robogram.net 데이터 저장소에서 이미지셋 다운로드"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q027",
+    "raw_id": "2-07",
+    "day": 2,
+    "order": 7,
+    "type": "객관식",
+    "content": "교재의 사물 모델이 함께 사용하는 이미지 특징은?",
+    "choices": [
+      "사람 이름과 전화번호",
+      "HSV 색상 히스토그램과 HOG 모양 특징",
+      "마이크 음량과 음성 높낮이",
+      "이미지 파일명과 수정 시간만"
+    ],
+    "answer": 1,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재 코드의 extract_features는 색상 히스토그램과 HOG 특징을 숫자로 만들고 연결합니다. 이미지의 색상과 모양 정보를 함께 사용합니다.",
+    "reference": "object/index.html\n5단계. 모델 학습 파일 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q028",
+    "raw_id": "2-08",
+    "day": 2,
+    "order": 8,
+    "type": "객관식",
+    "content": "교재 코드에서 사용하는 사물 분류 모델은?",
+    "choices": [
+      "KNN (KNeighborsClassifier)",
+      "LBPH 얼굴인식 모델",
+      "MediaPipe 사람 분리 모델만",
+      "Gemini 대화 모델만"
+    ],
+    "answer": 0,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "학습 코드가 KNeighborsClassifier를 생성하고 학습시킵니다. LBPH는 얼굴인식, Gemini는 대화, MediaPipe는 캡스톤 배경 제거와 관련됩니다.",
+    "reference": "object/index.html\n5단계. 모델 학습 파일 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q029",
+    "raw_id": "2-09",
+    "day": 2,
+    "order": 9,
+    "type": "객관식",
+    "content": "사물 모델의 학습 결과를 저장하는 파일은?",
+    "choices": [
+      "model/object_model.joblib",
+      "model/training_report.txt",
+      "trainer/face_model.yml",
+      "0_webcam_test.py"
+    ],
+    "answer": 0,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "joblib.dump로 모델과 클래스 정보 등을 object_model.joblib에 저장합니다. training_report.txt에는 평가 결과가 기록됩니다.",
+    "reference": "object/index.html\n5단계. 모델 학습 파일 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q030",
+    "raw_id": "2-10",
+    "day": 2,
+    "order": 10,
+    "type": "객관식",
+    "content": "학습 후 테스트 인식률과 분류 리포트를 확인할 파일은?",
+    "choices": [
+      "model/training_report.txt",
+      "0_webcam_test.py",
+      "model/object_model.joblib",
+      "obj_data.zip"
+    ],
+    "answer": 0,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 학습 평가 결과를 training_report.txt에 저장합니다. 모델 파일 자체와 사람이 읽을 평가 보고서의 용도를 구분해야 합니다.",
+    "reference": "object/index.html\n5단계. 모델 학습 파일 만들기; 7단계. 목표 사물 인식률 측정 테스트"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q031",
+    "raw_id": "2-11",
+    "day": 2,
+    "order": 11,
+    "type": "객관식",
+    "content": "실시간 화면의 Confidence를 해석한 설명으로 알맞은 것은?",
+    "choices": [
+      "웹캠 화면 밝기만 나타내는 값",
+      "정답일 실제 확률을 항상 보장하는 값",
+      "학습 특징과 비교한 상대적인 분류 신뢰도",
+      "지금까지 맞힌 횟수만 나타내는 값"
+    ],
+    "answer": 2,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 Confidence를 KNN이 주변 학습 데이터와 비교해 계산한 상대적인 분류 신뢰도로 설명합니다. 실제 정답 여부나 누적 인식률과는 다릅니다.",
+    "reference": "object/index.html\n6단계. 실시간 사물 인식 파일 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q032",
+    "raw_id": "2-12",
+    "day": 2,
+    "order": 12,
+    "type": "객관식",
+    "content": "목표 사물을 보여줄 위치로 교재에서 안내하는 곳은?",
+    "choices": [
+      "화면 바깥쪽",
+      "CMD 창의 문자 입력 영역",
+      "카메라 뒤쪽",
+      "화면 중앙 사각형 안"
+    ],
+    "answer": 3,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "사물 모델은 중앙의 고정된 영역을 분석합니다. 목표 물건을 중앙 사각형 안에 크게 보여줘야 해당 물건의 특징을 계산할 수 있습니다.",
+    "reference": "object/index.html\n7단계. 목표 사물 인식률 측정 테스트"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q033",
+    "raw_id": "2-13",
+    "day": 2,
+    "order": 13,
+    "type": "객관식",
+    "content": "교재의 측정 코드가 정답 또는 오답을 기록하는 간격은?",
+    "choices": [
+      "사진 수집이 끝난 뒤 한 번만",
+      "5분",
+      "0.5초",
+      "0.01초"
+    ],
+    "answer": 2,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 비슷한 순간이 매 프레임 중복 반영되는 것을 줄이기 위해 0.5초마다 측정합니다. 화면 표시와 측정 횟수 기록은 구분됩니다.",
+    "reference": "object/index.html\n7단계. 목표 사물 인식률 측정 테스트"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q034",
+    "raw_id": "2-14",
+    "day": 2,
+    "order": 14,
+    "type": "객관식",
+    "content": "Recent 20회 막대가 나타내는 것은?",
+    "choices": [
+      "최근 20번 측정의 인식률",
+      "실습 시작부터의 전체 누적 인식률",
+      "사물 이름의 글자 수",
+      "학습 사진의 총개수"
+    ],
+    "answer": 0,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "Recent는 최근 측정 결과를 보여줘 현재 자세와 조명에서의 성능 변화를 빠르게 확인할 수 있습니다. 전체 누적 결과는 Overall에 표시됩니다.",
+    "reference": "object/index.html\n7단계. 목표 사물 인식률 측정 테스트"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q035",
+    "raw_id": "2-15",
+    "day": 2,
+    "order": 15,
+    "type": "객관식",
+    "content": "측정 중 r 키를 누르면 교재 프로그램은 어떻게 동작하는가?",
+    "choices": [
+      "사물 이름을 무조건 keyboard로 바꾼다.",
+      "구간 리포트를 출력한 뒤 측정값을 초기화한다.",
+      "모델 파일을 영구 삭제한다.",
+      "새 얼굴 사진을 수집한다."
+    ],
+    "answer": 1,
+    "domain": "사물인식",
+    "diff": "기초",
+    "explanation": "교재는 r 키를 누르면 현재 구간의 인식률, 평균 confidence 등의 리포트를 CMD에 출력한 후 초기화한다고 설명합니다. 조건별 비교 실험에 활용할 수 있습니다.",
+    "reference": "object/index.html\n7단계. 목표 사물 인식률 측정 테스트"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q036",
+    "raw_id": "2-16",
+    "day": 2,
+    "order": 16,
+    "type": "객관식",
+    "content": "목표 사물을 40번 측정해 30번 맞혔다. 전체 인식률은? (정답 횟수 ÷ 전체 횟수 × 100)",
+    "choices": [
+      "40%",
+      "75%",
+      "70%",
+      "30%"
+    ],
+    "answer": 1,
+    "domain": "사물인식",
+    "diff": "초중급",
+    "explanation": "전체 인식률은 30 ÷ 40 × 100 = 75%입니다. 정답 횟수 자체나 모델의 Confidence와 다른 값입니다.",
+    "reference": "object/index.html\n7단계. 목표 사물 인식률 측정 테스트"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q037",
+    "raw_id": "2-17",
+    "day": 2,
+    "order": 17,
+    "type": "객관식",
+    "content": "train_test_split의 test_size=0.25가 뜻하는 것은? (정상 분할되는 경우)",
+    "choices": [
+      "정답인 데이터만 25% 남긴다.",
+      "학습 결과의 정확도를 25%로 고정한다.",
+      "사물 종류를 반드시 25개로 만든다.",
+      "전체 데이터의 25%를 테스트용으로 나눈다."
+    ],
+    "answer": 3,
+    "domain": "사물인식",
+    "diff": "초중급",
+    "explanation": "test_size=0.25는 평가에 사용할 데이터의 비율입니다. 나머지 75%는 학습에 사용하며 이 설정이 정확도 자체를 정하지는 않습니다.",
+    "reference": "object/index.html\n5단계. 모델 학습 파일 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q038",
+    "raw_id": "2-18",
+    "day": 2,
+    "order": 18,
+    "type": "객관식",
+    "content": "이미지가 부족해 학습과 평가에 같은 데이터를 쓰는 예외 처리로 들어갔다. 결과를 어떻게 해석해야 하는가?",
+    "choices": [
+      "웹캠의 성능이 자동으로 좋아진 것이다.",
+      "학습 데이터의 다양성은 더 이상 필요 없다.",
+      "새 사진에서도 반드시 같은 인식률이 나온다.",
+      "실제 새 사진에서의 성능보다 높게 나올 수 있다."
+    ],
+    "answer": 3,
+    "domain": "사물인식",
+    "diff": "초중급",
+    "explanation": "코드의 예외 처리에서는 X_train과 X_test에 같은 X를 사용합니다. 이미 본 사진을 다시 평가하므로 교재는 실제 성능보다 높게 나올 수 있다고 경고합니다.",
+    "reference": "object/index.html\n5단계. 모델 학습 파일 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q039",
+    "raw_id": "2-19",
+    "day": 2,
+    "order": 19,
+    "type": "객관식",
+    "content": "Overall은 낮지만 Recent 20회는 높다. 교재 설명에 맞는 해석은?",
+    "choices": [
+      "최근 조건에서 더 많이 틀리고 있다.",
+      "초반 오답 영향은 남아 있지만 최근 조건에서는 잘 맞히고 있다.",
+      "Recent는 학습 사진 수라 인식과 무관하다.",
+      "누적 결과가 낮으므로 최근 정답도 모두 오답이다."
+    ],
+    "answer": 1,
+    "domain": "사물인식",
+    "diff": "초중급",
+    "explanation": "Overall에는 초반부터의 기록이 남고 Recent에는 최근 기록만 반영됩니다. 교재는 초반 자세가 좋지 않았던 영향을 구분하고 필요하면 r로 새 구간을 측정하도록 안내합니다.",
+    "reference": "object/index.html\n7단계. 목표 사물 인식률 측정 테스트"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q040",
+    "raw_id": "2-20",
+    "day": 2,
+    "order": 20,
+    "type": "객관식",
+    "content": "같은 물건의 조명만 바꾸었더니 인식률이 크게 떨어졌다. 가장 알맞은 개선 방향은?",
+    "choices": [
+      "조명과 무관하므로 같은 사진 한 장만 반복 추가한다.",
+      "물건을 사각형 밖으로 옮겨 측정한다.",
+      "표시되는 인식률 숫자만 올린다.",
+      "여러 조명에서 찍은 학습 사진을 보강하고 다시 학습한다."
+    ],
+    "answer": 3,
+    "domain": "사물인식",
+    "diff": "초중급",
+    "explanation": "교재의 비교 실험은 조명 변화에 대한 모델의 약점을 확인합니다. 다양한 조명의 학습 사진을 보강해 실제 입력 조건의 차이를 줄이는 것이 적절합니다.",
+    "reference": "object/index.html\n7단계. 목표 사물 인식률 측정 테스트 · 비교 실험 해보기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q041",
+    "raw_id": "3-01",
+    "day": 3,
+    "order": 1,
+    "type": "객관식",
+    "content": "AI 페르소나 역할대화 앱의 기능으로 알맞은 것은?",
+    "choices": [
+      "텍스트를 새 그림으로만 바꾸기",
+      "사용자의 실제 감정을 확정해 진단하기",
+      "웹캠으로 사물 모델만 학습하기",
+      "선택한 역할로 웹캠 관찰에 반응하고 글 또는 음성으로 대화하기"
+    ],
+    "answer": 3,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재의 앱은 웹캠 관찰 결과와 역할 프롬프트를 Gemini에 연결해 첫 인사와 대화를 만듭니다. 글 입력과 브라우저 음성 기능도 사용합니다.",
+    "reference": "persona/index.html\n1. 수업 개요"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q042",
+    "raw_id": "3-02",
+    "day": 3,
+    "order": 2,
+    "type": "객관식",
+    "content": "교재의 노트북용 페르소나 웹앱에 사용하는 웹 프레임워크는?",
+    "choices": [
+      "Flask",
+      "HOG",
+      "NumPy",
+      "joblib"
+    ],
+    "answer": 0,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재는 Flask로 브라우저에서 접속하는 웹앱을 만듭니다. NumPy는 수치 처리, joblib은 사물 모델 저장·읽기, HOG는 이미지 특징과 관련됩니다.",
+    "reference": "persona/index.html\n1. 수업 개요; 7. 노트북용 페르소나 앱 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q043",
+    "raw_id": "3-03",
+    "day": 3,
+    "order": 3,
+    "type": "객관식",
+    "content": "교재에서 Gemini API 키를 준비하는 서비스는?",
+    "choices": [
+      "Windows 카메라 앱",
+      "Google AI Studio",
+      "MyMemory 번역 서비스",
+      "robogram.net 이미지 저장소"
+    ],
+    "answer": 1,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재는 Google AI Studio의 API key 화면에서 키를 발급받도록 안내합니다. 키를 복사한 뒤 Windows 환경변수에 저장합니다.",
+    "reference": "persona/index.html\n5. Google AI Studio에서 API 키 준비"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q044",
+    "raw_id": "3-04",
+    "day": 3,
+    "order": 4,
+    "type": "객관식",
+    "content": "교재의 API 키 관리 원칙에 맞는 행동은?",
+    "choices": [
+      "HTML에 넣어 모든 친구에게 공개한다.",
+      "단체 대화방에 키를 그대로 올린다.",
+      "비밀번호처럼 관리하고 공유 화면에 노출하지 않는다.",
+      "오류 화면에 키를 함께 캡처해 게시한다."
+    ],
+    "answer": 2,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "API 키는 비밀번호처럼 관리합니다. 교재는 HTML, 캡처 화면, 단톡방, GitHub 등에 직접 노출하지 말라고 안내합니다.",
+    "reference": "persona/index.html\n5. Google AI Studio에서 API 키 준비"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q045",
+    "raw_id": "3-05",
+    "day": 3,
+    "order": 5,
+    "type": "객관식",
+    "content": "노트북용 앱이 Gemini API 키를 읽는 환경변수 이름은?",
+    "choices": [
+      "DATA_DIR",
+      "MODEL_NAME",
+      "GEMINI_API_KEY",
+      "USERPROFILE"
+    ],
+    "answer": 2,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재는 setx GEMINI_API_KEY 명령으로 키를 저장하고 앱에서 해당 환경변수를 읽습니다. USERPROFILE은 사용자 폴더 경로와 관련됩니다.",
+    "reference": "persona/index.html\n6. Windows에 Gemini API 키 적용"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q046",
+    "raw_id": "3-06",
+    "day": 3,
+    "order": 6,
+    "type": "객관식",
+    "content": "setx로 API 키를 저장한 직후 교재에서 안내한 다음 행동은?",
+    "choices": [
+      "dataset 폴더를 삭제한다.",
+      "Python의 모든 버전을 제거한다.",
+      "같은 CMD에서 화면 글꼴만 바꾼다.",
+      "현재 CMD를 닫고 새 CMD를 연다."
+    ],
+    "answer": 3,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재는 setx로 저장한 환경변수가 새 CMD에서 적용되므로 기존 창을 닫고 새 창을 열라고 강조합니다.",
+    "reference": "persona/index.html\n6. Windows에 Gemini API 키 적용"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q047",
+    "raw_id": "3-07",
+    "day": 3,
+    "order": 7,
+    "type": "객관식",
+    "content": "노트북용 페르소나 앱의 기본 접속 주소는?",
+    "choices": [
+      "http://127.0.0.1:8080",
+      "http://127.0.0.1:8502",
+      "http://127.0.0.1:8503",
+      "http://127.0.0.1:8501"
+    ],
+    "answer": 3,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "3단계 페르소나 앱은 8501 포트를 사용합니다. 교재의 8502는 캡스톤, 8503은 이미지 생성 앱의 포트입니다.",
+    "reference": "persona/index.html\n8. 앱 실행과 접속"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q048",
+    "raw_id": "3-08",
+    "day": 3,
+    "order": 8,
+    "type": "객관식",
+    "content": "앱에서 처음 사용할 때 교재가 안내한 순서는?",
+    "choices": [
+      "API 키 공개 → 웹캠 사진 업로드 → 역할 선택",
+      "역할 선택 → 웹캠으로 보고 첫 인사하기 → 질문하기",
+      "질문하기 → Python 삭제 → 역할 선택",
+      "모델 파일 삭제 → 얼굴 학습 → 질문하기"
+    ],
+    "answer": 1,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재는 역할을 고른 뒤 웹캠 관찰과 첫 인사를 확인하고 질문하도록 안내합니다. 드롭다운에 없는 역할은 직접 만든 역할 프롬프트를 입력할 수 있습니다.",
+    "reference": "persona/index.html\n8-3. 학생 사용 순서"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q049",
+    "raw_id": "3-09",
+    "day": 3,
+    "order": 9,
+    "type": "객관식",
+    "content": "드롭다운에 없는 나만의 역할로 대화하려면 어디에 내용을 입력하는가?",
+    "choices": [
+      "웹캠 테스트 파일명 칸",
+      "Python 버전 확인 명령",
+      "직접 만든 역할 프롬프트 칸",
+      "Windows 카메라 권한 창"
+    ],
+    "answer": 2,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재의 앱에는 직접 만든 역할 프롬프트 입력칸이 있습니다. 여기에 원하는 역할과 대화 방식을 적어 새로운 페르소나를 실험할 수 있습니다.",
+    "reference": "persona/index.html\n8-3. 학생 사용 순서; 10. 확장 역할 프롬프트 5종"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q050",
+    "raw_id": "3-10",
+    "day": 3,
+    "order": 10,
+    "type": "객관식",
+    "content": "노트북용 앱이 Gemini API에 보내는 웹캠 관련 정보는?",
+    "choices": [
+      "사진 대신 텍스트 관찰 결과",
+      "수집한 얼굴 사진 원본 전체",
+      "학생의 주민등록번호",
+      "웹캠 영상의 모든 프레임"
+    ],
+    "answer": 0,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재의 설계에서는 노트북 내부에서 얼굴과 표정 특징을 간단히 분석하고 텍스트 결과만 Gemini에 보냅니다. 임시 이미지 파일은 분석 후 삭제합니다.",
+    "reference": "persona/index.html\n2. 개인정보·안전 원칙"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q051",
+    "raw_id": "3-11",
+    "day": 3,
+    "order": 11,
+    "type": "객관식",
+    "content": "웹캠에서 웃는 표정이 검출되었을 때 알맞은 해석은?",
+    "choices": [
+      "웃는 표정 특징이 보이지만 실제 감정은 단정하지 않는다.",
+      "그 사람의 나이를 정확히 알 수 있다.",
+      "그 사람은 반드시 행복하다.",
+      "그 사람의 건강 상태를 확정할 수 있다."
+    ],
+    "answer": 0,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재는 표정 특징 검출과 실제 감정 상태를 구분합니다. 얼굴만 보고 감정, 성별, 나이, 신원 등을 추정하거나 단정하지 않습니다.",
+    "reference": "persona/index.html\n2. 개인정보·안전 원칙"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q052",
+    "raw_id": "3-12",
+    "day": 3,
+    "order": 12,
+    "type": "객관식",
+    "content": "STT가 하는 일은?",
+    "choices": [
+      "사물 이미지에서 색상 특징 추출하기",
+      "얼굴 사진을 흑백으로 바꾸기",
+      "말한 음성을 문자로 바꾸기",
+      "답변 문자를 음성으로 읽기"
+    ],
+    "answer": 2,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "STT는 사용자가 말한 음성을 질문 텍스트로 변환합니다. 문자를 음성으로 읽는 기능은 TTS입니다.",
+    "reference": "persona/index.html\n9. 음성으로 페르소나와 대화하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q053",
+    "raw_id": "3-13",
+    "day": 3,
+    "order": 13,
+    "type": "객관식",
+    "content": "TTS가 하는 일은?",
+    "choices": [
+      "학습 사진을 분류 폴더에 저장하기",
+      "학생의 음성을 문자로 바꾸기",
+      "AI의 답변 문자를 음성으로 읽기",
+      "Gemini API 키를 발급하기"
+    ],
+    "answer": 2,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "TTS는 Gemini의 답변 텍스트를 브라우저 speechSynthesis 기능으로 읽어줍니다. 음성을 문자로 바꾸는 입력 기능인 STT와 방향이 다릅니다.",
+    "reference": "persona/index.html\n9. 음성으로 페르소나와 대화하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q054",
+    "raw_id": "3-14",
+    "day": 3,
+    "order": 14,
+    "type": "객관식",
+    "content": "마이크로 질문을 말할 때 교재의 개인정보 안내에 맞는 행동은?",
+    "choices": [
+      "음성은 언제나 기기 안에서만 처리되므로 개인정보를 자유롭게 말한다.",
+      "주소와 전화번호 같은 개인정보는 말하지 않는다.",
+      "API 키를 소리 내어 읽고 공유한다.",
+      "주민등록번호를 질문 앞에 붙인다."
+    ],
+    "answer": 1,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "교재는 브라우저와 운영체제 설정에 따라 음성 처리가 온라인 서비스를 이용할 수 있다고 안내합니다. 수업에서는 민감한 개인정보를 말하지 않습니다.",
+    "reference": "persona/index.html\n9-3. 사용 방법"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q055",
+    "raw_id": "3-15",
+    "day": 3,
+    "order": 15,
+    "type": "객관식",
+    "content": "노트북용 Flask 서버를 종료하는 교재의 방법은?",
+    "choices": [
+      "브라우저 주소의 포트 번호만 바꾼다.",
+      "웹페이지의 글자만 지운다.",
+      "스피커 음량만 0으로 낮춘다.",
+      "CMD에서 Ctrl+C를 누르거나 CMD 창을 닫는다."
+    ],
+    "answer": 3,
+    "domain": "AI 페르소나",
+    "diff": "기초",
+    "explanation": "웹앱 서버는 CMD에서 실행 중입니다. 교재는 Ctrl+C 또는 CMD 창 닫기로 Flask 서버가 종료된다고 설명합니다.",
+    "reference": "persona/index.html\n8. 앱 실행과 접속"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q056",
+    "raw_id": "3-16",
+    "day": 3,
+    "order": 16,
+    "type": "객관식",
+    "content": "음성 대화의 처리 순서로 알맞은 것은?",
+    "choices": [
+      "사용자 음성 → 모델 저장 → 웹캠 촬영 → 스피커",
+      "사용자 음성 → STT → 질문 텍스트 → Gemini 응답 → TTS → 스피커",
+      "사용자 음성 → TTS → 얼굴 학습 → Gemini 응답",
+      "Gemini 응답 → STT → 사용자 음성 → 모델 저장"
+    ],
+    "answer": 1,
+    "domain": "AI 페르소나",
+    "diff": "초중급",
+    "explanation": "음성을 STT로 글자로 바꾸어 Gemini에 질문하고, 답변 글자는 TTS로 읽습니다. 입력과 출력 기능의 방향을 구분하면 순서를 이해할 수 있습니다.",
+    "reference": "persona/index.html\n9-1. 음성 대화 흐름"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q057",
+    "raw_id": "3-17",
+    "day": 3,
+    "order": 17,
+    "type": "객관식",
+    "content": "API 키를 setx로 저장했지만 기존 CMD에서 실행한 앱에 키가 없다고 나온다. 가장 먼저 할 일은?",
+    "choices": [
+      "새 CMD를 열어 적용 여부를 확인한 뒤 앱을 다시 실행한다.",
+      "Flask 코드를 모두 삭제한다.",
+      "같은 CMD에서 웹캠 사진만 더 수집한다.",
+      "API 키를 문제 화면에 공개한다."
+    ],
+    "answer": 0,
+    "domain": "AI 페르소나",
+    "diff": "초중급",
+    "explanation": "교재는 setx 저장 후 새 CMD를 열어야 환경변수가 적용된다고 안내합니다. 새 창에서 적용 여부를 확인하고 앱을 실행하는 것이 우선입니다.",
+    "reference": "persona/index.html\n6. Windows에 Gemini API 키 적용; 12. 자주 발생하는 오류 해결"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q058",
+    "raw_id": "3-18",
+    "day": 3,
+    "order": 18,
+    "type": "객관식",
+    "content": "어제와 오늘 웹캠 인식 신뢰도 %가 다르다. 교재에 맞는 해석은?",
+    "choices": [
+      "조명과 각도에 따라 검출의 뚜렷함 지표가 달라질 수 있다.",
+      "수치가 한 번 높았으므로 오늘도 반드시 높아야 한다.",
+      "그 사람의 신원이 바뀌었다는 뜻이다.",
+      "사람의 실제 감정 확률이 달라진 것이다."
+    ],
+    "answer": 0,
+    "domain": "AI 페르소나",
+    "diff": "초중급",
+    "explanation": "이 앱의 %는 겹쳐 검출된 후보 영역 수를 사람이 읽기 쉽게 바꾼 대략적 지표입니다. 엄밀한 확률이 아니며 조명과 각도의 영향을 받습니다.",
+    "reference": "persona/index.html\n8-3. 학생 사용 순서 · 인식 신뢰도 % 설명"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q059",
+    "raw_id": "3-19",
+    "day": 3,
+    "order": 19,
+    "type": "객관식",
+    "content": "교재의 모의 면접관 역할로 수정할 프롬프트로 가장 알맞은 것은?",
+    "choices": [
+      "한 번에 질문 20개를 하고 답을 기다리지 마.",
+      "학생 답변을 듣지 말고 무조건 좋은 평가만 해줘.",
+      "실제 경험 대신 그럴듯한 경력을 지어내게 해줘.",
+      "한 번에 질문 하나를 하고 답변을 기다린 뒤 강점과 개선점을 짧게 알려줘."
+    ],
+    "answer": 3,
+    "domain": "AI 페르소나",
+    "diff": "초중급",
+    "explanation": "교재의 모의 면접관은 질문 하나씩 진행하고 실제 경험에 기반한 답변을 기다립니다. 이후 강점과 개선점을 짧게 안내하는 방식입니다.",
+    "reference": "persona/index.html\n10. 드롭다운에 없는 확장 역할 프롬프트 5종"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q060",
+    "raw_id": "3-20",
+    "day": 3,
+    "order": 20,
+    "type": "객관식",
+    "content": "아인슈타인 역할을 선택했더니 낮고 차분한 음성이 나온다. 교재에 맞는 설명은?",
+    "choices": [
+      "실제 아인슈타인의 녹음 음성을 생성한 것이다.",
+      "설치된 TTS 음성을 선택하고 rate와 pitch를 조절한 것이다.",
+      "Gemini가 웹캠 사진에서 목소리를 복원한 것이다.",
+      "얼굴인식 모델이 음성까지 새로 학습한 것이다."
+    ],
+    "answer": 1,
+    "domain": "AI 페르소나",
+    "diff": "초중급",
+    "explanation": "교재는 현재 PC의 TTS 음성과 말하기 속도 rate, 높낮이 pitch를 활용한다고 설명합니다. 실제 인물이나 캐릭터 성우의 음성을 생성하는 방식은 아닙니다.",
+    "reference": "persona/index.html\n9-2. 역할별 음성 선택"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q061",
+    "raw_id": "4-01",
+    "day": 4,
+    "order": 1,
+    "type": "객관식",
+    "content": "캡스톤에서 통합해 만드는 앱은?",
+    "choices": [
+      "텍스트 번역만 수행하는 앱",
+      "Python 버전만 확인하는 앱",
+      "얼굴인식·사물인식·페르소나를 연결한 AI 안내 키오스크",
+      "얼굴 사진 수집만 수행하는 앱"
+    ],
+    "answer": 2,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재는 앞서 만든 얼굴 모델, 사물 모델, 페르소나 대화를 하나의 AI 안내 키오스크로 연결합니다. 관찰 결과를 활용해 맞춤 인사와 대화를 만듭니다.",
+    "reference": "capstone/index.html\n오늘 만들 프로그램"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q062",
+    "raw_id": "4-02",
+    "day": 4,
+    "order": 2,
+    "type": "객관식",
+    "content": "캡스톤의 모델 사용 방식으로 알맞은 것은?",
+    "choices": [
+      "두 모델을 반드시 처음부터 다시 학습한다.",
+      "앞 단원에서 학습한 모델 파일을 그대로 불러온다.",
+      "Gemini API 키를 얼굴 모델 대신 사용한다.",
+      "모델 파일 없이 이름만 직접 입력한다."
+    ],
+    "answer": 1,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재의 핵심은 face_model.yml과 object_model.joblib의 재사용입니다. 캡스톤에서 새 모델을 또 학습시키지 않는다고 명시합니다.",
+    "reference": "capstone/index.html\n오늘 만들 프로그램 · 핵심 포인트"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q063",
+    "raw_id": "4-03",
+    "day": 4,
+    "order": 3,
+    "type": "객관식",
+    "content": "캡스톤의 얼굴인식 준비에 필요한 두 파일은?",
+    "choices": [
+      "index.html과 theme.css",
+      "app.py와 qr_code.png",
+      "object_model.joblib과 training_report.txt",
+      "face_model.yml과 labels.txt"
+    ],
+    "answer": 3,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "얼굴 모델에는 학습된 face_model.yml과 숫자 라벨을 이름으로 바꿀 labels.txt가 필요합니다. 교재는 1단계의 trainer 폴더에서 두 파일을 확인하도록 안내합니다.",
+    "reference": "capstone/index.html\n사전 준비 확인하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q064",
+    "raw_id": "4-04",
+    "day": 4,
+    "order": 4,
+    "type": "객관식",
+    "content": "캡스톤의 사물인식에 재사용하는 파일은?",
+    "choices": [
+      "haarcascade_smile.xml",
+      "qr_code.png",
+      "object_model.joblib",
+      "face_model.yml"
+    ],
+    "answer": 2,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "캡스톤은 2단계에서 만든 model/object_model.joblib을 읽어 사물을 분류합니다. 얼굴 모델이나 QR 코드 파일과는 역할이 다릅니다.",
+    "reference": "capstone/index.html\n사전 준비 확인하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q065",
+    "raw_id": "4-05",
+    "day": 4,
+    "order": 5,
+    "type": "객관식",
+    "content": "캡스톤의 Gemini 대화를 위해 미리 설정해야 하는 것은?",
+    "choices": [
+      "GEMINI_API_KEY 환경변수",
+      "face_model.yml의 파일 크기만",
+      "웹캠 테스트의 창 제목만",
+      "obj_data 폴더의 사진 개수만"
+    ],
+    "answer": 0,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재는 모델 두 종류와 함께 GEMINI_API_KEY가 준비되어 있어야 한다고 안내합니다. 3단계에서 준비한 키를 그대로 사용합니다.",
+    "reference": "capstone/index.html\n사전 준비 확인하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q066",
+    "raw_id": "4-06",
+    "day": 4,
+    "order": 6,
+    "type": "객관식",
+    "content": "캡스톤 코드가 이전 단원의 모델을 가져오는 방법은?",
+    "choices": [
+      "인터넷에서 매번 다른 얼굴 모델을 받는다.",
+      "이전 실습 폴더의 모델 경로를 직접 참조한다.",
+      "모델 대신 training_report.txt만 읽는다.",
+      "모델을 모두 app.py 코드 안에 글자로 복사한다."
+    ],
+    "answer": 1,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재는 모델을 캡스톤 폴더로 복사하지 않고 이전 폴더 경로를 코드에서 직접 참조한다고 설명합니다. 따라서 이전 단계의 모델 파일이 있어야 합니다.",
+    "reference": "capstone/index.html\n1단계. 캡스톤 전용 폴더 만들기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q067",
+    "raw_id": "4-07",
+    "day": 4,
+    "order": 7,
+    "type": "객관식",
+    "content": "캡스톤 웹앱의 기본 접속 주소는?",
+    "choices": [
+      "http://127.0.0.1:8503",
+      "http://127.0.0.1:8502",
+      "http://127.0.0.1:8501",
+      "http://127.0.0.1:8080"
+    ],
+    "answer": 1,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "캡스톤 앱은 8502 포트를 사용합니다. 페르소나의 8501과 이미지 생성의 8503을 구분하면 올바른 앱에 접속할 수 있습니다.",
+    "reference": "capstone/index.html\n4단계. 실행과 사용 순서"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q068",
+    "raw_id": "4-08",
+    "day": 4,
+    "order": 8,
+    "type": "객관식",
+    "content": "물건의 위치를 맞추고 촬영하는 순서로 알맞은 것은?",
+    "choices": [
+      "카메라 권한 끄기 → 물건을 화면 밖에 두기 → 촬영",
+      "지금 모습으로 확인하기 → 모델 파일 삭제 → 미리보기 켜기",
+      "미리보기 켜기 → 물건을 중앙 네모에 맞추기 → 지금 모습으로 확인하기",
+      "미리보기 끄기 → 빈 화면으로 관찰 요청하기"
+    ],
+    "answer": 2,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재는 실시간 미리보기에서 중앙 네모에 물건을 위치시킨 뒤 확인 버튼으로 캡처하도록 안내합니다. 이렇게 해야 분석 영역에 물건이 들어갔는지 확인할 수 있습니다.",
+    "reference": "capstone/index.html\n4단계. 실행과 사용 순서"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q069",
+    "raw_id": "4-09",
+    "day": 4,
+    "order": 9,
+    "type": "객관식",
+    "content": "지금 모습으로 확인하기를 눌러 캡처한 직후 미리보기는 어떻게 되는가?",
+    "choices": [
+      "계속 켜져 모든 영상을 외부에 보낸다.",
+      "앱의 포트가 8501로 바뀐다.",
+      "사물 학습을 처음부터 시작한다.",
+      "자동으로 꺼지고 카메라도 함께 꺼진다."
+    ],
+    "answer": 3,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재는 캡처 시점의 모습을 분석한 뒤 미리보기와 카메라가 자동으로 꺼진다고 설명합니다. 다시 촬영하려면 미리보기를 다시 켭니다.",
+    "reference": "capstone/index.html\n4단계. 실행과 사용 순서"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q070",
+    "raw_id": "4-10",
+    "day": 4,
+    "order": 10,
+    "type": "객관식",
+    "content": "캡처 사진에서 초록색 얼굴 박스가 뜻하는 것은?",
+    "choices": [
+      "카메라가 고장 났음",
+      "등록된 사람으로 인식됨",
+      "얼굴은 찾았지만 등록되지 않은 사람으로 판단됨",
+      "사물 신뢰도가 50% 미만임"
+    ],
+    "answer": 1,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재의 얼굴 박스는 초록이 등록된 사람, 주황이 등록되지 않은 사람 판단을 뜻합니다. 사물 박스의 파랑과 빨강은 별도의 의미입니다.",
+    "reference": "capstone/index.html\n화면에 찍힌 사진을 꼭 확인하세요"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q071",
+    "raw_id": "4-11",
+    "day": 4,
+    "order": 11,
+    "type": "객관식",
+    "content": "캡처 사진에서 주황색 얼굴 박스가 뜻하는 것은?",
+    "choices": [
+      "얼굴은 찾았지만 등록되지 않은 사람으로 판단됨",
+      "Gemini API 키가 정상임",
+      "사물 신뢰도가 50% 이상임",
+      "등록된 사람으로 확정됨"
+    ],
+    "answer": 0,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "주황색은 얼굴 검출은 되었지만 등록된 사람으로 인식되지 않았다는 뜻입니다. 얼굴 모델의 판단을 보여주는 색이며 사물 신뢰도와는 다릅니다.",
+    "reference": "capstone/index.html\n화면에 찍힌 사진을 꼭 확인하세요"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q072",
+    "raw_id": "4-12",
+    "day": 4,
+    "order": 12,
+    "type": "객관식",
+    "content": "파란색 사물 박스가 뜻하는 것은?",
+    "choices": [
+      "사물 분류 신뢰도가 50% 이상임",
+      "실제 정답이 반드시 보장됨",
+      "등록된 얼굴이 검출됨",
+      "사물 모델이 없는 상태임"
+    ],
+    "answer": 0,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재는 사물 박스가 파란색이면 신뢰도 50% 이상으로 판단되었다고 안내합니다. 높은 신뢰도여도 실제로 틀릴 수 있으므로 정답 보장은 아닙니다.",
+    "reference": "capstone/index.html\n화면에 찍힌 사진을 꼭 확인하세요"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q073",
+    "raw_id": "4-13",
+    "day": 4,
+    "order": 13,
+    "type": "객관식",
+    "content": "얼굴 모델과 사물 모델이 보는 범위의 차이로 알맞은 것은?",
+    "choices": [
+      "사물은 항상 자동으로 찾고 얼굴은 중앙 물건만 본다.",
+      "두 모델 모두 CMD의 글자만 분석한다.",
+      "얼굴과 사물 모두 화면 밖을 분석한다.",
+      "얼굴은 자동으로 찾고 사물은 중앙의 정해진 네모 영역을 본다."
+    ],
+    "answer": 3,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재는 얼굴을 자동 탐지하는 방식과 사물을 고정 영역에서 분석하는 방식을 비교합니다. 사물은 네모 안에 직접 넣어주어야 합니다.",
+    "reference": "capstone/index.html\n화면에 찍힌 사진을 꼭 확인하세요"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q074",
+    "raw_id": "4-14",
+    "day": 4,
+    "order": 14,
+    "type": "객관식",
+    "content": "인식 AI의 결과가 Gemini에 연결되는 방식은?",
+    "choices": [
+      "웹캠 장치 번호가 API 키를 대신한다.",
+      "Gemini의 답변이 얼굴 학습 사진으로 자동 저장된다.",
+      "인식 결과 텍스트가 Gemini의 입력 프롬프트가 된다.",
+      "얼굴 모델 파일이 음성 신호로 바뀐다."
+    ],
+    "answer": 2,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "교재는 얼굴·사물 인식의 출력 텍스트가 생성 AI의 입력이 되는 연결 구조를 설명합니다. 여러 모델이 단계적으로 이어지는 파이프라인을 체험합니다.",
+    "reference": "capstone/index.html\n이 단원에서 인공지능의 무엇을 배우고 확인할 수 있나요?"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q075",
+    "raw_id": "4-15",
+    "day": 4,
+    "order": 15,
+    "type": "객관식",
+    "content": "캡스톤이 Gemini에 보내는 웹캠 관련 정보는?",
+    "choices": [
+      "캡처 사진 원본 자체",
+      "얼굴 모델의 모든 학습 사진",
+      "실시간 웹캠 영상 전체",
+      "노트북에서 분석한 결과 텍스트"
+    ],
+    "answer": 3,
+    "domain": "캡스톤 통합",
+    "diff": "기초",
+    "explanation": "캡스톤 웹앱 안내는 사진을 외부로 보내지 않고 내부에서 분석한 결과 텍스트만 Gemini에게 전달한다고 설명합니다.",
+    "reference": "capstone/index.html\n3단계. app.py 작성하기 · 웹앱 안내"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q076",
+    "raw_id": "4-16",
+    "day": 4,
+    "order": 16,
+    "type": "객관식",
+    "content": "얼굴은 잘 맞히지만 사물만 계속 틀린다. 알맞은 개선은?",
+    "choices": [
+      "얼굴 모델만 재학습하면 사물도 자동으로 좋아진다.",
+      "사물의 중앙 네모 위치와 촬영 조건을 확인하고 2단계 데이터를 보강한다.",
+      "초록색 얼굴 박스를 파란색으로 바꾼다.",
+      "Gemini 답변을 더 길게 만들면 사물 모델이 자동 학습한다."
+    ],
+    "answer": 1,
+    "domain": "캡스톤 통합",
+    "diff": "초중급",
+    "explanation": "두 모델은 서로 다른 데이터로 따로 학습됩니다. 사물 문제라면 분석 영역과 조명·각도를 확인하고 사물 학습 데이터를 개선해야 합니다.",
+    "reference": "capstone/index.html\n잘 안 될 때"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q077",
+    "raw_id": "4-17",
+    "day": 4,
+    "order": 17,
+    "type": "객관식",
+    "content": "배경 제거를 추가했는데 사물인식이 더 나빠질 수 있는 이유로 알맞은 것은?",
+    "choices": [
+      "배경 제거를 하면 KNN이 자동으로 새 사진을 학습하기 때문이다.",
+      "Gemini가 기존 사물 모델을 자동 삭제하기 때문이다.",
+      "MediaPipe가 모든 물건을 항상 완벽하게 분리하기 때문이다.",
+      "학습 사진에는 배경이 있고 현재 사진은 배경이 제거되어 입력 조건이 달라질 수 있다."
+    ],
+    "answer": 3,
+    "domain": "캡스톤 통합",
+    "diff": "초중급",
+    "explanation": "교재는 배경 제거가 현재 화면에만 적용되고 이미 학습한 사진에는 적용되지 않는다고 설명합니다. 조건 차이와 물건 분리의 한계 때문에 개선이 보장되지 않습니다.",
+    "reference": "capstone/index.html\n배경 자동 제거 (MediaPipe, 캡스톤 전용 실험 기능)"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q078",
+    "raw_id": "4-18",
+    "day": 4,
+    "order": 18,
+    "type": "객관식",
+    "content": "미리보기와 페이지 요청이 동시에 처리되지 않아 멈춘다면 교재에서 확인할 실행 설정은?",
+    "choices": [
+      "threaded=True",
+      "test_size=0.25",
+      "max_count=80",
+      "n_neighbors=3"
+    ],
+    "answer": 0,
+    "domain": "캡스톤 통합",
+    "diff": "초중급",
+    "explanation": "교재의 app.run에는 threaded=True가 필요합니다. 실시간 영상 스트리밍과 페이지 요청을 동시에 처리하기 위한 설정이며 다른 값은 앞 단원의 학습·수집 설정입니다.",
+    "reference": "capstone/index.html\n잘 안 될 때; 3단계. app.py 작성하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q079",
+    "raw_id": "4-19",
+    "day": 4,
+    "order": 19,
+    "type": "객관식",
+    "content": "사물 박스는 파란색인데 실제 물건 이름을 틀렸다. 알맞은 판단은?",
+    "choices": [
+      "신뢰도 기준은 넘었지만 실제 정답과는 다를 수 있다.",
+      "색이 파란색이면 모델 파일을 읽지 않았다는 뜻이다.",
+      "파란색이므로 학생이 본 실제 물건이 반드시 틀렸다.",
+      "파란색은 무조건 얼굴인식 결과다."
+    ],
+    "answer": 0,
+    "domain": "캡스톤 통합",
+    "diff": "초중급",
+    "explanation": "파란색은 사물 모델의 신뢰도가 50% 이상이라는 표시입니다. 교재는 AI의 확신과 실제 정답을 구분해 확인하도록 강조합니다.",
+    "reference": "capstone/index.html\n이 단원에서 인공지능의 무엇을 배우고 확인할 수 있나요? · 신뢰도는 숫자일 뿐"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q080",
+    "raw_id": "4-20",
+    "day": 4,
+    "order": 20,
+    "type": "객관식",
+    "content": "책상 위 사진으로 학습한 사물 모델이 손에 든 물건을 자주 틀린다. 교재가 제시하는 가장 확실한 개선은?",
+    "choices": [
+      "배경 제거만 켜면 반드시 해결된다고 가정한다.",
+      "얼굴 이름표만 수정한다.",
+      "손에 든 모습도 학습 사진에 포함해 2단계 모델을 다시 학습한다.",
+      "물건을 중앙 네모 밖으로 옮긴다."
+    ],
+    "answer": 2,
+    "domain": "캡스톤 통합",
+    "diff": "초중급",
+    "explanation": "교재는 배경 제거를 임시 실험 수단으로 설명하고 손에 든 모습으로 재학습하는 것을 가장 확실한 개선으로 안내합니다. 실제 사용할 조건을 학습 데이터에 포함해야 합니다.",
+    "reference": "capstone/index.html\n배경 자동 제거 (MediaPipe, 캡스톤 전용 실험 기능); 2단원 데이터 준비"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q081",
+    "raw_id": "5-01",
+    "day": 5,
+    "order": 1,
+    "type": "객관식",
+    "content": "얼굴·사물인식 AI와 이미지 생성 AI의 차이로 알맞은 것은?",
+    "choices": [
+      "인식 AI는 대상을 판별하고 생성 AI는 설명에 맞는 새 그림을 만든다.",
+      "두 AI 모두 기존 사진의 파일명만 바꾼다.",
+      "인식 AI는 언제나 새 그림을 그린다.",
+      "생성 AI는 물건 이름만 분류한다."
+    ],
+    "answer": 0,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재는 무엇인지 맞히는 인식 AI와 새 그림을 만드는 생성 AI를 구분합니다. 두 기능은 입력에 대한 결과물의 목적이 다릅니다.",
+    "reference": "textimg/index.html\n이 수업에서 무엇을 배우나요? · 인식 AI와 생성 AI의 차이"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q082",
+    "raw_id": "5-02",
+    "day": 5,
+    "order": 2,
+    "type": "객관식",
+    "content": "교재에서 Text-to-Image가 뜻하는 것은?",
+    "choices": [
+      "말한 음성을 문자로만 바꾸기",
+      "얼굴 사진을 사람 이름으로 분류하기",
+      "설명 문장을 입력해 이미지를 생성하기",
+      "이미지 파일의 이름을 바꾸기"
+    ],
+    "answer": 2,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "Text-to-Image는 글로 설명한 장면을 그림으로 만드는 방식입니다. 얼굴 분류나 음성 인식과는 다른 생성 AI의 활용입니다.",
+    "reference": "textimg/index.html\n오늘 만들 프로그램"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q083",
+    "raw_id": "5-03",
+    "day": 5,
+    "order": 3,
+    "type": "객관식",
+    "content": "교재가 설명한 디노이징의 의미는?",
+    "choices": [
+      "설명에 맞춰 이미지의 잡음을 조금씩 지워가는 과정",
+      "사람 이름을 숫자 라벨로 바꾸는 과정",
+      "마이크 소리를 문자로 바꾸는 과정",
+      "이미지 파일을 압축 해제하는 과정"
+    ],
+    "answer": 0,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재는 무작위 노이즈 이미지에서 시작해 설명과 비슷해지도록 잡음을 점차 지우는 비유로 생성 과정을 설명합니다.",
+    "reference": "textimg/index.html\n그림은 어떻게 생성되나요? (쉬운 비유)"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q084",
+    "raw_id": "5-04",
+    "day": 5,
+    "order": 4,
+    "type": "객관식",
+    "content": "교재의 프롬프트 설계 4요소로 알맞은 것은?",
+    "choices": [
+      "이름·전화번호·주소·학교",
+      "폴더·파일명·확장자·용량",
+      "마이크·스피커·카메라·키보드",
+      "역할·맥락·제약·출력형식"
+    ],
+    "answer": 3,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재는 역할 또는 화풍, 맥락 또는 장면, 제약 또는 분위기, 출력형식의 네 요소를 제시합니다. 장면을 구체적으로 설계하는 데 사용합니다.",
+    "reference": "textimg/index.html\n프롬프트 설계 원리 — 역할·맥락·제약·출력형식"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q085",
+    "raw_id": "5-05",
+    "day": 5,
+    "order": 5,
+    "type": "객관식",
+    "content": "프롬프트의 수채화 일러스트 스타일로는 어떤 요소에 해당하는가?",
+    "choices": [
+      "출력 형식",
+      "제약 / 분위기",
+      "역할 / 화풍",
+      "맥락 / 장면"
+    ],
+    "answer": 2,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "수채화 일러스트 스타일은 어떤 표현 방식으로 그릴지 정하므로 역할 또는 화풍에 해당합니다. 장소와 행동은 맥락 또는 장면에 해당합니다.",
+    "reference": "textimg/index.html\n프롬프트 설계 원리 — 역할·맥락·제약·출력형식"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q086",
+    "raw_id": "5-06",
+    "day": 5,
+    "order": 6,
+    "type": "객관식",
+    "content": "프롬프트의 우주정거장 창문 밖으로 지구를 보는 고양이는 어떤 요소에 해당하는가?",
+    "choices": [
+      "제약 / 분위기",
+      "역할 / 화풍",
+      "출력 형식",
+      "맥락 / 장면"
+    ],
+    "answer": 3,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "주인공이 어디에서 무엇을 하는지 설명한 부분이므로 맥락 또는 장면입니다. 화풍이나 이미지의 비율을 지정한 표현과 구분됩니다.",
+    "reference": "textimg/index.html\n프롬프트 설계 원리 — 역할·맥락·제약·출력형식"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q087",
+    "raw_id": "5-07",
+    "day": 5,
+    "order": 7,
+    "type": "객관식",
+    "content": "프롬프트의 폭력적이지 않고 따뜻한 느낌으로는 어떤 요소에 해당하는가?",
+    "choices": [
+      "맥락 / 장면",
+      "역할 / 화풍",
+      "제약 / 분위기",
+      "출력 형식"
+    ],
+    "answer": 2,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "피해야 할 내용과 지켜야 할 분위기를 지정하므로 제약 또는 분위기입니다. 교재는 따뜻하고 아늑한 느낌 등을 예로 듭니다.",
+    "reference": "textimg/index.html\n프롬프트 설계 원리 — 역할·맥락·제약·출력형식"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q088",
+    "raw_id": "5-08",
+    "day": 5,
+    "order": 8,
+    "type": "객관식",
+    "content": "프롬프트의 정사각형 구도, 파스텔톤 색감은 어떤 요소에 해당하는가?",
+    "choices": [
+      "맥락 / 장면",
+      "출력 형식",
+      "제약 / 분위기",
+      "역할 / 화풍"
+    ],
+    "answer": 1,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재는 구도, 색감, 비율처럼 결과물의 형태를 출력형식으로 분류합니다. 같은 장면도 출력형식 지정에 따라 모습이 달라질 수 있습니다.",
+    "reference": "textimg/index.html\n프롬프트 설계 원리 — 역할·맥락·제약·출력형식"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q089",
+    "raw_id": "5-09",
+    "day": 5,
+    "order": 9,
+    "type": "객관식",
+    "content": "교재의 안전한 사용 약속에 맞는 이미지 요청은?",
+    "choices": [
+      "상상 속 고양이 우주비행사의 따뜻한 수채화",
+      "친구의 얼굴처럼 보이는 사실적인 사진",
+      "다른 학생을 조롱하는 그림",
+      "특정 저작권 캐릭터를 그대로 복제한 그림"
+    ],
+    "answer": 0,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재는 실제 사람의 사실적인 얼굴 요청, 비방·조롱, 저작권 캐릭터 복제를 피하도록 안내합니다. 상상 속 장면으로 안전하게 연습할 수 있습니다.",
+    "reference": "textimg/index.html\n안전하게 사용하기 (디지털 시민의식)"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q090",
+    "raw_id": "5-10",
+    "day": 5,
+    "order": 10,
+    "type": "객관식",
+    "content": "교재에서 생성된 이미지의 사용 범위로 안내한 것은?",
+    "choices": [
+      "실제 사람의 사진인 것처럼 외부에 게시",
+      "아무 작품이나 그대로 복제해 배포",
+      "출처 확인 없이 상품으로 판매",
+      "수업 과제와 개인 감상 목적"
+    ],
+    "answer": 3,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재는 생성 이미지의 저작권과 출처가 명확하지 않다고 설명하고 수업 과제와 개인 감상용으로 사용하도록 안내합니다. 여기서는 교재의 수업 규칙을 묻습니다.",
+    "reference": "textimg/index.html\n안전하게 사용하기 (디지털 시민의식)"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q091",
+    "raw_id": "5-11",
+    "day": 5,
+    "order": 11,
+    "type": "객관식",
+    "content": "교재의 이미지 생성 앱에서 한글 프롬프트를 처리하는 흐름은?",
+    "choices": [
+      "한글은 항상 오류로 처리해 삭제한다.",
+      "한글을 음성 파일로만 저장한다.",
+      "한글을 영어로 번역한 뒤 이미지 생성을 요청한다.",
+      "한글을 얼굴 이름표로 저장한다."
+    ],
+    "answer": 2,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재 앱은 한글 입력에 MyMemory 번역을 적용한 뒤 Pollinations에 이미지 생성을 요청하도록 구성되어 있습니다. 이는 제공된 앱의 처리 흐름입니다.",
+    "reference": "textimg/index.html\n오늘 만들 프로그램; 3단계. app.py 작성하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q092",
+    "raw_id": "5-12",
+    "day": 5,
+    "order": 12,
+    "type": "객관식",
+    "content": "노트북용 이미지 생성 Flask 앱의 포트는?",
+    "choices": [
+      "8501",
+      "8080",
+      "8503",
+      "8502"
+    ],
+    "answer": 2,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재는 페르소나 8501, 캡스톤 8502와 겹치지 않도록 이미지 생성 앱에 8503을 사용한다고 설명합니다.",
+    "reference": "textimg/index.html\n3단계. app.py 작성하기 · 포트 안내"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q093",
+    "raw_id": "5-13",
+    "day": 5,
+    "order": 13,
+    "type": "객관식",
+    "content": "여러 프롬프트로 만든 결과물을 비교할 수 있는 앱의 영역은?",
+    "choices": [
+      "Python 버전 확인 결과",
+      "화면 아래 갤러리",
+      "Windows 카메라 권한 창",
+      "CMD의 폴더 목록만"
+    ],
+    "answer": 1,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재의 앱은 생성한 이미지를 갤러리에 쌓아 보여줍니다. 화풍과 장면 등의 프롬프트를 바꾼 결과를 비교할 수 있습니다.",
+    "reference": "textimg/index.html\n4단계. 실행하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q094",
+    "raw_id": "5-14",
+    "day": 5,
+    "order": 14,
+    "type": "객관식",
+    "content": "로컬 Flask 앱에 QR 코드로 접속할 때 필요한 조건은?",
+    "choices": [
+      "노트북을 꺼두고 스마트폰만 켠다.",
+      "노트북 앱이 실행 중이고 스마트폰이 같은 Wi-Fi에 연결되어 있다.",
+      "Python 서버를 삭제한 뒤 QR을 스캔한다.",
+      "인터넷과 Wi-Fi를 모두 끈다."
+    ],
+    "answer": 1,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재의 5단계 QR 접속은 실행 중인 노트북의 앱에 같은 Wi-Fi에서 접근하는 방식입니다. 정적 배포와 달리 노트북 앱을 계속 실행해야 합니다.",
+    "reference": "textimg/index.html\n5단계. 스마트폰에서 QR 코드로 접속하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q095",
+    "raw_id": "5-15",
+    "day": 5,
+    "order": 15,
+    "type": "객관식",
+    "content": "교재의 정적 배포 버전이 Netlify에 올리는 핵심 파일은?",
+    "choices": [
+      "2_train_model.py",
+      "index.html",
+      "face_model.yml",
+      "object_model.joblib"
+    ],
+    "answer": 1,
+    "domain": "생성형 AI",
+    "diff": "기초",
+    "explanation": "교재는 서버 없이 브라우저에서 동작하는 정적 웹페이지 index.html을 만들어 폴더째 배포합니다. 얼굴·사물 모델 파일을 배포하는 작업은 아닙니다.",
+    "reference": "textimg/index.html\n6단계. 내 폰에 반영구적으로 설치하기 (Netlify 정적 배포)"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q096",
+    "raw_id": "5-16",
+    "day": 5,
+    "order": 16,
+    "type": "객관식",
+    "content": "고양이 그려줘를 교재의 4요소에 맞게 개선한 문장으로 가장 알맞은 것은?",
+    "choices": [
+      "수채화로, 우주정거장에서 지구를 보는 고양이를, 따뜻한 분위기로, 정사각형·파스텔톤으로 그려줘.",
+      "그림을 만들어줘. 화풍과 장면은 모두 생략해줘.",
+      "고양이 고양이 고양이 고양이 그려줘.",
+      "고양이를 아무 조건 없이 무조건 잘 그려줘."
+    ],
+    "answer": 0,
+    "domain": "생성형 AI",
+    "diff": "초중급",
+    "explanation": "정답은 화풍, 장면, 분위기, 출력형식을 모두 지정합니다. 교재는 단순한 주제만 적는 것보다 네 요소를 구체화해 결과를 비교하도록 안내합니다.",
+    "reference": "textimg/index.html\nBefore / After 비교; 프롬프트 설계 원리"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q097",
+    "raw_id": "5-17",
+    "day": 5,
+    "order": 17,
+    "type": "객관식",
+    "content": "같은 Wi-Fi의 스마트폰에서 로컬 앱은 열리지만 마이크 버튼이 회색이다. 교재에 맞는 행동은?",
+    "choices": [
+      "사물 모델을 다시 학습하면 해결된다.",
+      "API 키를 입력하면 마이크가 반드시 켜진다.",
+      "휴대전화가 고장 났다고 판단하고 초기화한다.",
+      "스마트폰에서는 텍스트로 입력하거나 노트북의 127.0.0.1에서 음성을 사용한다."
+    ],
+    "answer": 3,
+    "domain": "생성형 AI",
+    "diff": "초중급",
+    "explanation": "교재의 로컬 Wi-Fi 접속 버전은 보안 정책 때문에 스마트폰 마이크 버튼을 비활성화합니다. 이 경우 텍스트 입력을 사용하고 음성은 노트북의 로컬 주소에서 사용합니다.",
+    "reference": "textimg/index.html\n5단계. 스마트폰에서 QR 코드로 접속하기"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q098",
+    "raw_id": "5-18",
+    "day": 5,
+    "order": 18,
+    "type": "객관식",
+    "content": "Netlify 정적 버전의 갤러리가 다른 기기에서 안 보이는 이유는?",
+    "choices": [
+      "모든 기기의 갤러리가 자동 동기화되기 때문이다.",
+      "스마트폰이 같은 Wi-Fi에 없으면 저장 자료가 삭제되기 때문이다.",
+      "얼굴 모델이 아직 학습되지 않았기 때문이다.",
+      "프롬프트와 이미지 주소가 그 기기의 브라우저 localStorage에 저장되기 때문이다."
+    ],
+    "answer": 3,
+    "domain": "생성형 AI",
+    "diff": "초중급",
+    "explanation": "교재는 정적 버전이 이미지 파일 자체가 아니라 프롬프트와 이미지 주소를 localStorage에 저장한다고 설명합니다. 저장된 브라우저와 기기에만 보이는 개인 갤러리입니다.",
+    "reference": "textimg/index.html\n6단계. 내 폰에 반영구적으로 설치하기; 갤러리 저장 방식 안내"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q099",
+    "raw_id": "5-19",
+    "day": 5,
+    "order": 19,
+    "type": "객관식",
+    "content": "노트북을 껐을 때 로컬 QR 접속과 Netlify 정적 배포의 차이로 알맞은 것은? (인터넷 연결은 정상)",
+    "choices": [
+      "두 방식 모두 노트북을 항상 켜야 한다.",
+      "로컬 QR 접속은 중단되지만 배포된 정적 페이지는 열 수 있다.",
+      "두 방식 모두 자동으로 얼굴 모델을 학습한다.",
+      "로컬 QR만 계속 열리고 정적 페이지는 중단된다."
+    ],
+    "answer": 1,
+    "domain": "생성형 AI",
+    "diff": "초중급",
+    "explanation": "로컬 QR 접속은 노트북의 Flask 서버에 의존합니다. 정적 배포는 호스팅된 페이지에서 외부 서비스를 호출하므로 노트북 서버 실행에 의존하지 않습니다.",
+    "reference": "textimg/index.html\n5단계. 스마트폰에서 QR 코드로 접속하기; 6단계. Netlify 정적 배포"
+  },
+  {
+    "item_id": "WEBCAM-AI-Q100",
+    "raw_id": "5-20",
+    "day": 5,
+    "order": 20,
+    "type": "객관식",
+    "content": "이미지 생성을 연속으로 요청하던 중 429 안내가 나타났다. 교재의 대응으로 알맞은 것은?",
+    "choices": [
+      "요청이 잦은 상태이므로 간격을 두고 다시 시도한다.",
+      "새로고침과 생성 버튼을 더 빠르게 반복한다.",
+      "QR 코드의 파일명을 바꾸면 해결된다고 가정한다.",
+      "얼굴 이름표를 삭제한다."
+    ],
+    "answer": 0,
+    "domain": "생성형 AI",
+    "diff": "초중급",
+    "explanation": "교재는 429를 요청이 너무 잦다는 안내로 설명하고 간격을 두고 시도하도록 합니다. 연속 요청을 늘리는 행동은 해당 문제 해결에 맞지 않습니다.",
+    "reference": "textimg/index.html\n잘 안 될 때 · 상태 코드 429"
+  }
+]

@@ -1,0 +1,32 @@
+# ========================================================
+# Git Ignore Configuration for RoboEval
+# ========================================================
+
+# [CRITICAL SECURITY] Firebase Admin Private Key
+serviceAccountKey.json
+*serviceAccountKey*.json
+*.pem
+*.key
+
+# Backups & Temporary Files
+*.bak
+*.bak_*
+scratch/
+.system_generated/
+*.tmp
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

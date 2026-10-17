@@ -1,0 +1,2756 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로블록스 잼S 플러그인 성취도 평가 문제</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f7f9fc;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .toc {
+            background-color: white;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #1e3c72;
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 8px;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+        }
+
+        @media (max-width: 600px) {
+            .toc ul {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .toc li a {
+            color: #4a5568;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .toc li a:hover {
+            color: #2a5298;
+            text-decoration: underline;
+        }
+
+        .example-section {
+            background-color: white;
+            border: 1px solid #e1e8ed;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            page-break-after: always;
+        }
+
+        .example-section h2 {
+            color: #1e3c72;
+            font-size: 22px;
+            border-left: 5px solid #2a5298;
+            padding-left: 12px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .q-group-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #4a5568;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            background-color: #edf2f7;
+            padding: 6px 12px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .question-card {
+            border-bottom: 1px solid #f0f4f8;
+            padding: 20px 0;
+        }
+
+        .question-card:last-child {
+            border-bottom: none;
+        }
+
+        .q-header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .q-badge {
+            background-color: #2b6cb0;
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-right: 8px;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+
+        .q-badge.applied {
+            background-color: #dd6b20;
+        }
+
+        .q-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+            color: #2d3748;
+        }
+        
+        .q-title pre {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+            margin: 10px 0 0 0;
+        }
+
+        .choices-list {
+            list-style: none;
+            padding-left: 25px;
+            margin: 10px 0 0 0;
+        }
+
+        .choice-item {
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #4a5568;
+        }
+
+        .answers-section {
+            background-color: white;
+            border: 1px solid #e1e8ed;
+            border-radius: 10px;
+            padding: 40px 30px;
+            margin-top: 50px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            page-break-before: always;
+        }
+
+        .answers-section h2 {
+            color: #1e3c72;
+            font-size: 24px;
+            border-bottom: 3px solid #1e3c72;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 40px;
+            background-color: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #edf2f7;
+        }
+
+        @media (max-width: 600px) {
+            .answer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .answer-grid-item {
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #e2e8f0;
+            font-size: 14px;
+        }
+
+        .answer-grid-item .q-num {
+            font-weight: 700;
+            color: #718096;
+        }
+
+        .answer-grid-item .q-ans {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+
+        .answer-card {
+            border-bottom: 1px solid #edf2f7;
+            padding: 20px 0;
+        }
+
+        .answer-card:last-child {
+            border-bottom: none;
+        }
+
+        .answer-card-header {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .answer-card-ans {
+            font-size: 15px;
+            font-weight: 700;
+            color: #2b6cb0;
+            margin-bottom: 8px;
+        }
+
+        .answer-card-desc {
+            font-size: 14px;
+            color: #4a5568;
+            background-color: #f7fafc;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border-left: 4px solid #cbd5e0;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 13px;
+            color: #a0aec0;
+        }
+
+        /* Print optimization */
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            .container {
+                padding: 0;
+                max-width: 100%;
+            }
+            header {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                color: black;
+                background: none;
+                padding: 20px;
+                border-radius: 0;
+            }
+            header h1 {
+                color: black;
+            }
+            header p {
+                color: #555;
+            }
+            .toc {
+                display: none;
+            }
+            .example-section {
+                box-shadow: none;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                padding: 10px 0;
+                margin-bottom: 20px;
+                page-break-after: always;
+            }
+            .answers-section {
+                box-shadow: none;
+                border: none;
+                padding: 10px 0;
+                page-break-before: always;
+            }
+            .answer-grid {
+                background: none;
+                border: 1px solid #ccc;
+            }
+            .answer-grid-item {
+                border: 1px solid #ccc;
+            }
+            .answer-card-desc {
+                background-color: #f9f9f9;
+                border-left: 4px solid #777;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>로블록스 코딩 플러그인 잼S 성취도 평가 문제</h1>
+        <p>초보 입문_잼S와 로블록스 예제 11편 수록 교재 연계 평가 문항 (총 110문항)</p>
+    </header>
+
+    <div class="toc">
+        <h2>차례</h2>
+        <ul>
+                <li><a href="#ex-1">예제 1. 고양이 게임</a></li>
+            <li><a href="#ex-2">예제 2. 공 피하기</a></li>
+            <li><a href="#ex-3">예제 3. 색이 변하는 계단</a></li>
+            <li><a href="#ex-4">예제 4. 플레이어가 건드리면 소리가 나는 블록</a></li>
+            <li><a href="#ex-5">예제 5. 크기가 변하는 블록</a></li>
+            <li><a href="#ex-6">예제 6. 신호등</a></li>
+            <li><a href="#ex-7">예제 7. 함정 발판을 피해 다리 건너기</a></li>
+            <li><a href="#ex-8">예제 8. 엘리베이터</a></li>
+            <li><a href="#ex-9">예제 9. 움직이는 발판 건너기</a></li>
+            <li><a href="#ex-10">예제 10. 회전문</a></li>
+            <li><a href="#ex-11">예제 11. 장착 시 속도 증가, 사용 시 순간 이동 도구</a></li>
+            <li><a href="#answers-sheet">정답지 및 해설</a></li>
+        </ul>
+    </div>
+        <div class="example-section" id="ex-1">
+        <h2>예제 1. 고양이 게임</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q1. 로블록스 스튜디오 도구 상자(Toolbox)에서 고양이 3D 모델을 검색하여 플레이스에 가져오려고 합니다. 도구 상자의 카테고리(Category)를 무엇으로 설정해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 모델 (Models)</li>
+                <li class="choice-item">2) 이미지 (Images)</li>
+                <li class="choice-item">3) 오디오 (Audio)</li>
+                <li class="choice-item">4) 플러그인 (Plugins)</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q2. 도구 상자에서 고양이 울음소리 오디오 파일을 클릭해 가져왔을 때, 이 파일은 탐색기(Explorer) 창의 어느 항목 아래에 생성되나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) StarterGui</li>
+                <li class="choice-item">2) Workspace</li>
+                <li class="choice-item">3) Lighting</li>
+                <li class="choice-item">4) SoundService</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q3. 플레이어 캐릭터가 고양이 모델에 부딪혔을 때 울음소리가 나고 도망치는 이벤트를 실행하고 싶습니다. 잼S에서 사용해야 하는 알맞은 시작 이벤트 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [시작] 블록</li>
+                <li class="choice-item">2) [이 물체에 캐릭터가 충돌하면 시작] 블록</li>
+                <li class="choice-item">3) [도구를 사용하면 시작] 블록</li>
+                <li class="choice-item">4) [도구를 장비하면 시작] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q4. 고양이에게 잼S 블록 코딩을 작성하려고 합니다. 코딩 창을 열기 전에 로블록스 스튜디오에서 반드시 먼저 해야 하는 조작은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 스폰 위치 삭제하기</li>
+                <li class="choice-item">2) 고양이 모델을 마우스로 클릭해 파랗게 선택하기</li>
+                <li class="choice-item">3) 게임 플레이 버튼(F5) 누르기</li>
+                <li class="choice-item">4) 베이스플레이트 지우기</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q5. 로블록스 스튜디오에서 플레이어 캐릭터가 스폰 위치에 직접 등장하여 게임을 직접 플레이하며 작동 상태를 확인하는 단축키는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) F8</li>
+                <li class="choice-item">2) F5</li>
+                <li class="choice-item">3) F2</li>
+                <li class="choice-item">4) Ctrl + D</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q6. '우리에 고양이 가두기 미션'을 위해 고양이를 가둘 우리(Cage) 한가운데의 정확한 X, Z 좌표를 구하려고 합니다. 가장 알맞은 방법은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 눈대중으로 짐작해 임의의 숫자를 입력한다.</li>
+                <li class="choice-item">2) 우리 한가운데에 작은 빨간색 공 파트를 임시로 만든 뒤 속성 창의 Position X, Z 값을 확인한다.</li>
+                <li class="choice-item">3) 고양이의 현재 Position 좌표를 그대로 쓴다.</li>
+                <li class="choice-item">4) Baseplate의 Position 좌표를 복사한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q7. 고양이를 우리로 이동시킬 때, 고양이가 땅속에 파묻히거나 공중에 뜨지 않고 현재 높이(Y축)를 그대로 유지하게 하려면 잼S 이동 블록의 Y축 칸에 무엇을 넣어야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 0</li>
+                <li class="choice-item">2) 100</li>
+                <li class="choice-item">3) 자기 자신의 Y좌표 값</li>
+                <li class="choice-item">4) 랜덤 숫자 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q8. 우리에 들어간 고양이가 20초 동안 대기했다가 우리 밖으로 탈출하도록 코딩하려고 합니다. 이때 사용해야 할 시간 지연 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [이 물체에 캐릭터가 충돌하면 시작] 블록</li>
+                <li class="choice-item">2) [20초 기다리기] 블록</li>
+                <li class="choice-item">3) [무한 반복하기] 블록</li>
+                <li class="choice-item">4) [닿아있는 캐릭터 사망] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q9. 우리를 탈출한 고양이가 사방으로 무작위로 돌아다니게 만들려고 합니다. X축과 Z축 좌표 칸에 어떤 블록을 조립해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [랜덤 숫자] 블록</li>
+                <li class="choice-item">2) [Not] 블록</li>
+                <li class="choice-item">3) [true/false] 블록</li>
+                <li class="choice-item">4) [소리 처음부터 재생] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q10. 고양이를 우리에 가두었더니 20초를 기다리지 않고 곧바로 우리 바깥으로 도망갑니다. 코드 상의 어떤 오류 때문일까요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 소리를 처음부터 재생하기 블록이 없다.</li>
+                <li class="choice-item">2) 우리에 도달한 후 탈출 루프가 돌기 전 대기하는 [20초 기다리기] 블록이 누락되었거나 시간이 0초로 설정되어 있다.</li>
+                <li class="choice-item">3) 고양이 모델의 이름을 변경하지 않았다.</li>
+                <li class="choice-item">4) F5를 누르지 않고 F8을 눌렀다.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-2">
+        <h2>예제 2. 공 피하기</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q11. 로블록스 스튜디오에서 3차원 공간의 방향을 나타내며, 하늘 방향을 의미하는 연두색 축인 Y축이 포함된 이 도구의 이름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 도구 상자</li>
+                <li class="choice-item">2) 속성 창</li>
+                <li class="choice-item">3) 뷰 선택기 (View Selector)</li>
+                <li class="choice-item">4) 탐색기</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q12. 파트가 중력의 영향을 받아 아래로 떨어지지 않고 공중에 고정되도록 만들어 주는 로블록스 스튜디오의 중요 기능은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 스케일 (Scale)</li>
+                <li class="choice-item">2) 회전 (Rotate)</li>
+                <li class="choice-item">3) 앵커 (Anchor)</li>
+                <li class="choice-item">4) 이름 변경</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q13. 공 피하기 게임에서 캐릭터가 밟고 피할 수 있도록 바닥에 둥근 공 모양으로 생성한 파트는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 블록</li>
+                <li class="choice-item">2) 구 (Sphere)</li>
+                <li class="choice-item">3) 쐐기</li>
+                <li class="choice-item">4) 원기둥</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q14. 공 피하기 게임에서 날아오는 공에 플레이어 캐릭터가 닿았을 때 플레이어를 즉시 아웃(처치)시키는 잼S의 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [닿아있는 캐릭터 사망] 블록</li>
+                <li class="choice-item">2) [충돌이 불가능하게 하기] 블록</li>
+                <li class="choice-item">3) [크기 바꾸기] 블록</li>
+                <li class="choice-item">4) [소리 처음부터 재생하기] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q15. 공이 놀이터(사방 벽 안쪽)를 벗어나지 않고 안에서만 튕기며 움직이게 하려면 무엇을 확인해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 스폰 로케이션의 색상과 재질</li>
+                <li class="choice-item">2) 사방을 둘러싼 네 벽면 파트의 Position(위치) 좌표</li>
+                <li class="choice-item">3) 공의 크기(Size) 값</li>
+                <li class="choice-item">4) 도구 상자에서 가져온 오디오 길이</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q16. 놀이터를 감싼 벽들의 좌표를 확인했더니 X축 최소는 10, 최대는 90이고, Z축 최소는 20, 최대는 80입니다. 공이 벽 안에서만 무작위로 움직이게 하려면 [랜덤 숫자] 블록의 최소값과 최대값을 어떻게 설정해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) X축: 10 ~ 90, Z축: 20 ~ 80</li>
+                <li class="choice-item">2) X축: 20 ~ 80, Z축: 10 ~ 90</li>
+                <li class="choice-item">3) X축: 0 ~ 100, Z축: 0 ~ 100</li>
+                <li class="choice-item">4) X축: 10 ~ 20, Z축: 80 ~ 90</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q17. 공 파트의 이동 코딩 시 Y축(높이) 값을 0으로 입력했을 때 발생하는 현상은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 공이 하늘 높이 솟아올라 사라진다.</li>
+                <li class="choice-item">2) 공의 아랫부분 절반이 바닥에 파묻힌 채 굴러다닌다.</li>
+                <li class="choice-item">3) 공이 투명하게 변한다.</li>
+                <li class="choice-item">4) 공의 속도가 2배 빨라진다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q18. 공 피하기 게임에서 굴러다니는 공의 이동 속도를 더 빠르게 높이고 싶습니다. 어떤 블록의 값을 어떻게 변경해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [~초 동안 이동하기] 블록의 시간을 늘린다.</li>
+                <li class="choice-item">2) [~초 동안 이동하기] 블록의 시간을 줄인다.</li>
+                <li class="choice-item">3) [무한 반복하기] 블록의 횟수를 늘린다.</li>
+                <li class="choice-item">4) [닿아있는 캐릭터 사망] 블록의 시간을 늘린다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q19. 컴퓨터에서 빛의 삼원색을 조합하여 색을 표현하는 방식과 각 색상값의 올바른 범위는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) CMYK, 0 ~ 100</li>
+                <li class="choice-item">2) RGB, 0 ~ 255</li>
+                <li class="choice-item">3) HEX, 0 ~ 9</li>
+                <li class="choice-item">4) HSV, 0 ~ 360</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q20. 공이 매번 새로운 랜덤 좌표로 이동할 때마다 몸체 색상이 무작위로 계속 변하게 하려 합니다. 가장 알맞은 블록 조합과 위치는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [시작] 블록 아래에 [색 무작위로 변경] 블록을 한 번만 연결한다.</li>
+                <li class="choice-item">2) [무한 반복하기] 블록 안에 [~초 동안 이동하기] 블록과 함께 [자기 자신 색 무작위로 변경] 블록을 배치한다.</li>
+                <li class="choice-item">3) [닿아있는 캐릭터 사망] 블록 아래에 [색 무작위로 변경] 블록을 배치한다.</li>
+                <li class="choice-item">4) [이 물체에 캐릭터가 충돌하면 시작] 아래에 넣는다.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-3">
+        <h2>예제 3. 색이 변하는 계단</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q21. 로블록스 스튜디오에서 이미 작성한 파트와 잼S 코드를 그대로 담아 바로 옆에 동일하게 복제(Duplicate)하는 단축키는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Ctrl + C</li>
+                <li class="choice-item">2) Ctrl + V</li>
+                <li class="choice-item">3) Ctrl + D</li>
+                <li class="choice-item">4) Ctrl + Z</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q22. 계단이 플레이어를 지탱하고 아래로 떨어지지 않게 고정하려면 어떤 속성을 켜야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Material</li>
+                <li class="choice-item">2) Transparency</li>
+                <li class="choice-item">3) Anchored (앵커)</li>
+                <li class="choice-item">4) Name</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q23. 플레이어가 계단을 밟으면 색이 변하게 하고자 할 때 사용하는 잼S의 시작 이벤트 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [시작]</li>
+                <li class="choice-item">2) [이 물체에 캐릭터가 충돌하면 시작]</li>
+                <li class="choice-item">3) [도구를 사용하면 시작]</li>
+                <li class="choice-item">4) [도구를 장비하면 시작]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q24. 계단 파트의 색을 초록색으로 변경하려고 합니다. 잼S의 [색을 바꾸기] 블록에서 입력해야 할 RGB 값은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [255, 0, 0]</li>
+                <li class="choice-item">2) [0, 255, 0]</li>
+                <li class="choice-item">3) [0, 0, 255]</li>
+                <li class="choice-item">4) [255, 255, 255]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q25. 계단을 만들 때, 코딩을 여러 번 하지 않고 효율적으로 여러 개의 반응하는 계단을 만드는 방법은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 파트 10개를 먼저 배치하고 각각 잼S로 코딩한다.</li>
+                <li class="choice-item">2) 파트 1개를 꺼내 코딩을 완료한 후, 그 파트를 복제(Ctrl + D)하여 계단처럼 배치한다.</li>
+                <li class="choice-item">3) 모든 파트를 하나로 묶어 그룹으로 코딩한다.</li>
+                <li class="choice-item">4) 스폰 로케이션을 여러 개 만든다.</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q26. 계단을 밟았을 때 노란색으로 변하게 하려고 합니다. RGB 색상을 어떻게 설정해야 할까요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [255, 255, 0]</li>
+                <li class="choice-item">2) [0, 255, 255]</li>
+                <li class="choice-item">3) [255, 0, 255]</li>
+                <li class="choice-item">4) [100, 100, 100]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q27. 계단을 밟았을 때 색이 바뀐 뒤, 밟지 않고 3초가 지나면 다시 원래의 회색[100, 100, 100]으로 돌아가게 만들고 싶습니다. 알맞은 블록 배치 순서는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [충돌하면 시작] -> [색 바꾸기: 초록색] -> [3초 기다리기] -> [색 바꾸기: 회색]</li>
+                <li class="choice-item">2) [충돌하면 시작] -> [3초 기다리기] -> [색 바꾸기: 초록색] -> [색 바꾸기: 회색]</li>
+                <li class="choice-item">3) [시작] -> [색 바꾸기: 초록색] -> [무한 반복하기] -> [색 바꾸기: 회색]</li>
+                <li class="choice-item">4) [충돌하면 시작] -> [색 바꾸기: 회색] -> [3초 기다리기] -> [색 바꾸기: 초록색]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q28. 계단 게임에서 플레이어가 밟으면 사라져서 떨어지는 '페이크 계단'을 만들고 싶습니다. 이 물체에 충돌했을 때, 어떤 블록을 연결하면 플레이어가 계단을 통과하여 아래로 떨어지게 될까요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [닿아있는 캐릭터 사망]</li>
+                <li class="choice-item">2) [충돌이 불가능하게 하기]</li>
+                <li class="choice-item">3) [소리를 처음부터 재생하기]</li>
+                <li class="choice-item">4) [크기 바꾸기]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q29. 계단 파트의 투명도를 조절하여 밟았을 때 거의 보이지 않게(반투명하게) 만들고 싶습니다. 속성 창에서 투명도를 조절하는 속성 이름과 그 값의 범위로 올바른 것은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Color, 0~255</li>
+                <li class="choice-item">2) Transparency, 0(불투명)~1(투명)</li>
+                <li class="choice-item">3) Anchored, true/false</li>
+                <li class="choice-item">4) Size, 1~10</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q30. 계단을 밟으면 색이 초록색으로 변함과 동시에 '야옹' 소리가 나게 만들고 싶습니다. 이 기능의 올바른 잼S 블록 배치 방식은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [이 물체에 캐릭터가 충돌하면 시작] 블록 아래에 [소리를 처음부터 재생하기]와 [색을 [0, 255, 0]으로 바꾸기] 블록을 차례대로 끼워 넣는다.</li>
+                <li class="choice-item">2) [시작] 블록 아래에 [소리를 처음부터 재생하기] 블록만 넣는다.</li>
+                <li class="choice-item">3) [이 물체에 캐릭터가 충돌하면 시작] 블록 아래에 [닿아있는 캐릭터 사망] 블록만 넣는다.</li>
+                <li class="choice-item">4) [무한 반복하기] 블록 안에만 넣는다.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-4">
+        <h2>예제 4. 플레이어가 건드리면 소리가 나는 블록</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q31. 잼S에서 소리를 사용하기 위해 도구 상자(Toolbox)에서 오디오 카테고리를 선택한 후, 워크 스페이스에 소리를 가져왔습니다. 이 소리를 잼S 코드에서 불러와 연동하기 위해 사용하는 블록 카테고리는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 제어</li>
+                <li class="choice-item">2) 소리</li>
+                <li class="choice-item">3) 연산</li>
+                <li class="choice-item">4) 변수</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q32. 잼S 코딩 창에서 새로운 변수를 만들려고 합니다. 변수 창을 열기 위해 클릭해야 하는 버튼은 화면의 어디에 있나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 좌측 상단 파일 메뉴</li>
+                <li class="choice-item">2) 우측 하단의 [변수] 버튼</li>
+                <li class="choice-item">3) 중앙의 재생 버튼</li>
+                <li class="choice-item">4) 속성 창</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q33. 변수를 만들 때, 변수 이름과 함께 설정해야 하는 '영역'과 '타입' 중 참/거짓 값을 저장하기에 알맞은 타입은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 지역 변수 - 숫자</li>
+                <li class="choice-item">2) 지역 변수 - 부울 (Boolean)</li>
+                <li class="choice-item">3) 전역 변수 - 문자</li>
+                <li class="choice-item">4) 지역 변수 - 문자</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q34. 참(true)인 상태를 거짓(false)으로, 거짓(false)인 상태를 참(true)으로 논리를 반대로 뒤집을 때 사용하는 [연산] 카테고리의 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [And] 블록</li>
+                <li class="choice-item">2) [Or] 블록</li>
+                <li class="choice-item">3) [Not] 블록</li>
+                <li class="choice-item">4) [랜덤 숫자] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q35. 소리를 중복해서 시끄럽게 재생하지 않기 위해 잼S로 디바운스(중복 차단) 코딩을 할 때 사용하는 핵심 조건문 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [무한 반복하기]</li>
+                <li class="choice-item">2) [만약 ~라면]</li>
+                <li class="choice-item">3) [~초 기다리기]</li>
+                <li class="choice-item">4) [시작]</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q36. 이 예제에서 소리 중복 재생을 막기 위해 부울 변수 `is_playing`을 만들었습니다. `만약 Not is_playing 라면`이라는 조건식을 사용하는 주된 이유는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 소리가 이미 나고 있을 때만 다시 재생하기 위해서</li>
+                <li class="choice-item">2) 소리가 재생 중이 아닐 때(거짓 상태일 때)만 소리를 재생하게 하려고</li>
+                <li class="choice-item">3) 소리 재생 속도를 빠르게 하려고</li>
+                <li class="choice-item">4) 플레이어를 즉시 아웃시키기 위해서</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q37. 조건문 안으로 진입하자마자 변수값을 `true(참)`로 변경하는 이유는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 플레이어 캐릭터를 죽이기 위해</li>
+                <li class="choice-item">2) 소리 재생이 완료될 때까지 다른 충돌에 의해 소리가 중복 실행되는 것을 잠금(Lock)하기 위해</li>
+                <li class="choice-item">3) 소리를 영원히 들리지 않게 하기 위해</li>
+                <li class="choice-item">4) 변수를 메모리에서 삭제하기 위해</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q38. 소리 재생 블록 아래에 배치하는 [~초 기다리기] 블록의 대기 시간(초)은 어떻게 정하는 것이 가장 적절한가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 무조건 1초로 한다.</li>
+                <li class="choice-item">2) 자신이 도구 상자에서 가져온 소리의 재생 길이(시간)만큼 설정한다.</li>
+                <li class="choice-item">3) 무조건 10초로 길게 설정한다.</li>
+                <li class="choice-item">4) 0초로 설정한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q39. 소리 재생이 완전히 끝난 뒤, 다음에 다시 충돌했을 때 소리가 날 수 있도록 하려면 변수값을 무엇으로 다시 정해주어야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) true</li>
+                <li class="choice-item">2) false</li>
+                <li class="choice-item">3) 0</li>
+                <li class="choice-item">4) null</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q40. 만약 소리가 재생된 후에 변수를 다시 `false`로 바꾸는 코드가 누락되었다면 어떤 현상이 발생하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 소리가 무한대로 계속 겹쳐서 재생된다.</li>
+                <li class="choice-item">2) 처음 한 번만 소리가 나고 그 이후로는 아무리 부딪혀도 소리가 나지 않는다.</li>
+                <li class="choice-item">3) 계단의 색깔이 빨간색으로 바뀐다.</li>
+                <li class="choice-item">4) 로블록스 스튜디오가 즉시 종료된다.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-5">
+        <h2>예제 5. 크기가 변하는 블록</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q41. 잼S의 [형태] 카테고리에서 파트의 가로, 세로, 높이 크기를 직접 변경하기 위해 사용하는 블록의 이름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [크기 바꾸기] 블록</li>
+                <li class="choice-item">2) [위치 바꾸기] 블록</li>
+                <li class="choice-item">3) [색 바꾸기] 블록</li>
+                <li class="choice-item">4) [투명도 바꾸기] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q42. 잼S에서 특정 수치 내에서 무작위로 숫자를 생성하여 크기나 위치에 대입하고 싶을 때 사용하는 [연산] 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [더하기] 블록</li>
+                <li class="choice-item">2) [랜덤 숫자] 블록</li>
+                <li class="choice-item">3) [Not] 블록</li>
+                <li class="choice-item">4) [비교] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q43. 잼S 코딩 창에서 조립해 둔 특정 블록이나 블록 세트를 그대로 하나 더 만들고 싶을 때 수행하는 조작은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 블록을 더블 클릭한다.</li>
+                <li class="choice-item">2) 블록을 마우스 우클릭한 뒤 [블록 복사하기]를 클릭한다.</li>
+                <li class="choice-item">3) 단축키 F5를 누른다.</li>
+                <li class="choice-item">4) 로블록스 스튜디오를 껐다 켠다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q44. 파트의 가로(X), 세로(Y), 높이(Z) 세 방향 모두 다르게 랜덤 크기로 변하게 하려면 [랜덤 숫자] 블록이 총 몇 개 필요한가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 1개</li>
+                <li class="choice-item">2) 2개</li>
+                <li class="choice-item">3) 3개</li>
+                <li class="choice-item">4) 4개</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q45. 기초 예제에서 파트의 크기가 계속해서 5초마다 변하도록 반복 작업을 수행하게 하려면 어떤 블록들의 조합이 필요한가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [무한 반복하기] 안에 [크기 바꾸기]와 [5초 기다리기] 블록을 배치한다.</li>
+                <li class="choice-item">2) [시작] 바로 아래에 [크기 바꾸기]만 한 번 배치한다.</li>
+                <li class="choice-item">3) [이 물체에 캐릭터가 충돌하면 시작] 바로 아래에 [5초 기다리기]만 배치한다.</li>
+                <li class="choice-item">4) [닿아있는 캐릭터 사망] 아래에 넣는다.</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q46. 응용 예제인 '크기가 변하는 공중 사다리'에서, 플레이어가 발판을 밟았을 때 발판의 길이를 늘리고 위치를 이동시켜야 합니다. 이 발판의 정확한 길어난 크기(Size)와 이동할 좌표(Position)는 어떻게 확인해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 다른 친구가 작성한 좌표 값을 똑같이 적어 넣는다.</li>
+                <li class="choice-item">2) 스튜디오 화면에서 발판 크기를 미리 늘려놓은 후, 속성 창에서 Size와 Position의 X, Y, Z 값을 직접 확인해 적는다.</li>
+                <li class="choice-item">3) 그냥 기본 크기 블록에 랜덤 숫자를 무작위로 넣는다.</li>
+                <li class="choice-item">4) 고양이의 좌표를 복사한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q47. 로블록스에서는 파트의 크기(Size)만 강제로 늘리면, 파트가 양쪽 방향으로 동시에 확장(중심점 기준 확장)됩니다. 이 때문에 한쪽 방향(다리 건너편)으로만 길어지게 만드려면 크기 변경과 동시에 어떤 코드를 함께 작성해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [이 캐릭터의 걷는 속도 정하기] 블록</li>
+                <li class="choice-item">2) [위치] 이동 블록을 사용해 길어진 만큼 중심 좌표를 이동시킨다.</li>
+                <li class="choice-item">3) [닿아있는 캐릭터 사망] 블록</li>
+                <li class="choice-item">4) [충돌이 불가능하게 하기] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q48. 길어진 다리가 5초 후에 원래 모양으로 다시 줄어들게 하여 플레이어에게 스릴을 주려 합니다. 잼S에서 이 기능을 구현하기 위한 가장 논리적인 순서는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [늘어난 크기/위치로 변경] -> [5초 기다리기] -> [원래 크기/위치로 복구]</li>
+                <li class="choice-item">2) [원래 크기/위치로 복구] -> [5초 기다리기] -> [늘어난 크기/위치로 변경]</li>
+                <li class="choice-item">3) [5초 기다리기] -> [늘어난 크기/위치로 변경] -> [원래 크기/위치로 복구]</li>
+                <li class="choice-item">4) [무한 반복하기] -> [5초 기다리기]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q49. 이 게임을 공중 맵으로 완성하기 위해, 땅바닥 역할을 하는 불필요한 기본 밑판을 탐색기에서 삭제하려 합니다. 삭제해야 하는 이 파트의 이름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Workspace</li>
+                <li class="choice-item">2) Baseplate</li>
+                <li class="choice-item">3) SpawnLocation</li>
+                <li class="choice-item">4) Lighting</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q50. 만약 플레이어가 발판을 딛는 순간 발판 크기가 커지지 않고 즉시 플레이스 아래로 추락해 게임오버가 된다면, 무엇을 확인해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 사운드 파일의 길이</li>
+                <li class="choice-item">2) 해당 발판 파트의 Anchored(앵커) 속성이 활성화(체크)되어 있는지 확인한다.</li>
+                <li class="choice-item">3) 고양이의 Position</li>
+                <li class="choice-item">4) 스폰 로케이션의 이름</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-6">
+        <h2>예제 6. 신호등</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q51. 5초마다 빨간색 불과 초록색 불이 켜지는 신호등 예제에서, 전구의 불이 꺼져있는 어두운 회색 상태를 표현하기 위해 책에서 설정한 RGB 색상값은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [0, 0, 0]</li>
+                <li class="choice-item">2) [255, 255, 255]</li>
+                <li class="choice-item">3) [100, 100, 100]</li>
+                <li class="choice-item">4) [200, 200, 200]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q52. 신호등 전구가 빨간불과 회색 불을 연속으로 바꾸며 끊임없이 반복 작동하게 하려 합니다. 잼S의 어떤 제어 블록 안에 코드를 넣어야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [무한 반복하기] 블록</li>
+                <li class="choice-item">2) [만약 ~라면] 블록</li>
+                <li class="choice-item">3) [이 물체에 캐릭터가 충돌하면 시작] 블록</li>
+                <li class="choice-item">4) [도구를 사용하면 시작] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q53. 신호등의 위쪽 전구(빨간불)를 다음과 같이 코딩했습니다. 빈칸 ㉠과 ㉡에 들어갈 시간(초)으로 가장 적절한 것은?<br>- [색 바꾸기: 빨간색]<br>- [㉠초 기다리기]<br>- [색 바꾸기: 회색]<br>- [㉡초 기다리기]</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) ㉠ = 1, ㉡ = 1</li>
+                <li class="choice-item">2) ㉠ = 5, ㉡ = 5</li>
+                <li class="choice-item">3) ㉠ = 10, ㉡ = 0</li>
+                <li class="choice-item">4) ㉠ = 5, ㉡ = 0</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q54. 빨간색 전구 코딩을 완료한 후, 아래쪽 초록색 전구를 코딩할 때 사용해야 하는 잼S 코딩 대상 지정 드롭 다운 설정은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Baseplate</li>
+                <li class="choice-item">2) 자기 자신 (또는 초록 전구 파트 명칭)</li>
+                <li class="choice-item">3) Workspace</li>
+                <li class="choice-item">4) 고양이</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q55. 로블록스 스튜디오에서 이미 만든 전구 파트를 그대로 하나 더 복제하여 아래쪽 전구를 만드는 가장 편리한 단축키는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Ctrl + C</li>
+                <li class="choice-item">2) Ctrl + V</li>
+                <li class="choice-item">3) Ctrl + D</li>
+                <li class="choice-item">4) Ctrl + Z</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q56. 위쪽 전구(빨간불)가 켜져 있는 5초 동안은 아래쪽 전구(초록불)가 꺼져 있어야(회색) 하고, 위쪽 전구가 꺼지면 아래쪽 전구가 켜져야 합니다. 아래쪽 전구(초록불)의 동작 코드는 어떻게 구성되어야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [색 바꾸기: 초록] -> [5초 기다리기] -> [색 바꾸기: 회색] -> [5초 기다리기]</li>
+                <li class="choice-item">2) [색 바꾸기: 회색] -> [5초 기다리기] -> [색 바꾸기: 초록] -> [5초 기다리기]</li>
+                <li class="choice-item">3) [색 바꾸기: 초록] -> [색 바꾸기: 회색] -> [5초 기다리기]</li>
+                <li class="choice-item">4) [색 바꾸기: 회색] -> [색 바꾸기: 초록] -> [5초 기다리기]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q57. 신호등의 위아래 전구가 번갈아 켜지는 주기가 서로 엇갈리거나 꼬이지 않고 정확하게 맞물려 작동하는 원리는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 서로 다른 물리 엔진을 사용하기 때문</li>
+                <li class="choice-item">2) 두 전구 코드의 [대기 시간] 합과 켜지고 꺼지는 순서가 논리적으로 동기화되어 있기 때문</li>
+                <li class="choice-item">3) 두 파트가 물리적으로 접촉되어 있기 때문</li>
+                <li class="choice-item">4) 스폰 로케이션이 고정되어 있기 때문</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q58. 신호등의 점멸 주기를 5초에서 10초로 더 길게 변경하고 싶습니다. 코드 상에서 무엇을 수정해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 모든 [~초 기다리기] 블록의 대기 시간을 10으로 변경한다.</li>
+                <li class="choice-item">2) 모든 RGB 색상 값을 10으로 낮춘다.</li>
+                <li class="choice-item">3) 파트의 크기를 2배로 늘린다.</li>
+                <li class="choice-item">4) 무한 반복하기를 10번 반복하기로 바꾼다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q59. 신호등 전구가 실제로 빛이 밝게 빛나는 느낌을 주도록 스튜디오에서 재질(Material)을 설정하고 싶습니다. 속성 창에서 어떤 재질로 설정하는 것이 가장 적합할까요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Plastic (플라스틱)</li>
+                <li class="choice-item">2) Neon (네온)</li>
+                <li class="choice-item">3) Glass (유리)</li>
+                <li class="choice-item">4) Wood (나무)</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q60. 초록불이 켜진 상태(건널 수 있는 상태)일 때만 다리에 밟고 지나갈 수 있게 하고, 빨간불일 때는 다리가 사라지거나 뚫리게 하고 싶습니다. 이때 결합할 수 있는 잼S 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [이 캐릭터의 걷는 속도 정하기] 블록</li>
+                <li class="choice-item">2) [충돌이 불가능하게 하기] 블록을 활용해 빨간불일 때는 충돌을 끄고 초록불일 때는 충돌을 켠다.</li>
+                <li class="choice-item">3) [소리 재생하기] 블록만 사용한다.</li>
+                <li class="choice-item">4) [닿아있는 캐릭터 사망] 블록만 사용한다.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-7">
+        <h2>예제 7. 함정 발판을 피해 다리 건너기</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q61. 이 게임 예제의 주요 규칙과 어긋나는 설명은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 시작 지점과 도착 지점 사이를 발판을 밟고 건너간다.</li>
+                <li class="choice-item">2) 전체 8개의 발판 중 4개는 밟을 수 없는 함정 발판이다.</li>
+                <li class="choice-item">3) 함정 발판은 눈으로 보았을 때 다른 발판보다 더 투명하게 보인다.</li>
+                <li class="choice-item">4) 정상 발판 경로를 잘 기억해서 건너야 한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q62. 플레이어 캐릭터가 발판을 밟으려 할 때, 파트의 형태는 보이지만 몸체가 통과되어 낭떠러지로 추락하게 만드는 잼S의 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [충돌이 불가능하게 하기] 블록</li>
+                <li class="choice-item">2) [닿아있는 캐릭터 사망] 블록</li>
+                <li class="choice-item">3) [크기 바꾸기] 블록</li>
+                <li class="choice-item">4) [위치 이동하기] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q63. 잼S의 [충돌이 불가능하게 하기] 블록은 로블록스 스튜디오의 파트 속성 중 어떤 속성을 끄는(False) 역할과 동일한가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Anchored</li>
+                <li class="choice-item">2) CanCollide</li>
+                <li class="choice-item">3) Transparency</li>
+                <li class="choice-item">4) Material</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q64. 함정 발판이 게임이 실행되자마자 즉시 밟을 수 없는 상태로 설정되도록 잼S 코딩의 시작부에 위치시켜야 하는 이벤트 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [이 물체에 캐릭터가 충돌하면 시작] 블록</li>
+                <li class="choice-item">2) [시작] 블록</li>
+                <li class="choice-item">3) [도구를 사용하면 시작] 블록</li>
+                <li class="choice-item">4) [무한 반복하기] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q65. 다리 건너기 맵을 만든 후, 함정 발판에서 떨어지는 플레이어가 공중에 뜨지 않고 아래로 영구히 추락해 리스폰되도록 삭제해야 하는 바닥 오브젝트는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Workspace</li>
+                <li class="choice-item">2) Baseplate</li>
+                <li class="choice-item">3) SpawnLocation</li>
+                <li class="choice-item">4) Lighting</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q66. 함정 발판 4개를 효율적으로 만들려고 합니다. 가장 효과적인 제작 방법은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 일반 발판 8개를 먼저 다 만들고 4개의 스크립트를 하나씩 따로 작성한다.</li>
+                <li class="choice-item">2) 함정 발판 1개를 꺼내서 [시작] -> [자기 자신 충돌이 불가능하게 하기] 코딩을 완료한 후, 이 함정 발판을 복제(Ctrl + D)하여 필요한 위치들에 배치한다.</li>
+                <li class="choice-item">3) 모든 발판을 다 하나로 묶은 뒤 그룹에 코딩한다.</li>
+                <li class="choice-item">4) 도구 상자에서 TrapBlock을 검색해 불러온다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q67. 만약 게임을 실행했더니 함정 발판과 정상 발판 모두가 아래로 무수히 추락해 사라져 버립니다. 원인은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Baseplate를 지웠기 때문</li>
+                <li class="choice-item">2) 모든 발판 파트에 [앵커 (Anchor)] 속성을 켜지 않았기 때문</li>
+                <li class="choice-item">3) 충돌이 불가능하게 하기 블록이 정상 발판에도 심겼기 때문</li>
+                <li class="choice-item">4) F5 대신 F8을 눌렀기 때문</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q68. 밟으면 1초간 살짝 버티다가 아래로 무너져 내리는 스릴 넘치는 함정 발판 기믹을 만들고 싶습니다. 잼S 블록 배치로 알맞은 것은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [시작] -> [충돌이 불가능하게 하기]</li>
+                <li class="choice-item">2) [이 물체에 캐릭터가 충돌하면 시작] -> [1초 기다리기] -> [자기 자신 충돌이 불가능하게 하기]</li>
+                <li class="choice-item">3) [이 물체에 캐릭터가 충돌하면 시작] -> [자기 자신 충돌이 불가능하게 하기] -> [1초 기다리기]</li>
+                <li class="choice-item">4) [시작] -> [1초 기다리기] -> [충돌이 불가능하게 하기]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q69. 추락한 플레이어가 맵 아래 블랙홀(허공)로 떨어지면 자동으로 사망하여 스폰 포인트에서 다시 시작합니다. 로블록스 시스템이 제공하는 이 허공의 사망 한계 높이 영역을 속성에서 가리키는 용어는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Gravity (중력)</li>
+                <li class="choice-item">2) FallenPartsDestroyHeight (추락 파트 파괴 높이)</li>
+                <li class="choice-item">3) SpawnTime</li>
+                <li class="choice-item">4) SignalBehavior</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q70. 함정 발판을 밟아 밑으로 떨어질 때, 놀란 효과음('비명소리' 등)이 나게 하고 싶습니다. 잼S로 구현할 때 올바른 코드 조립 순서는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [이 물체에 캐릭터가 충돌하면 시작] -> [소리를 처음부터 재생하기] -> [자기 자신 충돌이 불가능하게 하기]</li>
+                <li class="choice-item">2) [시작] -> [소리를 처음부터 재생하기]</li>
+                <li class="choice-item">3) [이 물체에 캐릭터가 충돌하면 시작] -> [자기 자신 충돌이 불가능하게 하기] -> [소리를 처음부터 재생하기]</li>
+                <li class="choice-item">4) [무한 반복하기] -> [소리를 처음부터 재생하기]</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-8">
+        <h2>예제 8. 엘리베이터</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q71. 엘리베이터 예제에서 구현하려는 핵심 게임 기능으로 올바른 것은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 엘리베이터가 무조건 무한 반복하여 위아래로 계속 움직인다.</li>
+                <li class="choice-item">2) 플레이어가 엘리베이터에 올라타 충돌이 발생하면 위층으로 이동하고, 위에서 다시 타면 원래 아래층으로 복귀한다.</li>
+                <li class="choice-item">3) 엘리베이터가 충돌하면 즉시 폭발한다.</li>
+                <li class="choice-item">4) 엘리베이터의 색상만 랜덤하게 변한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q72. 현재 엘리베이터가 1층에 있는지 2층에 있는지 상태를 숫자로 저장하여 관리하기 위해 사용하는 프로그램의 개념은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 함수</li>
+                <li class="choice-item">2) 변수 (Variable)</li>
+                <li class="choice-item">3) 상수</li>
+                <li class="choice-item">4) 이벤트</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q73. 엘리베이터 예제에서는 두 종류의 변수를 만들어 사용합니다. 각각의 올바른 조합은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 전역 숫자 변수, 전역 문자 변수</li>
+                <li class="choice-item">2) 지역 부울 변수(중복 방지용), 지역 숫자 변수(층수 기록용)</li>
+                <li class="choice-item">3) 지역 문자 변수, 지역 부울 변수</li>
+                <li class="choice-item">4) 지역 부울 변수, 전역 문자 변수</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q74. 잼S의 조건 비교에서 '변수값이 1과 같은지' 확인하고 싶을 때 사용하는 [비교] 블록의 드롭 다운 연산자 기호는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) ></li>
+                <li class="choice-item">2) <</li>
+                <li class="choice-item">3) ==</li>
+                <li class="choice-item">4) !=</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q75. 엘리베이터의 2층 목표 위치 Y축 좌표는 어떻게 구해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 스튜디오 메인 메뉴에서 2층 버튼을 클릭해 다운로드한다.</li>
+                <li class="choice-item">2) 공중에 띄워둔 2층 발판 파트를 선택하고, 속성 창의 Origin > Position의 Y 값을 확인한다.</li>
+                <li class="choice-item">3) 항상 0을 입력한다.</li>
+                <li class="choice-item">4) X축과 Z축 좌표를 더한다.</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q76. 엘리베이터 동작 시, 부울 변수(작동 여부 변수)가 참(true)인 상태일 때 추가 충돌 이벤트를 무시하도록 잠그는 조건문 구조로 올바른 것은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 만약 부울 변수 라면</li>
+                <li class="choice-item">2) 만약 Not 부울 변수 라면</li>
+                <li class="choice-item">3) 만약 부울 변수 == 1 라면</li>
+                <li class="choice-item">4) 만약 부울 변수 != 1 라면</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q77. 엘리베이터 코딩 중 1층에서 2층으로 올라가는 작동 조건이 실행될 때, 엘리베이터의 층수 변수를 어떻게 바꾸어 주어야 하며, 그 이유는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 층수 변수를 1로 정한다. 그래야 1층에 계속 머물기 때문</li>
+                <li class="choice-item">2) 층수 변수를 2로 정한다. 그래야 다음에 밟았을 때 2층 상태임을 인식하고 1층으로 내려오기 때문</li>
+                <li class="choice-item">3) 층수 변수를 0으로 정한다.</li>
+                <li class="choice-item">4) 층수 변수를 삭제한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q78. 엘리베이터를 타고 2층으로 올라갔다가 다시 아래층으로 내려올 때, [~초 동안 이동하기] 블록의 X, Y, Z 좌표 중 1층 출발지와 동일하게 복구해야 하는 축과 다르게 수정해야 하는 축의 조합은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) X, Z축은 처음 위치와 동일하게 고정하고, Y축(높이)만 아래층 높이(예: 0)로 변경한다.</li>
+                <li class="choice-item">2) X, Y, Z 모두 0으로 바꾼다.</li>
+                <li class="choice-item">3) Y축만 그대로 두고 X, Z축을 무작위로 바꾼다.</li>
+                <li class="choice-item">4) X, Y, Z축을 모두 더 크게 변경한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q79. 엘리베이터 이동이 끝난 후, 다음 탑승을 위해 중복 작동 제한 잠금(부울 변수)을 풀어주어야 합니다. 대기 시간이 끝난 후 이 부울 변수를 무엇으로 정해주어야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) true</li>
+                <li class="choice-item">2) false</li>
+                <li class="choice-item">3) 1</li>
+                <li class="choice-item">4) 2</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q80. 엘리베이터를 여러 명이 함께 이용할 때, 1층에서 사람이 타고 올라가는 도중 1층 바닥의 충돌 신호가 계속해서 겹쳐서 기기가 오작동하거나 2층 좌표를 초과하여 날아가는 현상이 발생합니다. 어떤 논리 장치가 설계되지 않았기 때문인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 충돌 이벤트 감지 속도 부족</li>
+                <li class="choice-item">2) 부울 변수를 활용한 중복 진입 방지 잠금(디바운스/Debounce) 로직 오류 또는 누락</li>
+                <li class="choice-item">3) F5 테스트 대신 F8 테스트를 수행했기 때문</li>
+                <li class="choice-item">4) 오디오 파일의 용량이 커서 버벅거림</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-9">
+        <h2>예제 9. 움직이는 발판 건너기</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q81. 움직이는 발판 건너기 예제에서 각 발판이 수행해야 하는 기본적인 논리적 흐름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 계속 크기가 변한다.</li>
+                <li class="choice-item">2) 지정된 목표 좌표로 이동했다가 다시 원래 좌표로 돌아오는 작동을 영원히 반복한다.</li>
+                <li class="choice-item">3) 플레이어가 건드릴 때만 1번 움직인다.</li>
+                <li class="choice-item">4) 플레이어를 태우면 스스로 폭발한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q82. 발판을 계속 움직이게 하기 위해 잼S 코드의 이벤트 블록 바로 아래에 배치하는 제어 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [만약 ~라면] 블록</li>
+                <li class="choice-item">2) [무한 반복하기] 블록</li>
+                <li class="choice-item">3) [~초 기다리기] 블록</li>
+                <li class="choice-item">4) [닿아있는 캐릭터 사망] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q83. 잼S의 [~초 동안 이동하기] 블록은 [동작] 카테고리에 속해 있습니다. 이 블록에서 움직일 대상 오브젝트를 지정하는 타겟 칸은 무엇으로 지정해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Baseplate</li>
+                <li class="choice-item">2) 자기 자신</li>
+                <li class="choice-item">3) Workspace</li>
+                <li class="choice-item">4) 고양이</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q84. 왕복 운동을 하는 발판을 만들기 위해 잼S [무한 반복하기] 블록 내부에 연속으로 결합해야 하는 [~초 동안 이동하기] 블록의 최소 개수는 몇 개인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 1개</li>
+                <li class="choice-item">2) 2개</li>
+                <li class="choice-item">3) 3개</li>
+                <li class="choice-item">4) 4개</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q85. 움직이는 발판의 출발지 좌표와 도착지 좌표 값을 정확히 알아내는 가장 합리적인 방법은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 로블록스 스튜디오에서 발판을 시작 지점에 놓고 속성 창의 Position 값을 확인해 적고, 다시 목표 지점으로 발판을 이동시켜 그 Position 값을 확인해 적는다.</li>
+                <li class="choice-item">2) 임의의 0에서 100 사이 숫자를 아무렇게나 기입한다.</li>
+                <li class="choice-item">3) 교재의 그림에 나와 있는 숫자를 그대로 베껴 쓴다.</li>
+                <li class="choice-item">4) 스폰 로케이션의 값을 쓴다.</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q86. 움직이는 발판 3개를 공중에 만들었습니다. 게임 실행과 동시에 바닥이 사라져 발판 아래가 허공이 되도록 Explorer 창에서 지워야 하는 중요 바닥 판의 이름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Workspace</li>
+                <li class="choice-item">2) Baseplate</li>
+                <li class="choice-item">3) SpawnLocation</li>
+                <li class="choice-item">4) Lighting</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q87. 발판 A는 좌우로만 움직이게 하고 싶습니다. 그렇다면 시작 위치와 복귀 위치의 X, Y, Z 좌표 중 값의 변화를 주어야 하는 축(좌표)은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Y축만 값을 다르게 준다.</li>
+                <li class="choice-item">2) X축 또는 Z축 중 원하는 수평 방향의 값만 다르게 주고, 높이 Y축은 고정한다.</li>
+                <li class="choice-item">3) X, Y, Z 모두 다른 값을 준다.</li>
+                <li class="choice-item">4) 좌표 값을 모두 0으로 통일한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q88. 움직이는 발판 기믹에서 발판을 건너는 플레이어 캐릭터가 딛고 설 수 있게 하려면 해당 발판의 어떤 속성이 True 상태여야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) CanCollide</li>
+                <li class="choice-item">2) Transparency</li>
+                <li class="choice-item">3) Locked</li>
+                <li class="choice-item">4) CastShadow</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q89. 발판 3개가 똑같이 오른쪽으로 움직이기 시작하여 모두 한꺼번에 도달했다가 한꺼번에 돌아옵니다. 이 단조로운 패턴을 깨고, 발판들이 서로 지그재그로 어긋나며 움직이게 코딩을 바꾸려면 어떻게 해야 할까요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 모든 발판 코드를 전부 삭제한다.</li>
+                <li class="choice-item">2) 발판별로 시작점과 끝점 이동 좌표 순서를 반대로 뒤집어 조립하거나, 루프 시작 전 [~초 기다리기] 블록을 배치해 출발 타이밍을 지연시킨다.</li>
+                <li class="choice-item">3) 발판의 색상을 각각 무지개색으로 바꾼다.</li>
+                <li class="choice-item">4) 발판의 크기(Size)를 모두 다르게 조절한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q90. 게임을 직접 테스트해 보았는데 움직이는 발판 위에 캐릭터가 올라탔더니 캐릭터가 발판과 함께 수평으로 자연스럽게 같이 실려 이동하지 못하고 그 자리에 남아서 아래로 떨어집니다. 로블록스 스튜디오에서 무엇을 잘못 설정한 것일까요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 캐릭터의 스킨 설정 오류</li>
+                <li class="choice-item">2) 움직이는 발판의 Anchored(앵커) 고정 속성을 깜빡하고 켜지 않아서 물리 낙하가 진행되었거나 플레이어 마찰력 전달 누락</li>
+                <li class="choice-item">3) F5 단축키 대신 F8 단축키를 눌렀기 때문</li>
+                <li class="choice-item">4) 소리 파일을 삽입했기 때문</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-10">
+        <h2>예제 10. 회전문</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q91. 회전문 예제에서 잼S 코딩을 이용해 구현하려는 회전문의 기본 작동 방식은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 마우스 클릭 시 빠르게 한 번 돈다.</li>
+                <li class="choice-item">2) 끊임없이 천천히 축을 중심으로 회전한다.</li>
+                <li class="choice-item">3) 닿은 플레이어를 죽인다.</li>
+                <li class="choice-item">4) 문을 통과할 수 없게 충돌을 막는다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q92. 잼S의 [동작] 카테고리에서 파트의 각도를 회전시켜 주기 위해 꺼내서 조립해야 하는 블록의 이름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [이동하기] 블록</li>
+                <li class="choice-item">2) [회전하기] 블록</li>
+                <li class="choice-item">3) [크기 바꾸기] 블록</li>
+                <li class="choice-item">4) [위치] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q93. 회전문을 만들기 위해 회전 각도(각도 수치)를 계속 누적하여 변경시키며 저장할 수 있도록 생성한 변수의 종류는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 지역 숫자 변수</li>
+                <li class="choice-item">2) 지역 부울 변수</li>
+                <li class="choice-item">3) 전역 문자 변수</li>
+                <li class="choice-item">4) 전역 부울 변수</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q94. 회전문의 회전도가 1도씩 계속 늘어나면서 천천히 돌게 하기 위해 사용하는 [변수] 카테고리의 잼S 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [변숫값 정하기]</li>
+                <li class="choice-item">2) [변수에 값 더하기]</li>
+                <li class="choice-item">3) [변수 삭제하기]</li>
+                <li class="choice-item">4) [Not 변수]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q95. 회전문이 수평 바닥 평면상에서 팽이처럼 좌우로 spin(회전)하도록 만들려고 합니다. [회전하기] 블록의 X, Y, Z축 중 각도 변수를 어느 축 칸에 연결해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) X축</li>
+                <li class="choice-item">2) Y축 (세로 기둥 기준 회전)</li>
+                <li class="choice-item">3) Z축</li>
+                <li class="choice-item">4) X, Z축 동시 연결</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q96. 회전문 예제 교재에서 문의 회전 영역과 문이 지나갈 공간을 설계하기 위해, 벽 역할을 하는 고정식 파트를 총 몇 개 배치했나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 1개</li>
+                <li class="choice-item">2) 2개</li>
+                <li class="choice-item">3) 3개</li>
+                <li class="choice-item">4) 4개</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q97. 회전문이 한 바퀴(360도) 돌고 난 후에도 꼬이지 않고 계속해서 부드럽고 영구적으로 돌게 만드는 잼S 코드 구조는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [무한 반복하기] 블록 내부에 [자기 자신 Y축 각도 회전]과 [각도 변수에 1 더하기] 블록을 차례대로 배치한다.</li>
+                <li class="choice-item">2) [시작] 블록 아래에 [각도 회전]을 넣고 끝낸다.</li>
+                <li class="choice-item">3) [이 물체에 캐릭터가 충돌하면 시작] 블록을 활용한다.</li>
+                <li class="choice-item">4) 기다리기 블록을 수백 개 연결한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q98. 회전문의 회전 속도를 5배 정도로 매우 빠르게 돌려 고난이도 통과 장애물을 설계하고 싶습니다. 코드 상에서 수정할 부분은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [변수에 값 더하기] 블록의 수치를 1에서 5로 변경한다.</li>
+                <li class="choice-item">2) 회전문 파트의 스케일 크기를 5배 키운다.</li>
+                <li class="choice-item">3) 모든 변수 타입을 부울 타입으로 바꾼다.</li>
+                <li class="choice-item">4) 회전문 앵커(Anchor) 속성을 해제한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q99. 회전문이 시계 방향이 아닌, 반시계 방향(역방향)으로 천천히 돌게 하고 싶습니다. 어떻게 코딩을 수정해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 변수를 삭제한다.</li>
+                <li class="choice-item">2) [변수에 값 더하기] 블록의 수치에 음수 값인 -1을 입력한다.</li>
+                <li class="choice-item">3) X축 회전 칸에 변수를 넣는다.</li>
+                <li class="choice-item">4) F8 단축키를 눌러 테스트한다.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q100. 회전문을 잘 만들었는데, 캐릭터가 몸으로 슬쩍 밀거나 부딪혔을 때 문이 휙 밀려나서 옆으로 자빠지거나 떨어져 버립니다. 로블록스 속성 창에서 무엇을 점검해야 하나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 문 파트의 Anchored(앵커) 속성이 True(체크 상태)인지 확인한다.</li>
+                <li class="choice-item">2) 문 파트의 Color 속성</li>
+                <li class="choice-item">3) 문 파트의 이름 변경 상태</li>
+                <li class="choice-item">4) Sound의 활성화 여부</li>
+            </ul>
+        </div>
+    </div>
+    <div class="example-section" id="ex-11">
+        <h2>예제 11. 장착 시 속도 증가, 사용 시 순간 이동 도구</h2>
+        <div class="q-group-title">기초 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q101. 플레이어 캐릭터가 들고 다니거나 장착해서 상호작용할 수 있는 아이템을 제작하려 합니다. 탐색기의 Workspace에서 '+' 버튼을 눌러 추가해야 하는 특수 오브젝트의 이름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Model (모델)</li>
+                <li class="choice-item">2) Folder (폴더)</li>
+                <li class="choice-item">3) Tool (도구)</li>
+                <li class="choice-item">4) Sound (소리)</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q102. 생성한 Tool 오브젝트를 캐릭터의 손에 정상적으로 쥐여주고 작동시키기 위해, Tool 아래 생성하는 파트의 이름을 반드시 어떤 명칭으로 변경해야 하나요? (대소문자 중요)</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) ToolPart</li>
+                <li class="choice-item">2) Handle</li>
+                <li class="choice-item">3) handle</li>
+                <li class="choice-item">4) Grip</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q103. 로블록스에서 캐릭터의 기본 걷는 속도(WalkSpeed) 값은 숫자로 얼마로 설정되어 있나요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 8</li>
+                <li class="choice-item">2) 16</li>
+                <li class="choice-item">3) 32</li>
+                <li class="choice-item">4) 50</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q104. 플레이어의 마우스 조작(클릭 좌표) 및 화면 상태 정보와 캐릭터 속도 조작 등 클라이언트 영역의 행동을 제어하기 위해 잼S 코딩 창 [New] 버튼을 누르고 체크해야 하는 스크립트 종류는 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 일반 스크립트 (Server Script)</li>
+                <li class="choice-item">2) 로컬 스크립트 (Local Script)</li>
+                <li class="choice-item">3) 모듈 스크립트 (Module Script)</li>
+                <li class="choice-item">4) 잼S 전역 스크립트</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge">기초</span>
+                <h3 class="q-title">Q105. 속도 증가 도구의 잼S 코딩을 할 때 사용하는 이벤트 블록 2가지로 올바르게 짝지어진 것은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [시작], [무한 반복하기]</li>
+                <li class="choice-item">2) [도구를 장비하면 시작], [도구를 장비 해제하면 시작]</li>
+                <li class="choice-item">3) [도구를 사용하면 시작], [도구를 사용 끝내면 시작]</li>
+                <li class="choice-item">4) [이 물체에 캐릭터가 충돌하면 시작], [닿아있는 캐릭터 사망]</li>
+            </ul>
+        </div>
+        <div class="q-group-title">응용 문제 (5문항)</div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q106. 도구(Tool) 제작 시 파트 생성 단계에서 예제 교재 가이드에 따라 파트 아래에 자동 생성되어 있는 이것을 삭제해 주어야 정상적인 연동 작동이 됩니다. 삭제해야 하는 이 용접 개체의 이름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) Weld</li>
+                <li class="choice-item">2) Joints</li>
+                <li class="choice-item">3) Script</li>
+                <li class="choice-item">4) TouchTransmitter</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q107. 도구를 장비했을 때 캐릭터의 걷는 속도를 평소보다 빠른 50으로 정하고, 도구를 집어넣었을 때(장비 해제 시) 원래의 정상 속도로 복구하고 싶습니다. 알맞은 속도 값 입력의 쌍은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) 장비 시: 50, 장비 해제 시: 0</li>
+                <li class="choice-item">2) 장비 시: 50, 장비 해제 시: 16</li>
+                <li class="choice-item">3) 장비 시: 16, 장비 해제 시: 50</li>
+                <li class="choice-item">4) 장비 시: 50, 장비 해제 시: 50</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q108. 사용 시 순간 이동 도구를 코딩하려 합니다. 플레이어가 도구를 쥐고 화면을 마우스로 '클릭'했을 때 작동을 트리거 하는 잼S 이벤트 블록은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [도구를 장비하면 시작]</li>
+                <li class="choice-item">2) [도구를 사용하면 시작]</li>
+                <li class="choice-item">3) [도구를 장비 해제하면 시작]</li>
+                <li class="choice-item">4) [시작]</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q109. 마우스로 클릭한 3차원 입체 공간상의 최종 목적지로 캐릭터의 좌표를 한순간에 전송하여 안착시키는 잼S [동작] 블록의 명칭은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [이 캐릭터를 위치 ~로 순간 이동 시키기] 블록</li>
+                <li class="choice-item">2) [~초 동안 이동하기] 블록</li>
+                <li class="choice-item">3) [위치] 블록</li>
+                <li class="choice-item">4) [크기 바꾸기] 블록</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="q-header">
+                <span class="q-badge applied">응용</span>
+                <h3 class="q-title">Q110. 순간 이동 도구 코딩 시, 순간 이동 블록의 목표 위치 좌표 칸에 끼워 넣어야 하는 잼S [잼S-도구] 카테고리의 3차원 위치 값 블록의 이름은 무엇인가요?</h3>
+            </div>
+            <ul class="choices-list">
+                <li class="choice-item">1) [자기 자신의 좌표]</li>
+                <li class="choice-item">2) [마우스 위치 X/Y/Z 좌표] 블록</li>
+                <li class="choice-item">3) [랜덤 숫자]</li>
+                <li class="choice-item">4) [Baseplate 좌표]</li>
+            </ul>
+        </div>
+    </div>
+    <div class="answers-section" id="answers-sheet">
+        <h2>정답지 및 해설</h2>
+        
+        <h3>빠른 정답 찾기 표</h3>
+        <div class="answer-grid">
+                <div class="answer-grid-item">
+                <span class="q-num">Q1</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q2</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q3</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q4</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q5</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q6</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q7</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q8</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q9</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q10</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q11</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q12</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q13</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q14</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q15</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q16</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q17</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q18</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q19</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q20</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q21</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q22</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q23</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q24</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q25</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q26</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q27</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q28</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q29</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q30</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q31</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q32</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q33</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q34</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q35</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q36</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q37</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q38</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q39</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q40</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q41</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q42</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q43</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q44</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q45</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q46</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q47</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q48</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q49</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q50</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q51</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q52</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q53</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q54</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q55</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q56</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q57</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q58</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q59</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q60</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q61</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q62</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q63</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q64</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q65</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q66</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q67</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q68</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q69</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q70</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q71</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q72</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q73</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q74</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q75</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q76</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q77</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q78</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q79</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q80</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q81</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q82</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q83</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q84</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q85</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q86</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q87</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q88</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q89</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q90</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q91</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q92</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q93</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q94</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q95</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q96</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q97</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q98</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q99</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q100</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q101</span>
+                <span class="q-ans">3번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q102</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q103</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q104</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q105</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q106</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q107</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q108</span>
+                <span class="q-ans">2번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q109</span>
+                <span class="q-ans">1번</span>
+            </div>
+            <div class="answer-grid-item">
+                <span class="q-num">Q110</span>
+                <span class="q-ans">2번</span>
+            </div>
+        </div>
+        
+        <h3>상세 풀이 및 해설</h3>
+            <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 1. 고양이 게임</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q1. 로블록스 스튜디오 도구 상자(Toolbox)에서 고양이 3D 모델을 검색하여 플레이스에 가져오려고 합니다. 도구 상자의 카테고리(Category)를 무엇으로 설정해야 하나요?</div>
+            <div class="answer-card-ans">정답: 1) 모델 (Models)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 캐릭터나 사물 같은 3D 오브젝트를 월드에 생성하려면 도구 상자의 카테고리를 '모델(Models)'로 지정하고 검색해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q2. 도구 상자에서 고양이 울음소리 오디오 파일을 클릭해 가져왔을 때, 이 파일은 탐색기(Explorer) 창의 어느 항목 아래에 생성되나요?</div>
+            <div class="answer-card-ans">정답: 2) Workspace</div>
+            <p class="answer-card-desc"><b>풀이:</b> 도구 상자에서 오디오를 가져오면 기본적으로 게임 공간 전체를 관리하는 Workspace 하위 항목으로 생성됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q3. 플레이어 캐릭터가 고양이 모델에 부딪혔을 때 울음소리가 나고 도망치는 이벤트를 실행하고 싶습니다. 잼S에서 사용해야 하는 알맞은 시작 이벤트 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [이 물체에 캐릭터가 충돌하면 시작] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 플레이어 캐릭터가 사물과 접촉(충돌)하는 것을 감지하려면 [이 물체에 캐릭터가 충돌하면 시작] 블록을 사용해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q4. 고양이에게 잼S 블록 코딩을 작성하려고 합니다. 코딩 창을 열기 전에 로블록스 스튜디오에서 반드시 먼저 해야 하는 조작은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 고양이 모델을 마우스로 클릭해 파랗게 선택하기</div>
+            <p class="answer-card-desc"><b>풀이:</b> 특정 오브젝트에 코드를 연동하려면 먼저 스튜디오 탐색기나 화면에서 해당 오브젝트를 클릭하여 선택한 뒤 코딩 창을 활성화해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q5. 로블록스 스튜디오에서 플레이어 캐릭터가 스폰 위치에 직접 등장하여 게임을 직접 플레이하며 작동 상태를 확인하는 단축키는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) F5</div>
+            <p class="answer-card-desc"><b>풀이:</b> 플레이어 캐릭터가 맵에 스폰되어 직접 움직이며 확인하려면 F5(플레이) 단축키를 눌러 테스트를 시작합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q6. '우리에 고양이 가두기 미션'을 위해 고양이를 가둘 우리(Cage) 한가운데의 정확한 X, Z 좌표를 구하려고 합니다. 가장 알맞은 방법은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 우리 한가운데에 작은 빨간색 공 파트를 임시로 만든 뒤 속성 창의 Position X, Z 값을 확인한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 특정 지점의 정확한 좌표를 얻으려면 임시 파트를 생성하고 속성(Properties) 창에서 Position(위치) 값을 확인하는 것이 가장 정확합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q7. 고양이를 우리로 이동시킬 때, 고양이가 땅속에 파묻히거나 공중에 뜨지 않고 현재 높이(Y축)를 그대로 유지하게 하려면 잼S 이동 블록의 Y축 칸에 무엇을 넣어야 하나요?</div>
+            <div class="answer-card-ans">정답: 3) 자기 자신의 Y좌표 값</div>
+            <p class="answer-card-desc"><b>풀이:</b> 높이(Y축)를 그대로 유지하려면 '자기 자신'의 속성 창에서 확인한 Y좌표 값을 이동 대상 Y축에 입력해 주어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q8. 우리에 들어간 고양이가 20초 동안 대기했다가 우리 밖으로 탈출하도록 코딩하려고 합니다. 이때 사용해야 할 시간 지연 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [20초 기다리기] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 일정 시간 동안 행동을 멈추고 기다리게 하는 제어 블록은 [~초 기다리기] 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q9. 우리를 탈출한 고양이가 사방으로 무작위로 돌아다니게 만들려고 합니다. X축과 Z축 좌표 칸에 어떤 블록을 조립해야 하나요?</div>
+            <div class="answer-card-ans">정답: 1) [랜덤 숫자] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 무작위 범위의 좌표로 계속 이동시키기 위해서는 이동하기 블록의 X축과 Z축 칸에 [연산] 탭의 [랜덤 숫자] 블록을 조립해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q10. 고양이를 우리에 가두었더니 20초를 기다리지 않고 곧바로 우리 바깥으로 도망갑니다. 코드 상의 어떤 오류 때문일까요?</div>
+            <div class="answer-card-ans">정답: 2) 우리에 도달한 후 탈출 루프가 돌기 전 대기하는 [20초 기다리기] 블록이 누락되었거나 시간이 0초로 설정되어 있다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 이동 후 대기하는 [~초 기다리기] 블록이 없으면, 우리에 닿자마자 대기 시간 없이 바로 다음 코드인 탈출 무한 반복 코드로 넘어가 탈출해 버립니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 2. 공 피하기</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q11. 로블록스 스튜디오에서 3차원 공간의 방향을 나타내며, 하늘 방향을 의미하는 연두색 축인 Y축이 포함된 이 도구의 이름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) 뷰 선택기 (View Selector)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 화면 우측 상단 등에 표시되는 3차원 공간 방향 도구는 '뷰 선택기'입니다. 연두색은 Y축(하늘), 빨강은 X축, 파랑은 Z축을 나타냅니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q12. 파트가 중력의 영향을 받아 아래로 떨어지지 않고 공중에 고정되도록 만들어 주는 로블록스 스튜디오의 중요 기능은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) 앵커 (Anchor)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 앵커(Anchor)를 실행하면 해당 파트가 중력이나 물리적 충돌 등의 영향을 받지 않고 플레이스 공간에 단단히 고정됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q13. 공 피하기 게임에서 캐릭터가 밟고 피할 수 있도록 바닥에 둥근 공 모양으로 생성한 파트는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 구 (Sphere)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 둥근 공 모양을 가진 파트는 '구(Sphere)' 파트입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q14. 공 피하기 게임에서 날아오는 공에 플레이어 캐릭터가 닿았을 때 플레이어를 즉시 아웃(처치)시키는 잼S의 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [닿아있는 캐릭터 사망] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 닿은 즉시 아웃(HP를 0으로 만들어 스폰 위치로 리스폰)시키는 동작 블록은 [닿아있는 캐릭터 사망] 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q15. 공이 놀이터(사방 벽 안쪽)를 벗어나지 않고 안에서만 튕기며 움직이게 하려면 무엇을 확인해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) 사방을 둘러싼 네 벽면 파트의 Position(위치) 좌표</div>
+            <p class="answer-card-desc"><b>풀이:</b> 공이 벽 밖으로 나가지 않게 하기 위해서는 벽면의 Position 좌표를 구해 공의 이동 범위 최소/최대 값을 알아내야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q16. 놀이터를 감싼 벽들의 좌표를 확인했더니 X축 최소는 10, 최대는 90이고, Z축 최소는 20, 최대는 80입니다. 공이 벽 안에서만 무작위로 움직이게 하려면 [랜덤 숫자] 블록의 최소값과 최대값을 어떻게 설정해야 하나요?</div>
+            <div class="answer-card-ans">정답: 1) X축: 10 ~ 90, Z축: 20 ~ 80</div>
+            <p class="answer-card-desc"><b>풀이:</b> X축의 랜덤 범위에는 X축의 벽면 최소~최대 값(10~90)을, Z축에는 Z축의 벽면 최소~최대 값(20~80)을 입력해야 공이 벽 안에서만 돌아다닙니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q17. 공 파트의 이동 코딩 시 Y축(높이) 값을 0으로 입력했을 때 발생하는 현상은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 공의 아랫부분 절반이 바닥에 파묻힌 채 굴러다닌다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 구 파트의 위치 기준은 구의 '정중앙'이므로 Y값을 바닥 높이인 0으로 설정하면 구의 아랫부분 절반이 바닥에 묻히게 됩니다. 바닥 위에 떠 있게 하려면 중심 Y값을 2~3 정도로 주어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q18. 공 피하기 게임에서 굴러다니는 공의 이동 속도를 더 빠르게 높이고 싶습니다. 어떤 블록의 값을 어떻게 변경해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) [~초 동안 이동하기] 블록의 시간을 줄인다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> [~초 동안 이동하기] 블록에서 걸리는 시간을 줄여주면(예: 3초에서 1초) 공이 지정된 목적지까지 더 빠른 속도로 움직입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q19. 컴퓨터에서 빛의 삼원색을 조합하여 색을 표현하는 방식과 각 색상값의 올바른 범위는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) RGB, 0 ~ 255</div>
+            <p class="answer-card-desc"><b>풀이:</b> 빛의 삼원색(Red, Green, Blue)을 이용하는 색상 표현 방식은 RGB 방식이며, 각 색상값은 0부터 255까지의 단계를 갖습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q20. 공이 매번 새로운 랜덤 좌표로 이동할 때마다 몸체 색상이 무작위로 계속 변하게 하려 합니다. 가장 알맞은 블록 조합과 위치는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [무한 반복하기] 블록 안에 [~초 동안 이동하기] 블록과 함께 [자기 자신 색 무작위로 변경] 블록을 배치한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 이동할 때마다 색이 계속 바뀌려면, 이동 루프를 도는 [무한 반복하기] 블록 내부에 [~초 동안 이동하기] 블록과 [색 무작위로 변경] 블록이 함께 들어있어야 합니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 3. 색이 변하는 계단</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q21. 로블록스 스튜디오에서 이미 작성한 파트와 잼S 코드를 그대로 담아 바로 옆에 동일하게 복제(Duplicate)하는 단축키는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) Ctrl + D</div>
+            <p class="answer-card-desc"><b>풀이:</b> 로블록스 스튜디오의 복제 기능 단축키는 Ctrl + D 입니다. 이 기능을 이용하면 파트와 내부에 연동된 잼S 코드까지 통째로 복제됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q22. 계단이 플레이어를 지탱하고 아래로 떨어지지 않게 고정하려면 어떤 속성을 켜야 하나요?</div>
+            <div class="answer-card-ans">정답: 3) Anchored (앵커)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 파트가 아래로 추락하거나 밟았을 때 쓰러지지 않게 하려면 앵커(Anchored) 상태로 만들어 주어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q23. 플레이어가 계단을 밟으면 색이 변하게 하고자 할 때 사용하는 잼S의 시작 이벤트 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [이 물체에 캐릭터가 충돌하면 시작]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 플레이어가 계단을 밟는 것(접촉)은 충돌로 감지하므로 [이 물체에 캐릭터가 충돌하면 시작] 블록을 사용합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q24. 계단 파트의 색을 초록색으로 변경하려고 합니다. 잼S의 [색을 바꾸기] 블록에서 입력해야 할 RGB 값은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [0, 255, 0]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 초록색(Green)만 255 최대치이고 나머지가 0인 [0, 255, 0]이 초록색입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q25. 계단을 만들 때, 코딩을 여러 번 하지 않고 효율적으로 여러 개의 반응하는 계단을 만드는 방법은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 파트 1개를 꺼내 코딩을 완료한 후, 그 파트를 복제(Ctrl + D)하여 계단처럼 배치한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 잼S에서는 코딩이 완료된 파트를 복제하면 코딩(스크립트)도 함께 복제되므로, 1개를 먼저 코딩하고 복제하여 배치하는 것이 효율적입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q26. 계단을 밟았을 때 노란색으로 변하게 하려고 합니다. RGB 색상을 어떻게 설정해야 할까요?</div>
+            <div class="answer-card-ans">정답: 1) [255, 255, 0]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 빨간색(Red)과 초록색(Green)을 섞으면 노란색(Yellow)이 되므로, [255, 255, 0]으로 설정해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q27. 계단을 밟았을 때 색이 바뀐 뒤, 밟지 않고 3초가 지나면 다시 원래의 회색[100, 100, 100]으로 돌아가게 만들고 싶습니다. 알맞은 블록 배치 순서는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [충돌하면 시작] -> [색 바꾸기: 초록색] -> [3초 기다리기] -> [색 바꾸기: 회색]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 밟았을 때 즉시 초록색으로 바뀐 뒤, 3초 동안 대기했다가 원래 색(회색)으로 변경하는 순서로 작성해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q28. 계단 게임에서 플레이어가 밟으면 사라져서 떨어지는 '페이크 계단'을 만들고 싶습니다. 이 물체에 충돌했을 때, 어떤 블록을 연결하면 플레이어가 계단을 통과하여 아래로 떨어지게 될까요?</div>
+            <div class="answer-card-ans">정답: 2) [충돌이 불가능하게 하기]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 파트의 물리적 충돌 판정(CanCollide)을 꺼버리는 [충돌이 불가능하게 하기] 블록을 사용하면, 플레이어가 딛지 못하고 아래로 통과해 떨어집니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q29. 계단 파트의 투명도를 조절하여 밟았을 때 거의 보이지 않게(반투명하게) 만들고 싶습니다. 속성 창에서 투명도를 조절하는 속성 이름과 그 값의 범위로 올바른 것은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) Transparency, 0(불투명)~1(투명)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 투명도를 제어하는 속성은 Transparency이며, 값은 0(완전히 보임)에서 1(완전히 투명하여 안 보임) 사이의 소수로 설정합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q30. 계단을 밟으면 색이 초록색으로 변함과 동시에 '야옹' 소리가 나게 만들고 싶습니다. 이 기능의 올바른 잼S 블록 배치 방식은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [이 물체에 캐릭터가 충돌하면 시작] 블록 아래에 [소리를 처음부터 재생하기]와 [색을 [0, 255, 0]으로 바꾸기] 블록을 차례대로 끼워 넣는다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 충돌 이벤트가 발생했을 때 소리 재생 블록과 색상 변경 블록을 연달아 실행되도록 연결하면 됩니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 4. 플레이어가 건드리면 소리가 나는 블록</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q31. 잼S에서 소리를 사용하기 위해 도구 상자(Toolbox)에서 오디오 카테고리를 선택한 후, 워크 스페이스에 소리를 가져왔습니다. 이 소리를 잼S 코드에서 불러와 연동하기 위해 사용하는 블록 카테고리는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 소리</div>
+            <p class="answer-card-desc"><b>풀이:</b> 소리를 재생하고 제어하기 위해 잼S의 '소리' 카테고리에 있는 블록을 사용합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q32. 잼S 코딩 창에서 새로운 변수를 만들려고 합니다. 변수 창을 열기 위해 클릭해야 하는 버튼은 화면의 어디에 있나요?</div>
+            <div class="answer-card-ans">정답: 2) 우측 하단의 [변수] 버튼</div>
+            <p class="answer-card-desc"><b>풀이:</b> 잼S 플러그인 화면 우측 하단에 있는 [변수] 버튼을 클릭해 변수 생성 창을 엽니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q33. 변수를 만들 때, 변수 이름과 함께 설정해야 하는 '영역'과 '타입' 중 참/거짓 값을 저장하기에 알맞은 타입은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 지역 변수 - 부울 (Boolean)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 참(true) 또는 거짓(false) 값만 가지는 데이터 타입은 '부울(부울형/Boolean)'입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q34. 참(true)인 상태를 거짓(false)으로, 거짓(false)인 상태를 참(true)으로 논리를 반대로 뒤집을 때 사용하는 [연산] 카테고리의 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) [Not] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> Not 블록은 참을 거짓으로, 거짓을 참으로 부정(반전)시키는 논리 연산 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q35. 소리를 중복해서 시끄럽게 재생하지 않기 위해 잼S로 디바운스(중복 차단) 코딩을 할 때 사용하는 핵심 조건문 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [만약 ~라면]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 조건에 따라 특정 코드를 실행할지 여부를 결정하는 [만약 ~라면] 블록이 조건문으로 사용됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q36. 이 예제에서 소리 중복 재생을 막기 위해 부울 변수 `is_playing`을 만들었습니다. `만약 Not is_playing 라면`이라는 조건식을 사용하는 주된 이유는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 소리가 재생 중이 아닐 때(거짓 상태일 때)만 소리를 재생하게 하려고</div>
+            <p class="answer-card-desc"><b>풀이:</b> `is_playing`이 false(거짓)이면 `Not is_playing`은 true(참)가 되어 조건문 내부로 들어갑니다. 즉, 소리가 재생 중이 아닐 때만 재생 명령을 실행하게 됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q37. 조건문 안으로 진입하자마자 변수값을 `true(참)`로 변경하는 이유는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 소리 재생이 완료될 때까지 다른 충돌에 의해 소리가 중복 실행되는 것을 잠금(Lock)하기 위해</div>
+            <p class="answer-card-desc"><b>풀이:</b> 변수를 true로 바꾸면 `Not 변수`는 false가 되므로, 소리가 재생되는 동안 추가적인 충돌이 발생해도 조건문 내부 코드가 실행되지 않고 무시됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q38. 소리 재생 블록 아래에 배치하는 [~초 기다리기] 블록의 대기 시간(초)은 어떻게 정하는 것이 가장 적절한가요?</div>
+            <div class="answer-card-ans">정답: 2) 자신이 도구 상자에서 가져온 소리의 재생 길이(시간)만큼 설정한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 소리가 연주되는 동안만 중복을 차단해야 하므로, 소리의 실제 길이만큼 기다린 후에 잠금을 풀어주는 것이 자연스럽습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q39. 소리 재생이 완전히 끝난 뒤, 다음에 다시 충돌했을 때 소리가 날 수 있도록 하려면 변수값을 무엇으로 다시 정해주어야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) false</div>
+            <p class="answer-card-desc"><b>풀이:</b> 대기 시간이 끝난 후 변수를 다시 false(거짓)로 초기화해야만 다음 충돌 때 `Not false`(참)가 되어 소리가 다시 재생될 수 있습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q40. 만약 소리가 재생된 후에 변수를 다시 `false`로 바꾸는 코드가 누락되었다면 어떤 현상이 발생하나요?</div>
+            <div class="answer-card-ans">정답: 2) 처음 한 번만 소리가 나고 그 이후로는 아무리 부딪혀도 소리가 나지 않는다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 변수가 계속 true 상태로 유지되므로, 다음 충돌 때 `Not true`는 항상 false가 되어 조건문을 통과할 수 없으므로 두 번 다시 소리가 나지 않습니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 5. 크기가 변하는 블록</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q41. 잼S의 [형태] 카테고리에서 파트의 가로, 세로, 높이 크기를 직접 변경하기 위해 사용하는 블록의 이름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [크기 바꾸기] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 오브젝트의 크기를 제어하는 블록은 [형태] 카테고리의 [크기 바꾸기] 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q42. 잼S에서 특정 수치 내에서 무작위로 숫자를 생성하여 크기나 위치에 대입하고 싶을 때 사용하는 [연산] 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [랜덤 숫자] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 무작위 수를 추출하여 가변적인 동작을 만들 때 사용하는 블록은 [랜덤 숫자] 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q43. 잼S 코딩 창에서 조립해 둔 특정 블록이나 블록 세트를 그대로 하나 더 만들고 싶을 때 수행하는 조작은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 블록을 마우스 우클릭한 뒤 [블록 복사하기]를 클릭한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 잼S 내에서 조립된 블록을 복사하려면 해당 블록에 마우스 우클릭을 하고 '블록 복사하기'를 선택합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q44. 파트의 가로(X), 세로(Y), 높이(Z) 세 방향 모두 다르게 랜덤 크기로 변하게 하려면 [랜덤 숫자] 블록이 총 몇 개 필요한가요?</div>
+            <div class="answer-card-ans">정답: 3) 3개</div>
+            <p class="answer-card-desc"><b>풀이:</b> X, Y, Z축 각각의 크기 칸에 독립적으로 무작위 수를 부여해야 하므로 [랜덤 숫자] 블록이 총 3개 필요합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q45. 기초 예제에서 파트의 크기가 계속해서 5초마다 변하도록 반복 작업을 수행하게 하려면 어떤 블록들의 조합이 필요한가요?</div>
+            <div class="answer-card-ans">정답: 1) [무한 반복하기] 안에 [크기 바꾸기]와 [5초 기다리기] 블록을 배치한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 크기 변경과 5초 대기 행동을 영구히 반복해야 하므로, [무한 반복하기] 내부에 [크기 바꾸기] 블록과 [5초 기다리기] 블록이 차례로 조립되어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q46. 응용 예제인 '크기가 변하는 공중 사다리'에서, 플레이어가 발판을 밟았을 때 발판의 길이를 늘리고 위치를 이동시켜야 합니다. 이 발판의 정확한 길어난 크기(Size)와 이동할 좌표(Position)는 어떻게 확인해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) 스튜디오 화면에서 발판 크기를 미리 늘려놓은 후, 속성 창에서 Size와 Position의 X, Y, Z 값을 직접 확인해 적는다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 발판의 연장선상 레이아웃은 제작자마다 배치한 위치가 다르기 때문에, 스튜디오 속성 창에서 자신의 파트 Size와 Position 값을 직접 눈으로 읽어내어 코딩에 적용해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q47. 로블록스에서는 파트의 크기(Size)만 강제로 늘리면, 파트가 양쪽 방향으로 동시에 확장(중심점 기준 확장)됩니다. 이 때문에 한쪽 방향(다리 건너편)으로만 길어지게 만드려면 크기 변경과 동시에 어떤 코드를 함께 작성해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) [위치] 이동 블록을 사용해 길어진 만큼 중심 좌표를 이동시킨다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 로블록스 파트는 크기를 키우면 중심을 기준으로 양방향으로 고르게 늘어납니다. 따라서 한쪽으로만 늘어나는 효과를 주려면 크기를 바꾸는 동시에 중심 좌표(Position)도 함께 이동시켜 주어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q48. 길어진 다리가 5초 후에 원래 모양으로 다시 줄어들게 하여 플레이어에게 스릴을 주려 합니다. 잼S에서 이 기능을 구현하기 위한 가장 논리적인 순서는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [늘어난 크기/위치로 변경] -> [5초 기다리기] -> [원래 크기/위치로 복구]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 밟는 즉시 다리가 길어지고(늘어난 크기/위치 적용), 5초 동안 그 상태를 유지했다가(5초 기다리기), 다시 처음 크기(원래 크기/위치)로 되돌리는 흐름이 되어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q49. 이 게임을 공중 맵으로 완성하기 위해, 땅바닥 역할을 하는 불필요한 기본 밑판을 탐색기에서 삭제하려 합니다. 삭제해야 하는 이 파트의 이름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) Baseplate</div>
+            <p class="answer-card-desc"><b>풀이:</b> 스튜디오 실행 시 바닥에 깔리는 넓은 판은 'Baseplate(베이스플레이트)'입니다. 공중 다리 건너기 미션의 난이도를 높이기 위해 이를 삭제합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q50. 만약 플레이어가 발판을 딛는 순간 발판 크기가 커지지 않고 즉시 플레이스 아래로 추락해 게임오버가 된다면, 무엇을 확인해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) 해당 발판 파트의 Anchored(앵커) 속성이 활성화(체크)되어 있는지 확인한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 바닥인 Baseplate를 지운 상태에서 발판의 앵커(Anchored)를 설정하지 않으면, 게임 시작 시 중력 때문에 발판 자체가 아래로 추락해 버려 디딜 곳이 없어집니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 6. 신호등</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q51. 5초마다 빨간색 불과 초록색 불이 켜지는 신호등 예제에서, 전구의 불이 꺼져있는 어두운 회색 상태를 표현하기 위해 책에서 설정한 RGB 색상값은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) [100, 100, 100]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 신호등 예제에서는 불이 꺼진 상태의 회색 전구를 나타내기 위해 RGB 값을 [100, 100, 100]으로 지정했습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q52. 신호등 전구가 빨간불과 회색 불을 연속으로 바꾸며 끊임없이 반복 작동하게 하려 합니다. 잼S의 어떤 제어 블록 안에 코드를 넣어야 하나요?</div>
+            <div class="answer-card-ans">정답: 1) [무한 반복하기] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 신호등은 계속해서 반복 동작해야 하므로 [무한 반복하기] 블록 내부에 순차적인 코드를 넣어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q53. 신호등의 위쪽 전구(빨간불)를 다음과 같이 코딩했습니다. 빈칸 ㉠과 ㉡에 들어갈 시간(초)으로 가장 적절한 것은?
+- [색 바꾸기: 빨간색]
+- [㉠초 기다리기]
+- [색 바꾸기: 회색]
+- [㉡초 기다리기]</div>
+            <div class="answer-card-ans">정답: 2) ㉠ = 5, ㉡ = 5</div>
+            <p class="answer-card-desc"><b>풀이:</b> 신호등 교재에서는 빨간불이 5초 동안 켜지고(5초 기다리기), 꺼진 상태(회색)로 5초 동안 유지되도록 각각 5초 대기를 주어 주기를 맞췄습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q54. 빨간색 전구 코딩을 완료한 후, 아래쪽 초록색 전구를 코딩할 때 사용해야 하는 잼S 코딩 대상 지정 드롭 다운 설정은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 자기 자신 (또는 초록 전구 파트 명칭)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 코딩하고자 하는 개별 파트를 활성화하고 잼S 대상 드롭 다운을 '자기 자신'으로 변경하여 코딩을 작성해야 해당 전구에 코드가 적용됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q55. 로블록스 스튜디오에서 이미 만든 전구 파트를 그대로 하나 더 복제하여 아래쪽 전구를 만드는 가장 편리한 단축키는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) Ctrl + D</div>
+            <p class="answer-card-desc"><b>풀이:</b> 선택한 파트를 제자리에 똑같이 복제하는 단축키는 Ctrl + D 입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q56. 위쪽 전구(빨간불)가 켜져 있는 5초 동안은 아래쪽 전구(초록불)가 꺼져 있어야(회색) 하고, 위쪽 전구가 꺼지면 아래쪽 전구가 켜져야 합니다. 아래쪽 전구(초록불)의 동작 코드는 어떻게 구성되어야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) [색 바꾸기: 회색] -> [5초 기다리기] -> [색 바꾸기: 초록] -> [5초 기다리기]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 위 전구가 켜지는 첫 5초 동안 아래 전구는 꺼져 있어야 하므로 회색으로 시작하여 5초를 대기하고, 그 후 초록색으로 켜진 뒤 5초를 대기하는 패턴을 무한 반복해야 아귀가 맞습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q57. 신호등의 위아래 전구가 번갈아 켜지는 주기가 서로 엇갈리거나 꼬이지 않고 정확하게 맞물려 작동하는 원리는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 두 전구 코드의 [대기 시간] 합과 켜지고 꺼지는 순서가 논리적으로 동기화되어 있기 때문</div>
+            <p class="answer-card-desc"><b>풀이:</b> 신호등의 원활한 교차 작동은 두 전구 스크립트가 각각 5초 대기 시간을 조합하여 전체 사이클(10초)을 동일하게 맞췄기 때문입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q58. 신호등의 점멸 주기를 5초에서 10초로 더 길게 변경하고 싶습니다. 코드 상에서 무엇을 수정해야 하나요?</div>
+            <div class="answer-card-ans">정답: 1) 모든 [~초 기다리기] 블록의 대기 시간을 10으로 변경한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 신호등의 신호 유지 간격을 조절하려면 코드 속 모든 [~초 기다리기] 블록의 시간 설정 값을 동일하게 늘려주어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q59. 신호등 전구가 실제로 빛이 밝게 빛나는 느낌을 주도록 스튜디오에서 재질(Material)을 설정하고 싶습니다. 속성 창에서 어떤 재질로 설정하는 것이 가장 적합할까요?</div>
+            <div class="answer-card-ans">정답: 2) Neon (네온)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 로블록스 스튜디오에서 자체 발광하는 느낌을 주기 위해서는 파트 재질을 'Neon(네온)'으로 변경해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q60. 초록불이 켜진 상태(건널 수 있는 상태)일 때만 다리에 밟고 지나갈 수 있게 하고, 빨간불일 때는 다리가 사라지거나 뚫리게 하고 싶습니다. 이때 결합할 수 있는 잼S 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [충돌이 불가능하게 하기] 블록을 활용해 빨간불일 때는 충돌을 끄고 초록불일 때는 충돌을 켠다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 신호등 색상 변화 주기에 맞춰 다리 발판의 충돌 상태(CanCollide)를 켜고 끔으로써 실제 지나갈 수 있는 신호등 횡단보도 기믹을 구현할 수 있습니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 7. 함정 발판을 피해 다리 건너기</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q61. 이 게임 예제의 주요 규칙과 어긋나는 설명은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) 함정 발판은 눈으로 보았을 때 다른 발판보다 더 투명하게 보인다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 함정 발판은 시각적으로는 일반 발판과 완벽히 동일하므로, 직접 밟아보기 전에는 눈으로 구분할 수 없습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q62. 플레이어 캐릭터가 발판을 밟으려 할 때, 파트의 형태는 보이지만 몸체가 통과되어 낭떠러지로 추락하게 만드는 잼S의 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [충돌이 불가능하게 하기] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 외형은 유지하면서 물리적 충돌 판정을 비활성화하여 플레이어가 밟지 못하고 통과해 떨어지게 하는 블록은 [충돌이 불가능하게 하기] 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q63. 잼S의 [충돌이 불가능하게 하기] 블록은 로블록스 스튜디오의 파트 속성 중 어떤 속성을 끄는(False) 역할과 동일한가요?</div>
+            <div class="answer-card-ans">정답: 2) CanCollide</div>
+            <p class="answer-card-desc"><b>풀이:</b> CanCollide(충돌 허용) 속성은 파트가 다른 사물이나 캐릭터와 부딪히는 물리적 기능을 설정하는 속성입니다. 이 속성이 꺼지면 파트를 통과하게 됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q64. 함정 발판이 게임이 실행되자마자 즉시 밟을 수 없는 상태로 설정되도록 잼S 코딩의 시작부에 위치시켜야 하는 이벤트 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [시작] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 게임 월드가 로드되자마자 즉시 함정 속성을 활성화해야 하므로, 초기화 이벤트인 [시작] 블록 아래에 코드를 조립해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q65. 다리 건너기 맵을 만든 후, 함정 발판에서 떨어지는 플레이어가 공중에 뜨지 않고 아래로 영구히 추락해 리스폰되도록 삭제해야 하는 바닥 오브젝트는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) Baseplate</div>
+            <p class="answer-card-desc"><b>풀이:</b> 기본 바닥인 Baseplate를 지워야만 발판 아래가 허공(낭떠러지)이 되어 추락 미션을 정상 구현할 수 있습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q66. 함정 발판 4개를 효율적으로 만들려고 합니다. 가장 효과적인 제작 방법은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 함정 발판 1개를 꺼내서 [시작] -> [자기 자신 충돌이 불가능하게 하기] 코딩을 완료한 후, 이 함정 발판을 복제(Ctrl + D)하여 필요한 위치들에 배치한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 잼S 코드가 심어진 파트를 복제(Ctrl+D)하면 코드도 함께 복제되므로, 완성된 함정 발판 1개를 여러 개 복제해 배치하는 것이 빠르고 정확합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q67. 만약 게임을 실행했더니 함정 발판과 정상 발판 모두가 아래로 무수히 추락해 사라져 버립니다. 원인은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 모든 발판 파트에 [앵커 (Anchor)] 속성을 켜지 않았기 때문</div>
+            <p class="answer-card-desc"><b>풀이:</b> Baseplate를 삭제하여 공중 다리 맵을 만들었기 때문에, 발판 파트들에 앵커(Anchored) 고정을 걸어두지 않으면 중력의 영향을 받아 맵 전체가 아래로 떨어지게 됩니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q68. 밟으면 1초간 살짝 버티다가 아래로 무너져 내리는 스릴 넘치는 함정 발판 기믹을 만들고 싶습니다. 잼S 블록 배치로 알맞은 것은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [이 물체에 캐릭터가 충돌하면 시작] -> [1초 기다리기] -> [자기 자신 충돌이 불가능하게 하기]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 밟았을 때(충돌 발생) 시작하여, 1초 동안 플레이어가 디딜 수 있게 잠시 기다린 후, 충돌을 해제하여 아래로 통과시키는 구조가 알맞습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q69. 추락한 플레이어가 맵 아래 블랙홀(허공)로 떨어지면 자동으로 사망하여 스폰 포인트에서 다시 시작합니다. 로블록스 시스템이 제공하는 이 허공의 사망 한계 높이 영역을 속성에서 가리키는 용어는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) FallenPartsDestroyHeight (추락 파트 파괴 높이)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 로블록스 Workspace 속성 중 FallenPartsDestroyHeight는 파트나 캐릭터가 일정 깊이 이하로 떨어졌을 때 자동으로 소멸시키는 높이 기준값입니다. 기본값은 보통 -500입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q70. 함정 발판을 밟아 밑으로 떨어질 때, 놀란 효과음('비명소리' 등)이 나게 하고 싶습니다. 잼S로 구현할 때 올바른 코드 조립 순서는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [이 물체에 캐릭터가 충돌하면 시작] -> [소리를 처음부터 재생하기] -> [자기 자신 충돌이 불가능하게 하기]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 캐릭터가 충돌하면 우선 소리 재생 블록을 실행하여 비명 효과음을 들려주고, 즉시 다리의 충돌 권한을 비활성화해 떨어뜨리는 구조가 가장 이상적입니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 8. 엘리베이터</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q71. 엘리베이터 예제에서 구현하려는 핵심 게임 기능으로 올바른 것은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 플레이어가 엘리베이터에 올라타 충돌이 발생하면 위층으로 이동하고, 위에서 다시 타면 원래 아래층으로 복귀한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 플레이어 탑승 상태에 따라 1층이면 2층으로, 2층이면 1층으로 목적지를 유기적으로 변경하는 엘리베이터를 구현합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q72. 현재 엘리베이터가 1층에 있는지 2층에 있는지 상태를 숫자로 저장하여 관리하기 위해 사용하는 프로그램의 개념은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 변수 (Variable)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 바뀌는 데이터(1층 상태 혹은 2층 상태)를 저장해두는 기억 공간을 '변수'라고 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q73. 엘리베이터 예제에서는 두 종류의 변수를 만들어 사용합니다. 각각의 올바른 조합은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 지역 부울 변수(중복 방지용), 지역 숫자 변수(층수 기록용)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 이동 작동 중인지를 판별하여 중복 트리거를 막는 부울 변수와 현재 위치가 1층인지 2층인지를 수치로 확인하는 숫자 변수가 필요합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q74. 잼S의 조건 비교에서 '변수값이 1과 같은지' 확인하고 싶을 때 사용하는 [비교] 블록의 드롭 다운 연산자 기호는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) ==</div>
+            <p class="answer-card-desc"><b>풀이:</b> 두 값이 같은지 비교하는 동등 비교 연산자는 프로그래밍과 잼S에서 '=='로 표기합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q75. 엘리베이터의 2층 목표 위치 Y축 좌표는 어떻게 구해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) 공중에 띄워둔 2층 발판 파트를 선택하고, 속성 창의 Origin > Position의 Y 값을 확인한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 엘리베이터가 올라갈 높이는 2층 발판의 Y 높이와 일치해야 하므로, 스튜디오 속성 창에서 2층 발판의 Position Y 값을 찾아 입력합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q76. 엘리베이터 동작 시, 부울 변수(작동 여부 변수)가 참(true)인 상태일 때 추가 충돌 이벤트를 무시하도록 잠그는 조건문 구조로 올바른 것은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 만약 Not 부울 변수 라면</div>
+            <p class="answer-card-desc"><b>풀이:</b> 부울 변수가 false(작동 중 아님)여야만 `Not false`가 true가 되어 작동 코드 안으로 들어갈 수 있습니다. 즉, 이동 중일 때는 이벤트 재진입을 막아 줍니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q77. 엘리베이터 코딩 중 1층에서 2층으로 올라가는 작동 조건이 실행될 때, 엘리베이터의 층수 변수를 어떻게 바꾸어 주어야 하며, 그 이유는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 층수 변수를 2로 정한다. 그래야 다음에 밟았을 때 2층 상태임을 인식하고 1층으로 내려오기 때문</div>
+            <p class="answer-card-desc"><b>풀이:</b> 2층으로 출발하기 전에 층수 상태 변수를 2로 정해주어 변수를 갱신해야만, 엘리베이터가 올라간 후 플레이어가 다시 탔을 때 2층에서 내려가는 코드가 실행될 수 있습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q78. 엘리베이터를 타고 2층으로 올라갔다가 다시 아래층으로 내려올 때, [~초 동안 이동하기] 블록의 X, Y, Z 좌표 중 1층 출발지와 동일하게 복구해야 하는 축과 다르게 수정해야 하는 축의 조합은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) X, Z축은 처음 위치와 동일하게 고정하고, Y축(높이)만 아래층 높이(예: 0)로 변경한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 엘리베이터는 수평으로 틀어지지 않고 일직선 수직으로 하강해야 하므로 수평 좌표(X, Z)는 1층 출발점과 똑같이 지정하고, 수직 높이(Y)만 아래층 바닥 높이로 지정합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q79. 엘리베이터 이동이 끝난 후, 다음 탑승을 위해 중복 작동 제한 잠금(부울 변수)을 풀어주어야 합니다. 대기 시간이 끝난 후 이 부울 변수를 무엇으로 정해주어야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) false</div>
+            <p class="answer-card-desc"><b>풀이:</b> 움직임이 끝나 대기 시간이 끝난 후 작동 제한 잠금을 해제해야 하므로, 부울 변수를 다시 false(거짓) 상태로 되돌립니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q80. 엘리베이터를 여러 명이 함께 이용할 때, 1층에서 사람이 타고 올라가는 도중 1층 바닥의 충돌 신호가 계속해서 겹쳐서 기기가 오작동하거나 2층 좌표를 초과하여 날아가는 현상이 발생합니다. 어떤 논리 장치가 설계되지 않았기 때문인가요?</div>
+            <div class="answer-card-ans">정답: 2) 부울 변수를 활용한 중복 진입 방지 잠금(디바운스/Debounce) 로직 오류 또는 누락</div>
+            <p class="answer-card-desc"><b>풀이:</b> 여러 번 중복해서 충돌할 때 이미 실행 중이라면 추가적인 명령을 씹도록(무시하도록) 만드는 중복 실행 방지(Debounce) 부울 변수 락 제어가 정상 작동하지 않기 때문에 발생합니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 9. 움직이는 발판 건너기</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q81. 움직이는 발판 건너기 예제에서 각 발판이 수행해야 하는 기본적인 논리적 흐름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 지정된 목표 좌표로 이동했다가 다시 원래 좌표로 돌아오는 작동을 영원히 반복한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 이 예제는 발판들이 일정한 구간을 왕복 운동하여 플레이어의 점프 이동을 돕는 기믹을 제작합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q82. 발판을 계속 움직이게 하기 위해 잼S 코드의 이벤트 블록 바로 아래에 배치하는 제어 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [무한 반복하기] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 끊임없이 반복 작동시키는 루프 블록인 [무한 반복하기]를 활용해 왕복 행동을 지정합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q83. 잼S의 [~초 동안 이동하기] 블록은 [동작] 카테고리에 속해 있습니다. 이 블록에서 움직일 대상 오브젝트를 지정하는 타겟 칸은 무엇으로 지정해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) 자기 자신</div>
+            <p class="answer-card-desc"><b>풀이:</b> 코딩을 담고 있는 발판 그 자체가 스스로 이동해야 하므로 드롭 다운을 '자기 자신'으로 변경해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q84. 왕복 운동을 하는 발판을 만들기 위해 잼S [무한 반복하기] 블록 내부에 연속으로 결합해야 하는 [~초 동안 이동하기] 블록의 최소 개수는 몇 개인가요?</div>
+            <div class="answer-card-ans">정답: 2) 2개</div>
+            <p class="answer-card-desc"><b>풀이:</b> 목적지인 2지점(Position A, Position B) 사이를 오가야 하므로, A로 이동하는 블록과 B로 이동하는 블록 최소 2개가 연속으로 연결되어야 왕복 운동이 이루어집니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q85. 움직이는 발판의 출발지 좌표와 도착지 좌표 값을 정확히 알아내는 가장 합리적인 방법은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) 로블록스 스튜디오에서 발판을 시작 지점에 놓고 속성 창의 Position 값을 확인해 적고, 다시 목표 지점으로 발판을 이동시켜 그 Position 값을 확인해 적는다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 스튜디오 편집기 내에서 발판을 마우스로 끌어 출발 위치와 목표 위치에 각각 배치해 보고, 그때그때의 속성(Properties) Position 좌표값을 얻는 것이 가장 정확합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q86. 움직이는 발판 3개를 공중에 만들었습니다. 게임 실행과 동시에 바닥이 사라져 발판 아래가 허공이 되도록 Explorer 창에서 지워야 하는 중요 바닥 판의 이름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) Baseplate</div>
+            <p class="answer-card-desc"><b>풀이:</b> 낭떠러지 점프 건너기 맵을 위해 기본 바닥 판인 'Baseplate'를 선택하고 키보드 Delete 키로 삭제합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q87. 발판 A는 좌우로만 움직이게 하고 싶습니다. 그렇다면 시작 위치와 복귀 위치의 X, Y, Z 좌표 중 값의 변화를 주어야 하는 축(좌표)은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) X축 또는 Z축 중 원하는 수평 방향의 값만 다르게 주고, 높이 Y축은 고정한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 수평 방향(좌우)으로만 이동해야 하고 위아래로 출렁이면 안 되므로, 높이 Y축은 일정하게 맞추고 수평 평면 좌표(X 또는 Z)만 변형을 줍니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q88. 움직이는 발판 기믹에서 발판을 건너는 플레이어 캐릭터가 딛고 설 수 있게 하려면 해당 발판의 어떤 속성이 True 상태여야 하나요?</div>
+            <div class="answer-card-ans">정답: 1) CanCollide</div>
+            <p class="answer-card-desc"><b>풀이:</b> CanCollide(충돌 권한) 속성이 켜져 있어야 플레이어가 발판을 밟고 지탱할 수 있으며, 꺼지면 딛지 못하고 뚫려 추락합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q89. 발판 3개가 똑같이 오른쪽으로 움직이기 시작하여 모두 한꺼번에 도달했다가 한꺼번에 돌아옵니다. 이 단조로운 패턴을 깨고, 발판들이 서로 지그재그로 어긋나며 움직이게 코딩을 바꾸려면 어떻게 해야 할까요?</div>
+            <div class="answer-card-ans">정답: 2) 발판별로 시작점과 끝점 이동 좌표 순서를 반대로 뒤집어 조립하거나, 루프 시작 전 [~초 기다리기] 블록을 배치해 출발 타이밍을 지연시킨다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 각 발판 스크립트의 이동 블록 순서를 서로 엇갈리게(A->B, B->A) 배치하거나, 각 발판 코드의 맨 처음에 서로 다른 지연 대기 시간을 주면 엇갈리며 움직이는 멋진 맵을 완성할 수 있습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q90. 게임을 직접 테스트해 보았는데 움직이는 발판 위에 캐릭터가 올라탔더니 캐릭터가 발판과 함께 수평으로 자연스럽게 같이 실려 이동하지 못하고 그 자리에 남아서 아래로 떨어집니다. 로블록스 스튜디오에서 무엇을 잘못 설정한 것일까요?</div>
+            <div class="answer-card-ans">정답: 2) 움직이는 발판의 Anchored(앵커) 고정 속성을 깜빡하고 켜지 않아서 물리 낙하가 진행되었거나 플레이어 마찰력 전달 누락</div>
+            <p class="answer-card-desc"><b>풀이:</b> 로블록스의 움직이는 발판은 기본적으로 앵커(Anchored) 상태로 고정되어 움직여야 캐릭터가 그 마찰력을 받아 수평 동반 이동을 하게 됩니다. 앵커를 하지 않으면 물리 연산 엉킴으로 오작동합니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 10. 회전문</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q91. 회전문 예제에서 잼S 코딩을 이용해 구현하려는 회전문의 기본 작동 방식은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 끊임없이 천천히 축을 중심으로 회전한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 회전문은 게임이 실행된 후 중심축을 기준으로 영원히 천천히 지속 회전하는 장애물 또는 게이트 기믹입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q92. 잼S의 [동작] 카테고리에서 파트의 각도를 회전시켜 주기 위해 꺼내서 조립해야 하는 블록의 이름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [회전하기] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 파트를 제자리에서 회전시키기 위해 사용하는 블록은 [회전하기] 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q93. 회전문을 만들기 위해 회전 각도(각도 수치)를 계속 누적하여 변경시키며 저장할 수 있도록 생성한 변수의 종류는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) 지역 숫자 변수</div>
+            <p class="answer-card-desc"><b>풀이:</b> 회전 각도값(예: 0, 1, 2, 3...)은 변화하는 수치 데이터이므로 '지역 숫자 변수'를 개설하여 제어해야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q94. 회전문의 회전도가 1도씩 계속 늘어나면서 천천히 돌게 하기 위해 사용하는 [변수] 카테고리의 잼S 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [변수에 값 더하기]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 기존 각도 변수값에 일정한 단위 값(예: 1도씩)을 계속 추가(누적)해 주는 블록은 [변수에 값 더하기] 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q95. 회전문이 수평 바닥 평면상에서 팽이처럼 좌우로 spin(회전)하도록 만들려고 합니다. [회전하기] 블록의 X, Y, Z축 중 각도 변수를 어느 축 칸에 연결해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) Y축 (세로 기둥 기준 회전)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 회전문이 수평으로 빙글빙글 돌려면 수직 위방향 축인 Y축을 회전 기준 중심으로 삼아 각도를 변경해 주어야 합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q96. 회전문 예제 교재에서 문의 회전 영역과 문이 지나갈 공간을 설계하기 위해, 벽 역할을 하는 고정식 파트를 총 몇 개 배치했나요?</div>
+            <div class="answer-card-ans">정답: 3) 3개</div>
+            <p class="answer-card-desc"><b>풀이:</b> 회전문 교재에서는 문이 들어갈 틀과 방벽을 3개의 벽 파트(앵커 고정 상태)로 설계해 배치하였습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q97. 회전문이 한 바퀴(360도) 돌고 난 후에도 꼬이지 않고 계속해서 부드럽고 영구적으로 돌게 만드는 잼S 코드 구조는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [무한 반복하기] 블록 내부에 [자기 자신 Y축 각도 회전]과 [각도 변수에 1 더하기] 블록을 차례대로 배치한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> [무한 반복하기]를 돌며 각도 변수 값을 1도씩 누적 증가시켜 이를 [회전하기] 블록의 Y축에 전달함으로써 끊김 없는 360도 무한 회전이 가능해집니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q98. 회전문의 회전 속도를 5배 정도로 매우 빠르게 돌려 고난이도 통과 장애물을 설계하고 싶습니다. 코드 상에서 수정할 부분은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [변수에 값 더하기] 블록의 수치를 1에서 5로 변경한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 루프가 한 번 돌 때 증가하는 각도 변화폭을 높여주면(1도씩 증가하던 것을 5도씩 증가하게 변경) 회전 속도가 5배로 빠르게 빨라집니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q99. 회전문이 시계 방향이 아닌, 반시계 방향(역방향)으로 천천히 돌게 하고 싶습니다. 어떻게 코딩을 수정해야 하나요?</div>
+            <div class="answer-card-ans">정답: 2) [변수에 값 더하기] 블록의 수치에 음수 값인 -1을 입력한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 더해지는 수치를 음수(-1)로 입력하면 각도가 계속 줄어들어(359, 358, 357...) 역방향으로 빙글빙글 회전합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q100. 회전문을 잘 만들었는데, 캐릭터가 몸으로 슬쩍 밀거나 부딪혔을 때 문이 휙 밀려나서 옆으로 자빠지거나 떨어져 버립니다. 로블록스 속성 창에서 무엇을 점검해야 하나요?</div>
+            <div class="answer-card-ans">정답: 1) 문 파트의 Anchored(앵커) 속성이 True(체크 상태)인지 확인한다.</div>
+            <p class="answer-card-desc"><b>풀이:</b> 회전문은 스스로 코딩된 각도 변수값에 의해서만 돌아야 합니다. 앵커를 하지 않으면 캐릭터 충돌 시 물리 엔진에 의해 맵 밖으로 밀려나 추락합니다.</p>
+        </div>
+        <h4 style="color: #1e3c72; font-size: 18px; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">예제 11. 장착 시 속도 증가, 사용 시 순간 이동 도구</h4>
+        <div class="answer-card">
+            <div class="answer-card-header">Q101. 플레이어 캐릭터가 들고 다니거나 장착해서 상호작용할 수 있는 아이템을 제작하려 합니다. 탐색기의 Workspace에서 '+' 버튼을 눌러 추가해야 하는 특수 오브젝트의 이름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 3) Tool (도구)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 플레이어가 가방(Backpack)에 담아 장착하고 꺼내서 쓸 수 있는 아이템의 뼈대는 'Tool' 오브젝트입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q102. 생성한 Tool 오브젝트를 캐릭터의 손에 정상적으로 쥐여주고 작동시키기 위해, Tool 아래 생성하는 파트의 이름을 반드시 어떤 명칭으로 변경해야 하나요? (대소문자 중요)</div>
+            <div class="answer-card-ans">정답: 2) Handle</div>
+            <p class="answer-card-desc"><b>풀이:</b> 로블록스 시스템의 기본 규칙에 따라 Tool 내부의 주 파트 이름을 반드시 첫 글자 대문자인 'Handle'로 설정해야 캐릭터가 정상 장착할 수 있습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q103. 로블록스에서 캐릭터의 기본 걷는 속도(WalkSpeed) 값은 숫자로 얼마로 설정되어 있나요?</div>
+            <div class="answer-card-ans">정답: 2) 16</div>
+            <p class="answer-card-desc"><b>풀이:</b> 로블록스 휴머노이드 캐릭터의 기본 표준 걷기 속도값은 '16'입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q104. 플레이어의 마우스 조작(클릭 좌표) 및 화면 상태 정보와 캐릭터 속도 조작 등 클라이언트 영역의 행동을 제어하기 위해 잼S 코딩 창 [New] 버튼을 누르고 체크해야 하는 스크립트 종류는 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 로컬 스크립트 (Local Script)</div>
+            <p class="answer-card-desc"><b>풀이:</b> 마우스 좌표 확인이나 로컬 플레이어의 물리 제어 등 개인 단말기 환경 제어 작업은 반드시 '로컬 스크립트(Local Script)'로 작성해야 동작합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q105. 속도 증가 도구의 잼S 코딩을 할 때 사용하는 이벤트 블록 2가지로 올바르게 짝지어진 것은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [도구를 장비하면 시작], [도구를 장비 해제하면 시작]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 도구를 가방에서 꺼내 들었을 때와 다시 집어넣었을 때 작동 속도를 유기적으로 변경하려면 [도구를 장비하면 시작] 및 [도구를 장비 해제하면 시작] 두 블록이 필요합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q106. 도구(Tool) 제작 시 파트 생성 단계에서 예제 교재 가이드에 따라 파트 아래에 자동 생성되어 있는 이것을 삭제해 주어야 정상적인 연동 작동이 됩니다. 삭제해야 하는 이 용접 개체의 이름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) Weld</div>
+            <p class="answer-card-desc"><b>풀이:</b> 도구 파트 내에 불필요하게 엮인 Weld(용접) 개체가 있으면 물리 움직임 엉킴을 초래하므로 삭제를 권장합니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q107. 도구를 장비했을 때 캐릭터의 걷는 속도를 평소보다 빠른 50으로 정하고, 도구를 집어넣었을 때(장비 해제 시) 원래의 정상 속도로 복구하고 싶습니다. 알맞은 속도 값 입력의 쌍은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) 장비 시: 50, 장비 해제 시: 16</div>
+            <p class="answer-card-desc"><b>풀이:</b> 도구를 들었을 때 50의 빠른 속도를 주고, 내려놓았을 때는 원래 인간의 정상 보행 속도인 16으로 회복시켜 주어야 게임 밸런스가 맞습니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q108. 사용 시 순간 이동 도구를 코딩하려 합니다. 플레이어가 도구를 쥐고 화면을 마우스로 '클릭'했을 때 작동을 트리거 하는 잼S 이벤트 블록은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [도구를 사용하면 시작]</div>
+            <p class="answer-card-desc"><b>풀이:</b> 로블록스 도구를 장착한 채 활성화(마우스 좌클릭)하는 신호를 받아 동작을 수행하게 만드는 이벤트 블록은 [도구를 사용하면 시작]입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q109. 마우스로 클릭한 3차원 입체 공간상의 최종 목적지로 캐릭터의 좌표를 한순간에 전송하여 안착시키는 잼S [동작] 블록의 명칭은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 1) [이 캐릭터를 위치 ~로 순간 이동 시키기] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 지정된 좌표로 딜레이 없이 한 번에 워프시키는 블록은 [이 캐릭터를 위치 ~로 순간 이동 시키기] 블록입니다.</p>
+        </div>
+        <div class="answer-card">
+            <div class="answer-card-header">Q110. 순간 이동 도구 코딩 시, 순간 이동 블록의 목표 위치 좌표 칸에 끼워 넣어야 하는 잼S [잼S-도구] 카테고리의 3차원 위치 값 블록의 이름은 무엇인가요?</div>
+            <div class="answer-card-ans">정답: 2) [마우스 위치 X/Y/Z 좌표] 블록</div>
+            <p class="answer-card-desc"><b>풀이:</b> 클릭한 3D 가상 공간 좌표를 알아내어 그곳으로 캐릭터를 순간 이동시키기 위해 [마우스 위치 X/Y/Z 좌표] 블록을 조립해 넣어야 합니다.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2026 ROBOGRAM. All rights reserved. 본 성취도 평가 자료는 로보그램 잼S와 로블록스 교육용 교재 예제 11편을 바탕으로 설계되었습니다.</p>
+    </footer>
+</div>
+
+</body>
+</html>

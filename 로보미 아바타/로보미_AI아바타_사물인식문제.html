@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로보미 인공지능 전단원(01~19) 성취도 평가 문제집</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; background-color: #f7fafc; color: #2d3748; margin: 0; padding: 20px; }
+        .container { max-width: 950px; margin: 0 auto; background: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        h1 { text-align: center; color: #2b6cb0; border-bottom: 4px solid #2b6cb0; padding-bottom: 15px; margin-bottom: 30px; font-size: 24px; }
+        .desc-box { background-color: #ebf8ff; padding: 18px 22px; border-radius: 8px; border-left: 6px solid #2b6cb0; margin-bottom: 35px; font-size: 14px; line-height: 1.6; }
+        .chapter-section { margin-bottom: 45px; border-bottom: 1px dashed #e2e8f0; padding-bottom: 25px; }
+        .chapter-title { font-size: 17px; color: #ffffff; font-weight: bold; background: #2b6cb0; padding: 12px 18px; border-radius: 8px; margin-bottom: 25px; }
+        .question-block { margin-bottom: 25px; padding: 15px; background: #f7fafc; border-radius: 8px; border: 1px solid #cbd5e0; }
+        .question-header { font-size: 14px; font-weight: bold; margin-bottom: 12px; line-height: 1.5; }
+        .badge { display: inline-block; padding: 4px 10px; font-size: 11px; color: #fff; border-radius: 20px; margin-right: 8px; font-weight: bold; }
+        .badge-초등 { background-color: #4caf50; }
+        .badge-중등 { background-color: #3182ce; }
+        .badge-중등심화 { background-color: #805ad5; }
+        .options-list { list-style: none; padding-left: 0; margin: 5px 0; }
+        .options-list li { padding: 8px 12px; margin-bottom: 6px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 13px; }
+        .answer-sheet { margin-top: 50px; background: #2d3748; color: #fff; padding: 30px; border-radius: 12px; }
+        .answer-sheet h2 { margin-top: 0; color: #90cdf4; border-bottom: 1px solid #4a5568; padding-bottom: 12px; font-size: 19px; }
+        .answer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; font-size: 12px; }
+        .answer-item { background: #4a5568; padding: 10px; border-radius: 6px; text-align: center; border: 1px solid #718096; }
+        .print-btn { display: block; width: 250px; margin: 30px auto; padding: 14px; background: #2b6cb0; color: white; text-align: center; font-weight: bold; border-radius: 30px; border: none; font-size: 15px; cursor: pointer; }
+        @media print { .print-btn { display: none; } body { background: #fff; padding: 0; } .container { box-shadow: none; padding: 0; width: 100%; max-width: 100%; } .question-block { page-break-inside: avoid; background: #fff; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>로보미 인공지능 아바타 프로그램 통합 성취도 평가 문제집 (전단원 개정판)</h1>
+    <div class="desc-box">
+        본 문제집은 교수자님의 피드백을 수용하여 <b>1단원부터 19단원까지의 모든 심화 문항을 중학교 정보 교육과정 논리 및 알고리즘 원리 파악 수준으로 전면 통일</b>한 완전 개정판 파일입니다.<br>
+        * 기초: 초등 수준 / 응용: 중등 수준 / 심화: 중등 심화 수준 맞춤 설계.
+    </div>
+    <button class="print-btn" onclick="window.print()">인쇄 및 시험지 파일 저장</button>
+<div class="chapter-section">
+    <div class="chapter-title">1단원: 사물 인식 (YOLO)</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q1. YOLO 알고리즘을 실행했을 때 화면에 나오는 물체를 둘러싸는 네모난 상자의 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 그림 상자</li>
+            <li>② 경계 상자</li>
+            <li>③ 보물 상자</li>
+            <li>④ 비밀 상자</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q2. 사물인식(YOLO) 창이 열렸을 때, 키보드에서 어떤 글자를 눌러야 창을 예쁘게 종료할 수 있나요?</div>
+        <ul class="options-list">
+            <li>① A 키</li>
+            <li>② S 키</li>
+            <li>③ Q 키</li>
+            <li>④ Z 키</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q3. YOLO 블록을 실행했을 때 물체 위에 영어 이름과 함께 소수점(예: 0.79)으로 표시되는 숫자의 의미는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 물체의 실제 크기</li>
+            <li>② 인공지능이 그 물체라고 확신하는 확률</li>
+            <li>③ 카메라 렌즈의 밝기</li>
+            <li>④ 컴퓨터에 저장된 사진 순서</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q4. 중단 없이 계속해서 화면 속 사물을 감지하고 표시하기 위해 YOLO 코드가 내부적으로 사용하는 반복 구조는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 한 번만 실행 구조</li>
+            <li>② 동안 반복 참 (무한 루프) 구조</li>
+            <li>③ 만약~라면 선택 구조</li>
+            <li>④ 함수 호출 구조</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q5. YOLO 알고리즘이 포함된 프로그램의 작동 순서로 가장 올바른 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 프로그램 시작 -> 사물인식 후 화면 표시 -> Q키 누르면 루프 탈출 -> 종료</li>
+            <li>② 프로그램 시작 -> 카메라 드라이버 재설치 -> 사물 삭제 -> 종료</li>
+            <li>③ 프로그램 시작 -> 파일 이름 바꾸기 -> 무한 대기 -> 종료</li>
+            <li>④ 프로그램 시작 -> 마이크 소리 측정 -> 텍스트 출력 -> 종료</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q6. YOLO 알고리즘이 다른 인공지능 탐지 방식과 비교했을 때 가지는 가장 강력한 장점은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 물체의 위치 찾기와 분류를 복잡한 단계를 거치지 않고 한번에 처리하여 속도가 매우 빠르다.</li>
+            <li>② 정답이 없는 데이터를 스스로 학습하는 유일한 기술이다.</li>
+            <li>③ 카메라 화질을 강제로 전용 HD로 업그레이드해 준다.</li>
+            <li>④ 글씨체를 모두 똑같은 정체로 교정해 준다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">2단원: 모델 생성하기</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q7. 컴퓨터에게 사물 사진과 정답 이름표를 같이 보여주면서 '이건 마우스야'라고 공부시키는 기계학습 방법은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 지도학습</li>
+            <li>② 비지도학습</li>
+            <li>③ 강화학습</li>
+            <li>④ 스스로학습</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q8. '사물인식 모델 생성' 블록을 조립할 때, 내가 모아둔 사진들이 들어있는 이름표를 알려주기 위해 적어야 하는 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 내 컴퓨터 이름</li>
+            <li>② 폴더명</li>
+            <li>③ 인터넷 주소</li>
+            <li>④ 카메라 번호</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q9. '사물인식 모델 생성' 블록이 작동 완료되면, 실행 파일과 같은 위치의 'model' 폴더에 만들어지는 인공지능 모델 파일의 확장자 쌍은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① .png와 .jpg</li>
+            <li>② .h5와 .json</li>
+            <li>③ .txt와 .csv</li>
+            <li>④ .exe와 .bat</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q10. 인공지능 모델 학습 과정 중, 전체 데이터를 컴퓨터가 한 바퀴 다 돌며 공부한 횟수를 뜻하며 콘솔 창에 'Epoch 1/50' 형태로 출력되는 용어는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 에포크 (Epoch)</li>
+            <li>② 로스 (Loss)</li>
+            <li>③ 정확도 (Accuracy)</li>
+            <li>④ 스텝 (Step)</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q11. 주어진 데이터 집합 중 정답 라벨 없이 입력 데이터에서 비슷한 특징을 가지는 것끼리 그룹으로 나누는 기법은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 강화학습</li>
+            <li>② 회귀분석</li>
+            <li>③ 비슷한 것끼리 모으기 (군집화)</li>
+            <li>④ 원근 추정 변환</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q12. 인공지능이 정상적으로 잘 공부하고 있을 때, 학습 오차를 뜻하는 'Loss' 값과 예측 성공률을 뜻하는 'Accuracy' 값의 변화로 알맞은 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① Loss는 증가하고, Accuracy는 감소한다.</li>
+            <li>② Loss는 감소하고, Accuracy는 증가한다.</li>
+            <li>③ 둘 다 똑같이 늘어난다.</li>
+            <li>④ 둘 다 똑같이 줄어든다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">3단원: 사물 인식하기 (obj_data)</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q13. 컴퓨터에 연결된 카메라에 비치는 실시간 모습을 프로그램 안으로 가져오는 로보미 블록은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 이미지 표시 블록</li>
+            <li>② 파일 선택하기 블록</li>
+            <li>③ 카메라에서 이미지 가져오기 블록</li>
+            <li>④ 물체 찾기 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q14. 로보미가 카메라로 사물을 찾아내면, 사물 이름 텍스트는 화면 어느 위치에 무슨 색으로 나타나나요?</div>
+        <ul class="options-list">
+            <li>① 오른쪽 아래에 빨간색</li>
+            <li>② 좌측 상단에 초록색 글씨</li>
+            <li>③ 가운데에 노란색</li>
+            <li>④ 우측 위에 파란색</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q15. 실시간 사물인식 프로그램 실습 중, 무한 루프를 멈추고 안전하게 빠져나오기 위해 본문 코딩에서 설정한 알파벳 키는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① q 키</li>
+            <li>② s 키</li>
+            <li>③ a 키</li>
+            <li>④ 엔터 키</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q16. '물체 찾기' 블록의 빈칸 중 '모델명' 칸에 기본 다운로드 데이터셋 명칭으로 교재에서 입력한 문자열은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① my_model</li>
+            <li>② obj_data</li>
+            <li>③ yolo_data</li>
+            <li>④ camera_img</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q17. 로보미 비전 실습 중 '이미지 표시' 블록에서 분석 결과가 그려진 바인딩 화면을 띄우기 위해 매핑하는 변수 리스트의 특정 인덱스(#) 값은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 새이미지 / # : 0</li>
+            <li>② 새이미지 / # : 1</li>
+            <li>③ 결과 / # : 2</li>
+            <li>④ 파일 / # : 3</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q18. 실시간 조건문 내부에서 '키 입력 [a] 키' 블록을 조립했음에도 키가 한 번에 잘 끝나지 않는 현상에 대한 대처법으로 교재에서 설명한 팁은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 카메라 선을 뽑는다.</li>
+            <li>② 시각화 창인 'Result' 창을 마우스로 클릭하여 활성화한 뒤 a키를 여러 번 누르거나 꾹 누른다.</li>
+            <li>③ cropped 폴더를 새로 만든다.</li>
+            <li>④ 프로그램 창을 최소화해 둔다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">4단원: 데이터 수집하기</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q19. 나만의 인공지능 모델을 만들기 위해 카메라 앞에서 사물을 직접 찍어서 사진 파일로 모으는 단계를 무엇이라고 하나요?</div>
+        <ul class="options-list">
+            <li>① 문제 정의</li>
+            <li>② 데이터 수집</li>
+            <li>③ 모델 평가</li>
+            <li>④ 데이터 가공</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q20. 카메라 실시간 화면을 보다가 내가 키보드에서 '이 글자'를 누를 때마다 사진이 컴퓨터에 저장됩니다. 어떤 키일까요?</div>
+        <ul class="options-list">
+            <li>① q 키</li>
+            <li>② s 키</li>
+            <li>③ a 키</li>
+            <li>④ c 키</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q21. 사진을 찍을 때마다 'Mouse_0.png', 'Mouse_1.png' 처럼 숫자가 자동으로 바뀌어 중복 저장을 방지하는 코딩 블록 조합은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① '텍스트 만들기' 블록과 변수 '번호'</li>
+            <li>② 무작위수 뽑기 블록</li>
+            <li>③ ROI 설정 블록</li>
+            <li>④ 스도쿠 해결사 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q22. 사진을 한 장 저장한 직후, 다음 장의 숫자를 키워주기 위해 변수 '번호'의 값을 어떻게 코딩해야 하나요?</div>
+        <ul class="options-list">
+            <li>① '번호' 변수를 0으로 정하기</li>
+            <li>② '번호' 변수 값을 1만큼 바꾸기 (증가)</li>
+            <li>③ 변수 삭제하기</li>
+            <li>④ '번호' 변수를 텍스트로 바꾸기</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q23. 인공지능을 만드는 첫 번째 단계인 '문제 정의' 과정을 대충 하거나 생략했을 때 프로젝트에 어떤 오작동이 생기나요?</div>
+        <ul class="options-list">
+            <li>① 카메라가 하드웨어적으로 폭발한다.</li>
+            <li>② 기준과 가설이 섞여 실생활에서 사용할 수 없는 무의미한 인공지능 프로그램이 만들어진다.</li>
+            <li>③ 저장 사진 확장자가 모두 강제로 바뀐다.</li>
+            <li>④ 컴퓨터 모니터가 저절로 꺼진다.</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q24. 마우스 물체 인식 성능을 최대로 높이기 위해, 수집된 초기 이미지 데이터 중 정제(지워야 할) 이미지의 유형 조건으로 알맞은 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 한 장의 사진 속에 배경만 가득하고 물체가 너무 작거나 생쥐(동물) 같은 엉뚱한 노이즈가 섞인 이미지</li>
+            <li>② 선명하게 정중앙에 찍힌 표준 규격 이미지</li>
+            <li>③ 확장자가 .png로 저장된 깨끗한 이미지</li>
+            <li>④ 마우스를 정면에서 예쁘게 촬영한 이미지</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">5단원: 데이터 가공하기</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q25. 수집한 사진에서 인공지능이 공부하기에 불필요한 배경을 가위로 오려내듯 다듬어주는 전처리 가공 작업을 무엇이라고 하나요?</div>
+        <ul class="options-list">
+            <li>① 데이터 전처리</li>
+            <li>② 문제 정의</li>
+            <li>③ 강화학습</li>
+            <li>④ 모델 적용</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q26. 사진창에서 마우스로 원하는 물체 범위를 네모나게 드래그한 후, 이 영역만 저장을 확정 지을 때 누르는 키보드 조작은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① S 키나 Q 키</li>
+            <li>② 스페이스바(SPACE) 또는 엔터(ENTER)</li>
+            <li>③ C 키</li>
+            <li>④ A 키</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q27. 인공지능 비전 학습에서 우리가 '관심 영역' 또는 '원하는 부분 타겟'을 뜻하는 단어로 마우스 드래그를 통해 설정하는 이 박스의 명칭은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① YOLO</li>
+            <li>② ROI (Region Of Interest)</li>
+            <li>③ Epoch</li>
+            <li>④ Loss</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q28. 'ROI 설정' 블록을 실행하여 마우스로 사물 부분만 잘라내어 저장하면, 이 사진들은 어느 폴더 안에 차곡차곡 쌓이나요?</div>
+        <ul class="options-list">
+            <li>① model 폴더</li>
+            <li>② result 폴더</li>
+            <li>③ cropped 폴더</li>
+            <li>④ img 폴더</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q29. 폴더의 많은 파일 중 원하는 특정 확장자(예: .jpg)만 필터링하여 순서대로 목록화하기 위해 사용하는 두 블록의 연결 구조는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① '폴더의 파일 목록화' -> 목록에서 [.jpg] '문자열에서 찾기'</li>
+            <li>② '카메라에서 이미지 가져오기' -> '이미지 표시'</li>
+            <li>③ '사물인식 모델 생성' -> '폴더명 입력'</li>
+            <li>④ '이미지 스캔하기' -> '파일 선택하기'</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q30. 'ROI 설정' 가공 프로그램 도중 현재 띄워진 사진의 상태가 흔들려서 잘라내지 않고, 다음 사진으로 그냥 건너뛰고 싶을 때 누르는 키보드 약속 알파벳은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① A 키</li>
+            <li>② S 키</li>
+            <li>③ C 키</li>
+            <li>④ Q 키</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">6단원: 모델 재 생성하기</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q31. 나만의 맞춤 인공지능 사물인식 모델을 만들기 위해 가공한 사진들을 한군데 모아두기 위해 직접 새로 만드는 최상위 폴더 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① obj_data</li>
+            <li>② my_model</li>
+            <li>③ result</li>
+            <li>④ cropped</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q32. 'my_model' 폴더 아래에 'keyboard' 폴더와 'mouse' 폴더를 분리하여 만드는 이유는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 폴더의 용량을 줄이기 위해</li>
+            <li>② 인공지능에게 사물의 정답 이름(클래스)을 알려주어 분류하기 위해</li>
+            <li>③ 카메라 렌즈를 닦기 위해</li>
+            <li>④ 컴퓨터 속도를 조절하기 위해</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q33. '사물인식 모델 생성' 블록의 '폴더명' 매개변수 칸에 'my_model'을 입력하고 실행하면 컴퓨터는 어떤 연산을 시작하나요?</div>
+        <ul class="options-list">
+            <li>① 인터넷 포털 사이트 홈화면 열기</li>
+            <li>② 폴더 속에 나누어둔 사진 데이터를 학습하여 나만의 사물인식 가중치 모델 생성하기</li>
+            <li>③ 바탕화면 사진 무작위로 지우기</li>
+            <li>④ 음성인식 마이크 장치 검색하기</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q34. 'my_model' 폴더 바로 아래에 'keyboard'나 'mouse' 같은 분류용 하위 폴더 없이 사진 파일들만 마구잡이로 섞여 있을 때 발생하는 학습 오류 현상은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 자동으로 흑백 사진으로 변한다.</li>
+            <li>② 사물의 정답(분류 폴더) 구분이 불가능하여 올바른 지도학습 모델 생성이 실패한다.</li>
+            <li>③ 컴퓨터 강제 재부팅이 일어난다.</li>
+            <li>④ 스도쿠 해결사가 강제로 켜진다.</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q35. 나만의 사물인식 학습 데이터로 모델 재 생성을 완료했을 때, 인공지능 구동 프로그램 백엔드 환경에서 결과물로 최종 저장해 주는 파일 확장자 쌍은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① .png, .jpg</li>
+            <li>② .txt, .csv</li>
+            <li>③ .h5, .json</li>
+            <li>④ .py, .exe</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q36. 모델 생성 코드가 끝까지 실행을 완료하고 터미널 콘솔창에서 멈추었을 때, 프로그램을 정상적으로 빠져나오기 위해 입력해야 하는 최종 키보드 버튼은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 스페이스바</li>
+            <li>② 엔터(Enter) 키</li>
+            <li>③ Q 키</li>
+            <li>④ ESC 키</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">7단원: 사물 (다시) 인식하기</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q37. 내가 새로 다듬어 만든 나만의 인공지능 모델 파일을 불러와 실시간 카메라로 물체를 탐지할 때 조립하는 핵심 인식 블록은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 사물인식(YOLO) 블록</li>
+            <li>② 물체 찾기 블록</li>
+            <li>③ ROI 설정 블록</li>
+            <li>④ 이미지 스캔하기 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q38. 내가 직접 빌드한 모델로 물체를 식별하기 위해 '물체 찾기' 블록의 '모델명' 칸에 적어야 하는 문자열 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① obj_data</li>
+            <li>② my_model</li>
+            <li>③ keyboard</li>
+            <li>④ mouse</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q39. 무한 반복 루프 구조 내에서 실시간 카메라 영상을 연속적으로 분석하여 최종 바인딩 처리된 화면을 스크린에 출력해 주는 핵심 블록은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 이미지 표시 블록</li>
+            <li>② 파일 선택하기 블록</li>
+            <li>③ 사물인식 모델 생성 블록</li>
+            <li>④ 다음 내용 출력 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q40. 나만의 사물 다시 인식하기 실시간 프로그램 작동 도중 루프를 중단하고 안전하게 빠져나오기 위해 입력하는 키보드 약속 문자는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① q 키</li>
+            <li>② s 키</li>
+            <li>③ a 키</li>
+            <li>④ c 키</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q41. 나만의 사물인식 모델 프로그램이 'keyboard'와 'mouse' 사물을 완벽하게 구별하여 사물 인식을 수행하기 위한 사전 조건이 아닌 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① model 폴더 내부에 나만의 학습 모델 가중치 파일(.h5, .json)이 준비되어 있어야 함</li>
+            <li>② 코드 상의 '모델명' 매개변수 칸에 'my_model' 텍스트를 논리적으로 매칭해두어야 함</li>
+            <li>③ 10단원의 스도쿠 해결사 블록을 조립하여 외곽선 마방진 필터를 사전에 거쳐야만 추론이 작동함</li>
+            <li>④ 컴퓨터에 정상적으로 카메라 하드웨어가 연결되어 이미지를 받아와야 함</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q42. 실시간 루프 작동 도중 종료 키인 'a 키' 제어 동작이 원활하게 컴퓨터에 전송되지 않고 지연될 때 교재에서 알려준 조치 행동 가이드는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 카메라를 손으로 가린다.</li>
+            <li>② 팝업된 실시간 윈도우 창인 'Result' 창을 마우스로 한 번 클릭하여 컴퓨터 활성화 포커스를 맞춘 후 a키를 여러 번 누른다.</li>
+            <li>③ cropped 폴더의 이름을 지운다.</li>
+            <li>④ 컴퓨터 본체의 전원 스위치를 끈다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">8단원: 스캔 도우미</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q43. 카메라로 삐딱하게 기울여 찍은 책이나 영수증 사진을 스캐너로 밀어낸 것처럼 반듯한 평면 형태로 펴주는 기술의 명칭은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 패턴 인식</li>
+            <li>② 원근 변환</li>
+            <li>③ 광학 문자 인식</li>
+            <li>④ 텍스트 토큰화</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q44. 스캔할 사진창이 나타났을 때, 내가 반듯하게 펴고 싶은 가이드라인 네 모서리 모퉁이 점을 찍는 올바른 방향 회전 순서는 어떻게 되나요?</div>
+        <ul class="options-list">
+            <li>① 왼쪽 위 모서리부터 시계 방향으로 콕콕콕콕 4개 찍기</li>
+            <li>② 오른쪽 아래 모서리부터 시계 반대 방향으로 찍기</li>
+            <li>③ 아무 데나 손가는 대로 4개 찍기</li>
+            <li>④ 대각선 지그재그 방향 순서로 4개 찍기</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q45. '이미지 스캔하기' 블록에 입력 자료로 연결하여, 사용자가 컴퓨터 탐색기 창에서 원하는 가공 사진 파일을 직접 선택하도록 연동하는 블록은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 사물인식 모델 생성 블록</li>
+            <li>② 파일 선택하기 블록</li>
+            <li>③ 물체 찾기 블록</li>
+            <li>④ 키 입력 확인 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q46. 모서리 영역에 초록색 타겟 점들을 찍다가 마우스 마킹 위치를 실수했을 때, 찍혀있던 점들을 한 번에 싹 지우고 처음부터 리셋하는 마우스 조작법은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 마우스 왼쪽 버튼 더블 클릭</li>
+            <li>② 마우스 오른쪽 버튼 단일 클릭</li>
+            <li>③ 마우스 휠 스크롤 회전</li>
+            <li>④ 마우스 드래그 박스 그리기</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q47. 스캔 도우미 프로그램에서 종이를 평평하고 반듯한 사각형으로 펴기 위해 마우스로 최종 찍어야 하는 점의 개수는 몇 개인가요?</div>
+        <ul class="options-list">
+            <li>① 2개</li>
+            <li>② 3개</li>
+            <li>③ 4개</li>
+            <li>④ 9개</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q48. 스캔 도우미 코딩을 완료하여 사각형 매핑 연산 처리가 모두 완수된 최종 스캔 파일이 저장되는 기본 저장위치 폴더 이름은 어디인가요?</div>
+        <ul class="options-list">
+            <li>① 로보미 아바타 실행 디렉토리의 result 폴더 내부</li>
+            <li>② 바탕화면의 img 폴더</li>
+            <li>③ my_model 내부의 cropped 폴더</li>
+            <li>④ model 폴더</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">9단원: 숫자 인식</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q49. 사진창에 적혀있는 문서의 글자나 인쇄된 숫자들을 인공지능이 컴퓨터 텍스트 데이터 문자로 읽어오는 광학 문자 인식 기술의 약어는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① YOLO</li>
+            <li>② OCR</li>
+            <li>③ k-NN</li>
+            <li>④  Ursina</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q50. '문자&숫자 인식' 블록 메뉴에서 인공지능에게 식별을 원하는 언어로 기본 지정 및 변경할 수 있는 매개변수 종류 3가지는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 한국어, 영어, 숫자</li>
+            <li>② 한국어, 영어, 일본어</li>
+            <li>③ 중국어, 영어, 한자</li>
+            <li>④ 기호, 이진수, 텍스트</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q51. 숫자 인식 블록 코드가 구동되어 띄워진 숫자판 이미지창에서, 내가 타겟으로 잡은 특정 숫자 영역을 지정하고 마우스 드래그를 마친 후 컴퓨터에게 읽기를 확정시키는 키는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① A 키 또는 Q 키</li>
+            <li>② 스페이스바(SPACE) 또는 엔터(ENTER)</li>
+            <li>③ C 키</li>
+            <li>④ S 키</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q52. '문자&숫자 인식' 블록이 추출한 최종 글자 결과 데이터를 우리 눈으로 파악하도록 컴퓨터 콘솔창 화면에 글자로 인쇄해 주는 출력 블록 명칭은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 이미지 표시 블록</li>
+            <li>② 다음 내용 출력 블록</li>
+            <li>③ ROI 설정 블록</li>
+            <li>④ 물체 찾기 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q53. 교재에서 광학 문자 인식(OCR)의 핵심 기반 알고리즘으로 소개한 기술로, 이미지, 문자 등 원래 사진이나 글자 속에서 규칙성을 찾아 구별하는 기술 명칭은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 텍스트 토큰화</li>
+            <li>② 패턴 인식 (Pattern Recognition)</li>
+            <li>③ 원근 변환 행렬</li>
+            <li>④ 강화학습 보상 기법</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q54. 교재 실습 가이드에 등장하는 예제 비전 파일인 '숫자.PNG'를 파일 디렉토리 에러 없이 정상적으로 불러오기 위해 사진 파일을 미리 넣어두어야 하는 약속된 하위 폴더는 어디인가요?</div>
+        <ul class="options-list">
+            <li>① model 폴더</li>
+            <li>② result 폴더</li>
+            <li>③ img 폴더</li>
+            <li>④ cropped 폴더</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">10단원: 스도쿠 해결사</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q55. 가로 9칸, 세로 9칸 사각형 표 내부에서 1부터 9까지의 숫자가 행과 열, 격자에 중복 마킹 없이 가득 채워 넣는 연산 퍼즐의 명칭은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 테트리스</li>
+            <li>② 스도쿠 (Sudoku)</li>
+            <li>③ 가로세로 낱말 맞추기</li>
+            <li>④ 블록 미로 찾기</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q56. '스도쿠 해결사' 블록을 배치하고 사진을 주입하면 인공지능 퍼즐 엔진이 빈칸을 계산해 줍니다. 이때 화면에 정답 숫자가 채워져 나타나는 글자 색깔은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 빨간색</li>
+            <li>② 초록색</li>
+            <li>③ 파란색</li>
+            <li>④ 노란색</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q57. '스도쿠 해결사' 블록의 '스도쿠 파일명' 매개변수 빈칸에 퍼즐 사진을 넣어주기 위해 아래에 레고 조각처럼 조립해 붙이는 연동 블록 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 폴더의 파일 목록화 블록</li>
+            <li>② 파일 선택하기 블록</li>
+            <li>③ 이미지 스캔하기 블록</li>
+            <li>④ 카메라에서 이미지 가져오기 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q58. 불러온 스도쿠 그림의 화질 저하나 각도 불일치 등의 노이즈로 인해 인공지능 비전이 스도쿠 격자판 윤곽 테두리 자체를 검출해 내지 못했을 때 콘솔창에 인쇄되는 경고 단어는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① error sudoku</li>
+            <li>② no sudoku</li>
+            <li>③ fail image</li>
+            <li>④ zero table</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q59. 스도쿠 해결 엔진 프로그램에서 테두리 격자선은 올바르게 찾았으나, 개별 빈칸 속 숫자 데이터의 OCR 해독에 노이즈를 유발하여 최종 해결 실패를 일으키는 이미지적 요인이 아닌 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 사람이 흘려 쓴 특이한 손글씨 서체나 화질 저하</li>
+            <li>② 이미지 속에 혼입된 투명 워터마크 노이즈</li>
+            <li>③ 가로 세로 3x3 조건이 수학적으로 딱 떨어지게 유일한 정답을 가진 깨끗한 스도쿠 파일 이미지</li>
+            <li>④ 스도쿠 칸 내부 글씨가 너무 흐릿하게 번져있는 상태</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q60. 10단원 보너스 수학 퀴즈 단락에 수록된 개념으로, 사각형 격자 칸에 숫자를 중복 없이 채워 가로, 세로, 대각선 라인의 모든 숫자의 합이 일치하도록 설계하는 수학 퍼즐의 정식 명칭은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 마방진 (Magic Square)</li>
+            <li>② 사각형 격자 배열</li>
+            <li>③ 원근 투영 배열</li>
+            <li>④ 숫자 연합 필터</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">11단원: AI 오목</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q61. 오목 게임은 한 방향으로 같은 색깔 돌을 몇 개 먼저 나란히 놓아야 이기나요?</div>
+        <ul class="options-list">
+            <li>① 3개</li>
+            <li>② 4개</li>
+            <li>③ 5개</li>
+            <li>④ 6개</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q62. 인공지능 오목 프로그램을 만들 때 사용한 오픈소스 게임 엔진의 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 우르시나 엔진</li>
+            <li>② 오목 엔진</li>
+            <li>③ 엔트리 엔진</li>
+            <li>④ 스크래치 엔진</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q63. AI 오목에서 바둑판 상태를 입력받아 컴퓨터가 최적의 자리를 계산할 수 있게 만드는 딥러닝 기술의 신경망 구조 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 패턴 신경망</li>
+            <li>② 심층 인공신경망 (DNN)</li>
+            <li>③ 원근 변환 망</li>
+            <li>④ 스도쿠 해결망</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q64. 컴퓨터가 행동을 취한 뒤 상이나 벌을 받으며 스스로 최선의 비법을 알아내는 기계학습 방법은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 비지도학습</li>
+            <li>② 강화학습</li>
+            <li>③ 지도학습</li>
+            <li>④ 문자인식학습</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q65. 강화학습에서 현재 주위 환경을 살피고 결정을 내려 행동을 직접 실행하는 주인공(주체)을 무엇이라고 부르나요?</div>
+        <ul class="options-list">
+            <li>① 에이전트 (Agent)</li>
+            <li>② 환경 (Environment)</li>
+            <li>③ 보상 데이터</li>
+            <li>④ 라벨</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q66. 오픈소스 게임 엔진인 '우르시나 엔진'의 설명으로 교재에 나온 내용 중 가장 알맞은 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 공개된 코드로 이루어져 있어 누구나 제한 없이 고쳐 쓸 수 있다.</li>
+            <li>② 매달 정해진 돈을 내야만 쓰는 유료 프로그램이다.</li>
+            <li>③ 2D 게임만 만들 수 있고 3D 게임은 전혀 만들 수 없다.</li>
+            <li>④ 로보미 아바타와 별도로 전용 카메라 장비가 있어야만 작동한다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">12단원: 동작 감지 CCTV</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q67. 동작 감지 CCTV 화면에 움직임이 생겼을 때, 좌측 상단에 자동으로 나타나는 영어 문구는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① Hello!</li>
+            <li>② Motion Detected!</li>
+            <li>③ Sudoku Clear</li>
+            <li>④ Exit Program</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q68. 움직임이 발견되어 작동한 결과물이 출력되는 화면 창의 타이틀 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① result</li>
+            <li>② motion</li>
+            <li>③ camera</li>
+            <li>④ cctv</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q69. 'CCTV 설정' 블록 안에 들어있는 두 가지 숫자는 각각 무엇을 결정하는 항목인가요?</div>
+        <ul class="options-list">
+            <li>① 카메라 밝기, 사진 크기</li>
+            <li>② 감도 (빛을 느끼는 정도), 최소 범위 (뭉쳐있는 픽셀 수)</li>
+            <li>③ 모니터 해상도, 저장 시간</li>
+            <li>④ 정확도 점수, 에포크 횟수</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q70. 동작 감지 CCTV 코드를 켰을 때, 실행 에러가 나거나 켜지지 않는 가장 대표적인 환경적 원인은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 컴퓨터에 연결된 다른 앱이 카메라를 이미 독점해서 사용 중일 때</li>
+            <li>② 감도 숫자를 25로 적었을 때</li>
+            <li>③ 마이크 볼륨이 너무 작을 때</li>
+            <li>④ 키보드의 Q 키가 고장 났을 때</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q71. 'CCTV 설정' 블록에서 '최소 범위'라는 말의 정의를 교재 이론 팁에 나온 대로 알맞게 설명한 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 카메라 렌즈가 사물을 볼 수 있는 가장 가까운 거리</li>
+            <li>② 화면 안에서 동작 변화가 일어나 뭉쳐있는 픽셀의 개수</li>
+            <li>③ 동영상이 녹화되는 최소 시간</li>
+            <li>④ 무한 루프 블록이 반복되는 최소 횟수</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q72. 동작 감지 CCTV 프로그램에서 화면 속 움직임을 연속적으로 포착해내기 위해 'CCTV 화면' 블록을 조립해야 하는 제어 구조는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 한 번만 실행되는 순차 구조</li>
+            <li>② 동안 반복 참 (무한 반복) 루프 구조</li>
+            <li>③ 만약~라면 조건 구조</li>
+            <li>④ 새로운 변수 만들기 구조</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">13단원: 배경 제거</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q73. 카메라 화면에서 사람만 남기고, 주변 배경을 안 보이게 흐릿하게 처리해 주는 블록은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 오목 블록</li>
+            <li>② 배경 제거 블록</li>
+            <li>③ CCTV 블록</li>
+            <li>④ 음성 입력 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q74. 사진이나 화면에서 배경을 안개처럼 뿌옇고 흐릿하게 만드는 디자인 효과를 무엇이라고 부르나요?</div>
+        <ul class="options-list">
+            <li>① 원근 효과</li>
+            <li>② 흐림 효과</li>
+            <li>③ 반짝 효과</li>
+            <li>④ 무지개 효과</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q75. '배경 제거' 블록을 코딩하여 무한 반복문 안에 넣기 전에, 제일 위쪽 바깥에 가장 먼저 조립해 두어야 하는 선행 설정 블록의 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 배경 제거 설정</li>
+            <li>② 가상 키보드 설정</li>
+            <li>③ 손동작 인식 설정</li>
+            <li>④ 오목 설정</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q76. 배경 제거 프로그램의 블록 조립 순서가 올바른 논리적 흐름으로 연결된 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 배경 제거 설정 -> 카메라에서 이미지 가져오기 -> 배경 제거 -> 이미지 표시</li>
+            <li>② 이미지 표시 -> 파일 선택하기 -> 배경 제거 -> 종료</li>
+            <li>③ 가위바위보 설정 -> 배경 제거 -> 무한 루프</li>
+            <li>④ 배경 제거 ->감도 조절 -> 문자 출력 -> 종료</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q77. '배경 제거' 블록은 인공지능이 화면 속 사진을 픽셀 단위로 구별하여 처리합니다. 이때 인공지능이 나누는 두 가지 핵심 영역은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 사진의 파일 크기와 확장자 영역</li>
+            <li>② 사람 영역(인물)과 배경 영역</li>
+            <li>③ 카메라 렌즈 영역과 모니터 창 영역</li>
+            <li>④  소리 주파수 영역과 글자 텍스트 영역</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q78. 프로그램 실행을 끝내려고 종료 키를 눌렀는데 반응이 없을 때, 교재에서 안내한 가장 정확한 조치 행동은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 카메라 선을 뽑는다.</li>
+            <li>② 시각화 화면인 'Result' 창을 마우스로 클릭해 활성화한 후 종료 키를 여러 번 누르거나 꾹 누른다.</li>
+            <li>③ 배경 제거 설정 블록을 삭제한다.</li>
+            <li>④  cropped 폴더에 있는 파일을 지운다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">14단원: 몸동작 인식</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q79. 카메라 앞 사람의 팔다리 관절 위치를 짚어내어 동그란 점과 선으로 이어주는 인공지능 기술은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 스도쿠 해결사</li>
+            <li>② 몸동작 인식</li>
+            <li>③ 원근 변환</li>
+            <li>④ 음성인식 챗봇</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q80. '몸동작 설정' 블록을 쓰면 내 몸 관절에 그려지는 선과 점의 어떤 형태를 바꿀 수 있나요?</div>
+        <ul class="options-list">
+            <li>① 선과 점의 이름</li>
+            <li>② 원의 반지름 크기와 선의 두께</li>
+            <li>③ 선이 화면에서 사라지는 시간</li>
+            <li>④ 관절의 영어 스펠링</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q81. 교재에 적힌 몸동작 포즈 분류 3단계 순서 중 '변환된 데이터를 사용하여 분류하고 숫자를 세는' 단계는 몇 번째 단계인가요?</div>
+        <ul class="options-list">
+            <li>① 1단계</li>
+            <li>② 2단계</li>
+            <li>③ 3단계</li>
+            <li>④ 준비 단계</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q82. 데이터가 살고 있는 공간에서 내가 궁금한 정답과 가장 가까이에 뭉쳐있는 이웃들을 찾아내어 종류를 맞추는 알고리즘의 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① YOLO 알고리즘</li>
+            <li>② k-최근접 이웃 알고리즘 (k-NN)</li>
+            <li>③ 탐욕 알고리즘</li>
+            <li>④ 백트래킹 알고리즘</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q83. k-최근접 이웃 알고리즘에서 주변의 요소를 몇 개 골라서 볼 것인가를 뜻하는 기준 변수(k값)를 바꾸면 어떤 일이 일어나나요?</div>
+        <ul class="options-list">
+            <li>① 컴퓨터 그래픽 화질이 강제로 좋아진다.</li>
+            <li>② 주변 요소를 몇 개 보느냐에 따라 정답을 예측하는 최종 분류 결과가 바뀔 수 있다.</li>
+            <li>③ 오목 게임 프로그램이 강제로 실행된다.</li>
+            <li>④ 변수 '번호'의 값이 자동으로 지워진다.</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q84. 교재 예시 그림 가이드 설명에 따르면, 기준 범위를 아주 좁게 잡아서 바로 옆 딱 1개만 볼 때(k=1)와 조금 더 넓혀 3개를 볼 때(k=3)의 정답 판단 모양은 각각 어떻게 다른가요?</div>
+        <ul class="options-list">
+            <li>① k=1일 때는 세모, k=3일 때는 네모</li>
+            <li>② k=1일 때는 동그라미, k=3일 때는 세모</li>
+            <li>③ k=1일 때는 네모, k=3일 때는 동그라미</li>
+            <li>④ 둘 다 아무것도 구별하지 못함</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">15단원: 손동작 인식하기</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q85. 카메라에 손을 보여주었을 때 손가락 관절 마디마다 원과 선으로 예쁘게 그려주는 블록은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 배경 감지 블록</li>
+            <li>② 손동작 인식 블록</li>
+            <li>③ CCTV 출력 블록</li>
+            <li>④ 음성 변환 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q86. 내 손을 움직여서 나의 생각이나 명령을 다른 사람에게 전달하는 행동 언어를 뜻하는 영단어는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 패턴</li>
+            <li>② 제스처 (Gesture)</li>
+            <li>③ 에이전트</li>
+            <li>④ 랜드마크</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q87. '손동작 인식 설정' 블록을 배치할 때, 컴퓨터에게 한 화면에서 몇 개의 손까지 찾아낼지 지정하는 매개변수 빈칸의 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 카메라 렌즈 번호</li>
+            <li>② 인식 가능한 최대 손 개수</li>
+            <li>③ 원의 반지름 두께</li>
+            <li>④ 종료 알파벳</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q88. 손동작 인식 실습용 기본 단일 손 코딩 중, '손동작 인식 설정' 블록의 '최대 손 개수' 칸에 적혀있는 기본 숫자는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 1</li>
+            <li>② 2</li>
+            <li>③ 5</li>
+            <li>④ 10</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q89. 컴퓨터가 카메라 속 이미지에서 내가 무슨 손동작을 취했는지 맞추기 위해 실시간으로 알아내고 추적하는 손의 정보 3가지는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 손의 픽셀 용량, 만든 날짜, 촬영 폴더</li>
+            <li>② 손의 위치, 손의 모양, 손의 궤적 (움직이는 길)</li>
+            <li>③ 손가락의 표면 온도, 마이크 크기, 목소리 주파수</li>
+            <li>④ 손에 연결된 유선 마우스의 이름과 확장자</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q90. 무한 반복 루프 제어문 안에서 '손동작 인식' 블록이 정상 실행되었을 때 화면에 시각적으로 나타나는 확실한 특징은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 화면에 비친 손가락 관절 마디마다 동그란 원과 선이 그려져서 손 모양을 따라다닌다.</li>
+            <li>② 손 영역만 가위로 오려낸 뒤 흑백 사진으로 지워버린다.</li>
+            <li>③ 손이 움직일 때마다 'Motion Detected!'라고 경고창이 뜬다.</li>
+            <li>④ 오목판을 화면에 자동으로 생성한다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">16단원: 가위바위보</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q91. 손 모양을 가위, 바위, 보 모양으로 바꾸어 서로 물리며 승부를 겨루는 게임은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 오목</li>
+            <li>② 가위바위보</li>
+            <li>③ 스도쿠</li>
+            <li>④ CCTV 감지</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q92. 나와 친구 둘이서 가위바위보 대결을 하려면 '최대 손 개수' 설정 칸의 숫자를 얼마로 적어야 할까요?</div>
+        <ul class="options-list">
+            <li>① 1개</li>
+            <li>② 2개</li>
+            <li>③ 3개</li>
+            <li>④ 4개</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q93. '가위 바위 보' 전용 인공지능 블록이 카메라 화면을 보면서 가장 집중해서 처리하는 두 가지 핵심 행동은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 화면 속 손을 2개 찾아서 무슨 모양인지 인식하고 서로 비교하여 승패 내기</li>
+            <li>② 손 사진을 1장만 찍어 크롭 폴더에 집어넣기</li>
+            <li>③ 마이크 소리를 듣고 가위바위보 텍스트로 바꾸기</li>
+            <li>④ 바둑판 격자를 찾아 우르시나 게임 엔진에 알려주기</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q94. 가위바위보 게임을 재미있게 하다가 무한 반복을 끊고 코딩을 끝내기 위해 'Result' 창을 누르고 입력하는 알파벳 키는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① a 키</li>
+            <li>② s 키</li>
+            <li>③ q 키</li>
+            <li>④ c 키</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q95. 교재 이론 팁(TIP) 가이드에 적혀있는 가위바위보의 순환 상성 관계의 기호 표현 규칙으로 옳은 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① (가위 < 바위 < 보 < 가위)</li>
+            <li>② (보 < 가위 < 바위 < 보)</li>
+            <li>③ (바위 < 가위 < 보 < 바위)</li>
+            <li>④ 셋 다 비겨서 똑같다</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q96. 가위바위보 코딩 블록을 실행했는데, 화면에 한 사람의 손만 나오거나 반대로 세 명 이상의 손이 들어오면 프로그램 판단이 어떻게 되나요?</div>
+        <ul class="options-list">
+            <li>① 자동으로 흑백 흐림 효과가 최대로 적용된다.</li>
+            <li>② 블록이 정상 실행되기 위한 조건인 '손 2개 감지'가 이루어지지 않아 승패 비교가 제대로 실행되지 않는다.</li>
+            <li>③ 자동으로 오목 게임 화면으로 전환된다.</li>
+            <li>④ 변수 '번호'의 숫자가 1만큼 저절로 줄어든다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">17단원: 가상 키보드</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q97. 화면에 투명한 자판을 띄워두고 카메라에 대고 손가락을 움직여 글자를 입력하는 똑똑한 블록의 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 동작 CCTV 블록</li>
+            <li>② 배경 제거 블록</li>
+            <li>③ 가상 키보드 블록</li>
+            <li>④ 스도쿠 해결 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q98. 가상 키보드 화면에서 원하는 글자 버튼을 '클릭(선택)'하고 싶을 때, 어떤 손가락을 아래쪽으로 내리면 될까요?</div>
+        <ul class="options-list">
+            <li>① 엄지손가락</li>
+            <li>② 검지손가락</li>
+            <li>③ 새끼손가락</li>
+            <li>④ 약손가락</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q99. '가상 키보드' 기능이 컴퓨터 안에서 제대로 움직일 수 있도록 루프문 바깥 제일 상단에 열어두어야 하는 열쇠 블록은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 가상 키보드 설정</li>
+            <li>② 손동작 인식 설정</li>
+            <li>③ CCTV 설정</li>
+            <li>④ 배경 제거 설정</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q100. 가상 키보드 순서도 가이드에서 알려주는 반복문 내부의 올바른 3단계 프로그램 실행 순서는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 카메라에서 이미지 가져오기 -> 가상 키보드 작동 -> 이미지 표시</li>
+            <li>② 파일 선택하기 -> 이미지 스캔하기 -> 출력하기</li>
+            <li>③ 모델 생성하기 -> 영역 지정하기 -> cropped 폴더 저장</li>
+            <li>④ 음성인식 켜기 -> 안녕 확인 -> 인사말 출력</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q101. 교재 '사용 방법'에 적혀있는 가상 키보드가 글자를 타이핑했다고 인식하는 기준이 되는 손가락 위의 랜드마크 컬러 점 조합은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 손목의 파란색 점을 기준으로 손을 흔든다.</li>
+            <li>② 손가락 중지의 '노란색 점'을 기준으로 '검지손가락'을 밑으로 내린다.</li>
+            <li>③ 엄지손가락의 빨간색 점이 화면 밖으로 멀어진다.</li>
+            <li>④ 마우스 오른쪽 버튼을 혼자서 두 번 클릭한다.</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q102. 가상 키보드 프로그램이 정상 작동하여 글자를 적기 위해 사용자가 화면 앞에서 손을 다룰 때 주의해야 할 행동 수칙은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 마이크에 대고 글자를 크게 읽어야 한다.</li>
+            <li>② 카메라 화면 자판 위치에 내 손의 점들이 잘 보이도록 손을 띄우고 조건에 맞춰 검지를 움직인다.</li>
+            <li>③ 스도쿠 사진을 카메라 렌즈 앞에 바짝 붙인다.</li>
+            <li>④ 배경을 완전하게 흐리게 만드는 블록을 중간에 강제로 조립한다.</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">18단원: 음성인식</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q103. 사람이 마이크에 대고 말하는 노랫소리나 목소리를 알아듣고 컴퓨터 글자로 바꾸어주는 기능을 무엇이라고 하나요?</div>
+        <ul class="options-list">
+            <li>① 원근 조절 변환</li>
+            <li>② 패턴 모양 인식</li>
+            <li>③ 음성인식</li>
+            <li>④ 경계 상자 추적</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q104. '음성인식' 블록 목록 안에 내장되어 선택할 수 있는 나라별 언어의 개수는 총 몇 가지인가요?</div>
+        <ul class="options-list">
+            <li>① 2가지</li>
+            <li>② 3가지</li>
+            <li>③ 4가지</li>
+            <li>④ 5가지</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q105. '음성인식' 블록 메뉴에서 인공지능이 알아듣도록 선택할 수 있는 교재 지원 4대 언어가 아닌 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 한국어</li>
+            <li>② 영어</li>
+            <li>③ 독일어</li>
+            <li>④ 중국어 및 일본어</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q106. 음성인식 블록을 켜고 검은색 컴퓨터 실행창에 어떤 문구가 등장했을 때 말을 시작해야 목소리가 녹음될까요?</div>
+        <ul class="options-list">
+            <li>① Motion Detected!</li>
+            <li>② 말씀해주세요...</li>
+            <li>③ Press enter to exit!</li>
+            <li>④ error sudoku</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q107. 교재 설명란에 적힌 '음성인식 기술'의 가장 올바른 정의 및 설명은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 단순히 목소리의 크기만 재서 숫자로 바꾸는 기술이다.</li>
+            <li>② 기계가 음성 신호를 입력으로 받아들여 다양한 기계학습 기술을 통해 의미 있는 텍스트나 명령어 정보로 변환하는 기술이다.</li>
+            <li>③ 컴퓨터에 적힌 글씨를 사람이 듣는 스피커 오디오 파일로 저장하는 기술이다.</li>
+            <li>④ 카메라에서 찍은 사진의 색깔 채널을 마음대로 섞어주는 기술이다.</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q108. 음성인식 블록을 실행했을 때, 인공지능이 내 소리를 전혀 듣지 못하고 에러 메시지를 내보내는 원인에 해당하지 않는 상황은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 컴퓨터에 마이크 하드웨어가 없거나 선이 제대로 안 꽂혀있을 때</li>
+            <li>② 내가 말하는 도중에 주위의 시끄러운 소음이나 다른 소리가 마이크에 섞여 들어갔을 때</li>
+            <li>③ 코딩 블록 메뉴에서 선택한 언어가 아닌 엉뚱한 외국어로 말을 했을 때</li>
+            <li>④ 내 컴퓨터 카메라의 화질 해상도가 너무 낮아서 촬영이 잘 안 될 때</li>
+        </ul>
+    </div>
+</div>
+<div class="chapter-section">
+    <div class="chapter-title">19단원: 음성인식 챗봇</div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q109. 음성인식 챗봇에게 내가 마이크로 "안녕"이라고 말을 걸었을 때, 컴퓨터가 화면에 답변해 주는 문장은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 종료합니다.</li>
+            <li>② 안녕하세요!</li>
+            <li>③ 다시 한번 말씀해 주세요.</li>
+            <li>④ 반복을 끝냅니다.</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-초등">기초 (초등)</span> Q110. 챗봇 프로그램을 완전히 종료시키고 싶을 때 마이크에 대고 크게 외쳐야 하는 약속 단어는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 안녕</li>
+            <li>② 시작</li>
+            <li>③ 종료</li>
+            <li>④ 취소</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q111. 음성인식 챗봇 코딩 중 인공지능이 내 발음을 이해하지 못했거나 약속된 단어가 아닐 때, '아니라면' 조건에 걸려 출력되는 문구는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 안녕하세요!</li>
+            <li>② 종료합니다.</li>
+            <li>③ 다시 한번 말씀해 주세요.</li>
+            <li>④ 말씀해주세요...</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등">응용 (중등)</span> Q112. 사용자가 마이크에 대고 '종료'라고 말했을 때, 무한 루프 굴레를 안전하게 부수고 탈출하기 위해 조립한 주황색 제어 블록 이름은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 동안 반복 블록</li>
+            <li>② 반복 종료 블록</li>
+            <li>③ 변수 정하기 블록</li>
+            <li>④ 이미지 표시 블록</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q113. 교재에 적힌 음성인식 챗봇의 3단 분기 조건 구조의 작동 규칙으로 가장 알맞은 것은 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① 음성 변수 값이 마우스 사진 데이터인지 확인한다.</li>
+            <li>② 내가 말한 텍스트 내용이 '안녕'일 때, '종료'일 때, 그 외의 다른 발음일 때 각각 정해진 대답을 하도록 컴퓨터가 위에서부터 순서대로 판단한다.</li>
+            <li>③ 수학 마방진 행렬의 정답 칸을 비교한다.</li>
+            <li>④ CCTV 감도 수치를 25와 비교한다.</li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-header"><span class="badge badge-중등심화">중등 심화 (조정)</span> Q114. 음성인식 챗봇 프로그램이 '종료합니다' 문구를 내보내며 완전히 멈추기 바로 직전, 콘솔 창 맨 아랫줄에 출력되는 최종 대기용 시스템 영어 문구는 무엇인가요?</div>
+        <ul class="options-list">
+            <li>① Motion Detected!</li>
+            <li>② Press enter to exit!</li>
+            <li>③ error sudoku</li>
+            <li>④ Camera Open</li>
+        </ul>
+    </div>
+</div>
+
+    <div class="answer-sheet">
+        <h2>정답지 (선생님 배포용 올인원 마킹 가이드)</h2>
+        <div class="answer-grid">
+            <div class="answer-item"><strong>Q1 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q2 [초등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q3 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q4 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q5 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q6 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q7 [초등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q8 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q9 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q10 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q11 [중등심화]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q12 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q13 [초등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q14 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q15 [중등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q16 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q17 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q18 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q19 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q20 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q21 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q22 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q23 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q24 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q25 [초등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q26 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q27 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q28 [중등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q29 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q30 [중등심화]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q31 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q32 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q33 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q34 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q35 [중등심화]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q36 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q37 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q38 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q39 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q40 [중등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q41 [중등심화]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q42 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q43 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q44 [초등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q45 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q46 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q47 [중등심화]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q48 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q49 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q50 [초등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q51 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q52 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q53 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q54 [중등심화]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q55 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q56 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q57 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q58 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q59 [중등심화]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q60 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q61 [초등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q62 [초등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q63 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q64 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q65 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q66 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q67 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q68 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q69 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q70 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q71 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q72 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q73 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q74 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q75 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q76 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q77 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q78 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q79 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q80 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q81 [중등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q82 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q83 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q84 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q85 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q86 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q87 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q88 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q89 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q90 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q91 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q92 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q93 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q94 [중등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q95 [중등심화]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q96 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q97 [초등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q98 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q99 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q100 [중등]</strong><br>정답 (1번)</div>
+            <div class="answer-item"><strong>Q101 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q102 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q103 [초등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q104 [초등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q105 [중등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q106 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q107 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q108 [중등심화]</strong><br>정답 (4번)</div>
+            <div class="answer-item"><strong>Q109 [초등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q110 [초등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q111 [중등]</strong><br>정답 (3번)</div>
+            <div class="answer-item"><strong>Q112 [중등]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q113 [중등심화]</strong><br>정답 (2번)</div>
+            <div class="answer-item"><strong>Q114 [중등심화]</strong><br>정답 (2번)</div>

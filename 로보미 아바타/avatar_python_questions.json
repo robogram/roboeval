@@ -1,0 +1,3362 @@
+[
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q001",
+    "day": 1,
+    "order": 1,
+    "type": "객관식",
+    "content": "파이썬에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "그림만 그리는 프로그램",
+      "사람이 컴퓨터에 명령을 내리기 위한 프로그래밍 언어",
+      "인터넷 주소의 한 종류",
+      "키보드의 이름"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q002",
+    "day": 1,
+    "order": 2,
+    "type": "객관식",
+    "content": "프로그래밍 언어의 역할은?",
+    "choices": [
+      "사람의 명령을 컴퓨터가 실행할 수 있게 표현한다",
+      "컴퓨터 전원을 공급한다",
+      "화면의 먼지를 없앤다",
+      "파일을 종이에 인쇄만 한다"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q003",
+    "day": 1,
+    "order": 3,
+    "type": "객관식",
+    "content": "초보자가 파이썬을 배우기 좋은 이유는?",
+    "choices": [
+      "반드시 영어를 완벽히 해야 한다",
+      "숫자를 사용할 수 없다",
+      "게임만 만들 수 있다",
+      "문법이 비교적 간결하고 읽기 쉽다"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q004",
+    "day": 1,
+    "order": 4,
+    "type": "객관식",
+    "content": "교재에서 소개하는 파이썬 활용으로 알맞지 않은 것은?",
+    "choices": [
+      "간단한 게임 만들기",
+      "데이터 다루기",
+      "컴퓨터 부품을 손으로 조립하기",
+      "업무 자동화하기"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q005",
+    "day": 1,
+    "order": 5,
+    "type": "객관식",
+    "content": "프로그램이 작동하는 기본 순서로 알맞은 것은?",
+    "choices": [
+      "결과 확인 → 코드 삭제 → 전원 끄기",
+      "코드 작성 → 실행 → 결과 확인",
+      "설치 삭제 → 실행 → 입력",
+      "인쇄 → 저장 → 조립"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q006",
+    "day": 1,
+    "order": 6,
+    "type": "객관식",
+    "content": "IDLE은 무엇인가?",
+    "choices": [
+      "파이썬 코드를 작성하고 실행할 수 있는 기본 도구",
+      "파이썬 캐릭터 이름",
+      "인터넷 검색 사이트",
+      "압축 파일 형식"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q007",
+    "day": 1,
+    "order": 7,
+    "type": "객관식",
+    "content": "Windows에서 파이썬 설치를 시작할 때 필요한 것은?",
+    "choices": [
+      "사진 편집 앱",
+      "음악 파일",
+      "프린터 드라이버만",
+      "공식 사이트에서 받은 설치 프로그램"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q008",
+    "day": 1,
+    "order": 8,
+    "type": "객관식",
+    "content": "Windows 설치 화면에서 Add Python to PATH를 선택하는 까닭은?",
+    "choices": [
+      "바탕 화면 색을 바꾸기 위해",
+      "인터넷 속도를 높이기 위해",
+      "명령 프롬프트에서 python 명령을 쉽게 쓰기 위해",
+      "키보드 언어를 바꾸기 위해"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q009",
+    "day": 1,
+    "order": 9,
+    "type": "객관식",
+    "content": "명령 프롬프트에서 설치 버전을 확인하는 명령은?",
+    "choices": [
+      "python --color",
+      "python --version",
+      "version install",
+      "idle --paint"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q010",
+    "day": 1,
+    "order": 10,
+    "type": "객관식",
+    "content": "IDLE Shell의 >>> 표시는 무엇을 뜻하는가?",
+    "choices": [
+      "파이썬 명령을 입력할 수 있다는 표시",
+      "오류가 반드시 났다는 표시",
+      "설치가 삭제됐다는 표시",
+      "컴퓨터가 꺼진다는 표시"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q011",
+    "day": 1,
+    "order": 11,
+    "type": "객관식",
+    "content": "설치 확인용 첫 코드로 가장 알맞은 것은?",
+    "choices": [
+      "paint Hello",
+      "computer start",
+      "python = install",
+      "print(\"Hello, Python!\")"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q012",
+    "day": 1,
+    "order": 12,
+    "type": "객관식",
+    "content": "파이썬 소스 파일의 확장자는?",
+    "choices": [
+      ".jpg",
+      ".mp3",
+      ".py",
+      ".pptx"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q013",
+    "day": 1,
+    "order": 13,
+    "type": "객관식",
+    "content": "python 명령을 찾을 수 없다는 메시지가 나올 때 먼저 확인할 것은?",
+    "choices": [
+      "스피커 음량",
+      "파이썬 설치와 PATH 설정",
+      "모니터 밝기",
+      "마우스 배터리만"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q014",
+    "day": 1,
+    "order": 14,
+    "type": "객관식",
+    "content": "교재에서 설치 방법을 안내하는 운영체제 조합은?",
+    "choices": [
+      "Windows, macOS, Linux",
+      "Windows만",
+      "Android만",
+      "게임기 운영체제만"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q015",
+    "day": 1,
+    "order": 15,
+    "type": "객관식",
+    "content": "코드 실행 중 오류가 났을 때 바람직한 태도는?",
+    "choices": [
+      "컴퓨터를 바로 버린다",
+      "무조건 설치를 삭제한다",
+      "오류를 읽지 않고 같은 행동만 반복한다",
+      "오류 메시지와 입력 내용을 차근차근 확인한다"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q016",
+    "day": 1,
+    "order": 16,
+    "type": "객관식",
+    "content": "학교 PC에서 파이썬 코드를 처음 실행하려 한다. 가장 먼저 할 일은?",
+    "choices": [
+      "무조건 새 컴퓨터를 산다",
+      "인터넷 창만 연다",
+      "파이썬 또는 IDLE이 설치되어 있는지 확인한다",
+      "문서 파일 이름을 바꾼다"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q017",
+    "day": 1,
+    "order": 17,
+    "type": "객관식",
+    "content": "python --version 실행 결과가 Python 3.x.x로 나타났다. 뜻은?",
+    "choices": [
+      "파이썬이 삭제되었다",
+      "파이썬 3 버전이 설치되어 있다",
+      "코드에 오류가 있다",
+      "인터넷이 끊겼다"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q018",
+    "day": 1,
+    "order": 18,
+    "type": "객관식",
+    "content": "여러 줄 코드를 저장해 다시 실행하려면 가장 알맞은 방법은?",
+    "choices": [
+      "IDLE 편집기에 작성해 .py 파일로 저장하고 실행한다",
+      "Shell 화면을 사진으로 찍는다",
+      "코드를 음악 파일로 저장한다",
+      "파일 확장자를 .jpg로 바꾼다"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q019",
+    "day": 1,
+    "order": 19,
+    "type": "객관식",
+    "content": "IDLE은 열리지만 print 코드에 결과가 없다. 먼저 확인할 것은?",
+    "choices": [
+      "모니터 제조사",
+      "책상 높이",
+      "배경 화면",
+      "코드를 실행했는지와 괄호·따옴표가 맞는지"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q020",
+    "day": 1,
+    "order": 20,
+    "type": "객관식",
+    "content": "교재 실습을 따라 하기 위한 도구로 가장 적절한 것은?",
+    "choices": [
+      "그림판만",
+      "계산기만",
+      "파이썬과 IDLE",
+      "동영상 재생기만"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q021",
+    "day": 2,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 'print()'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "\"파이썬\"",
+      "print(25)",
+      "print(\"안녕\")",
+      "print(\"나이\", 14)"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q022",
+    "day": 2,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 '문자열'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print(25)",
+      "\"파이썬\"",
+      "print(\"나이\", 14)",
+      "\\n"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q023",
+    "day": 2,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 '숫자 출력'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print(25)",
+      "print(\"나이\", 14)",
+      "\\n",
+      "\\t"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q024",
+    "day": 2,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '여러 값 출력'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "\\n",
+      "\\t",
+      "따옴표",
+      "print(\"나이\", 14)"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q025",
+    "day": 2,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '줄바꿈 문자'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "\\t",
+      "따옴표",
+      "\\n",
+      "()"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q026",
+    "day": 2,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '탭 문자'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "따옴표",
+      "\\t",
+      "()",
+      "자료의 종류가 다름"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q027",
+    "day": 2,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '따옴표 구분'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "따옴표",
+      "()",
+      "자료의 종류가 다름",
+      "print()"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q028",
+    "day": 2,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '괄호'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "자료의 종류가 다름",
+      "print()",
+      "작성된 순서",
+      "()"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q029",
+    "day": 2,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '문자와 숫자 차이'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print()",
+      "작성된 순서",
+      "자료의 종류가 다름",
+      "print"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q030",
+    "day": 2,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '빈 줄 출력'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "작성된 순서",
+      "print()",
+      "print",
+      "print(\"A\", \"B\")"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q031",
+    "day": 2,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '출력 순서'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "작성된 순서",
+      "print",
+      "print(\"A\", \"B\")",
+      "\\n, \\t"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q032",
+    "day": 2,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 '대소문자'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print(\"A\", \"B\")",
+      "\\n, \\t",
+      "print(\"OK\")",
+      "print"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q033",
+    "day": 2,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 '쉼표 출력'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "\\n, \\t",
+      "print(\"OK\")",
+      "print(\"A\", \"B\")",
+      "A와 B가 서로 다른 줄에 출력"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q034",
+    "day": 2,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 '이스케이프 문자'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print(\"OK\")",
+      "\\n, \\t",
+      "A와 B가 서로 다른 줄에 출력",
+      "2 + 3이라는 글자"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q035",
+    "day": 2,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 '구문 확인'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print(\"OK\")",
+      "A와 B가 서로 다른 줄에 출력",
+      "2 + 3이라는 글자",
+      "5"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q036",
+    "day": 2,
+    "order": 16,
+    "type": "객관식",
+    "content": "print(\"A\\nB\")의 결과",
+    "choices": [
+      "2 + 3이라는 글자",
+      "5",
+      "안녕을 문자열로 쓰려면 따옴표 필요",
+      "A와 B가 서로 다른 줄에 출력"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q037",
+    "day": 2,
+    "order": 17,
+    "type": "객관식",
+    "content": "print(\"2 + 3\")의 결과",
+    "choices": [
+      "5",
+      "안녕을 문자열로 쓰려면 따옴표 필요",
+      "2 + 3이라는 글자",
+      "print(\"민수\", 14)"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q038",
+    "day": 2,
+    "order": 18,
+    "type": "객관식",
+    "content": "print(2 + 3)의 결과",
+    "choices": [
+      "안녕을 문자열로 쓰려면 따옴표 필요",
+      "5",
+      "print(\"민수\", 14)",
+      "print(\"안녕\")"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q039",
+    "day": 2,
+    "order": 19,
+    "type": "객관식",
+    "content": "print(안녕)의 문제",
+    "choices": [
+      "안녕을 문자열로 쓰려면 따옴표 필요",
+      "print(\"민수\", 14)",
+      "print(\"안녕\")",
+      "\"파이썬\""
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q040",
+    "day": 2,
+    "order": 20,
+    "type": "객관식",
+    "content": "이름과 나이를 한 줄에 출력",
+    "choices": [
+      "print(\"안녕\")",
+      "\"파이썬\"",
+      "print(25)",
+      "print(\"민수\", 14)"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q041",
+    "day": 3,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 '변수'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "=",
+      "'+",
+      "'-",
+      "score = 90"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q042",
+    "day": 3,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 '할당 연산자'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "'+",
+      "'-",
+      "=",
+      "*"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q043",
+    "day": 3,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 '덧셈'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "'-",
+      "'+",
+      "*",
+      "/"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q044",
+    "day": 3,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '뺄셈'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "'-",
+      "*",
+      "/",
+      "//"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q045",
+    "day": 3,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '곱셈'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "/",
+      "//",
+      "%",
+      "*"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q046",
+    "day": 3,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '나눗셈'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "//",
+      "%",
+      "/",
+      "**"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q047",
+    "day": 3,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '몫'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "%",
+      "//",
+      "**",
+      "age = 14"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q048",
+    "day": 3,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '나머지'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "%",
+      "**",
+      "age = 14",
+      "x = 3 다음 x = 5"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q049",
+    "day": 3,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '거듭제곱'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "age = 14",
+      "x = 3 다음 x = 5",
+      "2 + 3 * 4는 14",
+      "**"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q050",
+    "day": 3,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '변수 사용'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "x = 3 다음 x = 5",
+      "2 + 3 * 4는 14",
+      "age = 14",
+      "(2 + 3) * 4는 20"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q051",
+    "day": 3,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '변수 변경'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "2 + 3 * 4는 14",
+      "x = 3 다음 x = 5",
+      "(2 + 3) * 4는 20",
+      "f\"점수: {score}\""
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q052",
+    "day": 3,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 '연산 우선순위'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "2 + 3 * 4는 14",
+      "(2 + 3) * 4는 20",
+      "f\"점수: {score}\"",
+      "student_score"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q053",
+    "day": 3,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 '괄호 계산'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "f\"점수: {score}\"",
+      "student_score",
+      "7",
+      "(2 + 3) * 4는 20"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q054",
+    "day": 3,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 'f-string'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "student_score",
+      "7",
+      "f\"점수: {score}\"",
+      "3"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q055",
+    "day": 3,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 '변수 이름'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "7",
+      "student_score",
+      "3",
+      "1"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q056",
+    "day": 3,
+    "order": 16,
+    "type": "객관식",
+    "content": "x=5; x=x+2 후 x의 값",
+    "choices": [
+      "7",
+      "3",
+      "1",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q057",
+    "day": 3,
+    "order": 17,
+    "type": "객관식",
+    "content": "10 // 3의 결과",
+    "choices": [
+      "1",
+      "8",
+      "12",
+      "3"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q058",
+    "day": 3,
+    "order": 18,
+    "type": "객관식",
+    "content": "10 % 3의 결과",
+    "choices": [
+      "8",
+      "12",
+      "1",
+      "score = 90"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q059",
+    "day": 3,
+    "order": 19,
+    "type": "객관식",
+    "content": "2 ** 3의 결과",
+    "choices": [
+      "12",
+      "8",
+      "score = 90",
+      "="
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q060",
+    "day": 3,
+    "order": 20,
+    "type": "객관식",
+    "content": "a=4; b=3; print(a*b)의 결과",
+    "choices": [
+      "12",
+      "score = 90",
+      "=",
+      "'+"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q061",
+    "day": 4,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 'for문'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "for i in ...:",
+      "for i in range(3):",
+      ":",
+      "보통 공백 4칸"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q062",
+    "day": 4,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 '기본 구조'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      ":",
+      "보통 공백 4칸",
+      "i",
+      "for i in range(3):"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q063",
+    "day": 4,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 '콜론'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "보통 공백 4칸",
+      "i",
+      ":",
+      "for color in colors:"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q064",
+    "day": 4,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '들여쓰기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "i",
+      "보통 공백 4칸",
+      "for color in colors:",
+      "3번 반복"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q065",
+    "day": 4,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '반복 변수'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "i",
+      "for color in colors:",
+      "3번 반복",
+      "for 안의 print"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q066",
+    "day": 4,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '리스트 반복'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "3번 반복",
+      "for 안의 print",
+      "바깥쪽으로 맞춤",
+      "for color in colors:"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q067",
+    "day": 4,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 'range(3)'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "for 안의 print",
+      "바깥쪽으로 맞춤",
+      "3번 반복",
+      "앞에서 뒤로"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q068",
+    "day": 4,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '반복 출력'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "바깥쪽으로 맞춤",
+      "for 안의 print",
+      "앞에서 뒤로",
+      "print(i)"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q069",
+    "day": 4,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '블록 종료'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "바깥쪽으로 맞춤",
+      "앞에서 뒤로",
+      "print(i)",
+      "중첩 for문"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q070",
+    "day": 4,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '순서'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print(i)",
+      "중첩 for문",
+      "중복 감소",
+      "앞에서 뒤로"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q071",
+    "day": 4,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '변수 활용'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "중첩 for문",
+      "중복 감소",
+      "print(i)",
+      "for"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q072",
+    "day": 4,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 '중첩 반복'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "중복 감소",
+      "중첩 for문",
+      "for",
+      "in"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q073",
+    "day": 4,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 '반복 장점'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "중복 감소",
+      "for",
+      "in",
+      "3회"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q074",
+    "day": 4,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 '문법 대소문자'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "in",
+      "3회",
+      "B",
+      "for"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q075",
+    "day": 4,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 'in 의미'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "3회",
+      "B",
+      "in",
+      ":"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q076",
+    "day": 4,
+    "order": 16,
+    "type": "객관식",
+    "content": "for i in [1,2,3]: print(i)의 출력 횟수",
+    "choices": [
+      "B",
+      "3회",
+      ":",
+      "for name in names: print(name)"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q077",
+    "day": 4,
+    "order": 17,
+    "type": "객관식",
+    "content": "for x in [\"A\",\"B\"]: print(x)의 마지막 출력",
+    "choices": [
+      "B",
+      ":",
+      "for name in names: print(name)",
+      "6회"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q078",
+    "day": 4,
+    "order": 18,
+    "type": "객관식",
+    "content": "for i in range(3) 뒤에 빠진 기호",
+    "choices": [
+      "for name in names: print(name)",
+      "6회",
+      "for i in ...:",
+      ":"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q079",
+    "day": 4,
+    "order": 19,
+    "type": "객관식",
+    "content": "친구 3명의 이름을 차례로 출력",
+    "choices": [
+      "6회",
+      "for i in ...:",
+      "for name in names: print(name)",
+      "for i in range(3):"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q080",
+    "day": 4,
+    "order": 20,
+    "type": "객관식",
+    "content": "바깥 반복 2회, 안쪽 반복 3회면 안쪽 문장 실행 횟수",
+    "choices": [
+      "for i in ...:",
+      "6회",
+      "for i in range(3):",
+      ":"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q081",
+    "day": 5,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 'range(stop)'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "range(2,5)는 2,3,4",
+      "range(5)는 0~4",
+      "range(1,6,2)는 1,3,5",
+      "range(1,4)는 1,2,3"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q082",
+    "day": 5,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 'range(start,stop)'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "range(2,5)는 2,3,4",
+      "range(1,6,2)는 1,3,5",
+      "range(1,4)는 1,2,3",
+      "range(5,0,-1)"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q083",
+    "day": 5,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 'range(start,stop,step)'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "range(1,4)는 1,2,3",
+      "range(5,0,-1)",
+      "range(4)",
+      "range(1,6,2)는 1,3,5"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q084",
+    "day": 5,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '끝값 규칙'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "range(5,0,-1)",
+      "range(4)",
+      "range(1,4)는 1,2,3",
+      "range(2,10,2)"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q085",
+    "day": 5,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '감소 반복'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "range(4)",
+      "range(5,0,-1)",
+      "range(2,10,2)",
+      "range(1,10,2)"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q086",
+    "day": 5,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '횟수 반복'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "range(4)",
+      "range(2,10,2)",
+      "range(1,10,2)",
+      "total = total + i"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q087",
+    "day": 5,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '짝수 만들기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "range(1,10,2)",
+      "total = total + i",
+      "total = 0",
+      "range(2,10,2)"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q088",
+    "day": 5,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '홀수 만들기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "total = total + i",
+      "total = 0",
+      "range(1,10,2)",
+      "음수 간격"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q089",
+    "day": 5,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '누적 합계'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "total = 0",
+      "total = total + i",
+      "음수 간격",
+      "1씩 증가"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q090",
+    "day": 5,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '초기값'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "total = 0",
+      "음수 간격",
+      "1씩 증가",
+      "i"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q091",
+    "day": 5,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '카운트다운'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "1씩 증가",
+      "i",
+      "\"*\" * i",
+      "음수 간격"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q092",
+    "day": 5,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 'step 생략'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "i",
+      "\"*\" * i",
+      "1씩 증가",
+      "i % 2 == 0"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q093",
+    "day": 5,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 '반복 변수'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "\"*\" * i",
+      "i",
+      "i % 2 == 0",
+      "3, 5, 7"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q094",
+    "day": 5,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 '패턴 출력'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "\"*\" * i",
+      "i % 2 == 0",
+      "3, 5, 7",
+      "2"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q095",
+    "day": 5,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 '조건 결합'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "3, 5, 7",
+      "2",
+      "15",
+      "i % 2 == 0"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q096",
+    "day": 5,
+    "order": 16,
+    "type": "객관식",
+    "content": "list(range(3,8,2))에 해당하는 값",
+    "choices": [
+      "2",
+      "15",
+      "3, 5, 7",
+      "step은 0일 수 없음"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q097",
+    "day": 5,
+    "order": 17,
+    "type": "객관식",
+    "content": "range(5,1,-1)이 만드는 마지막 값",
+    "choices": [
+      "15",
+      "2",
+      "step은 0일 수 없음",
+      "3회"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q098",
+    "day": 5,
+    "order": 18,
+    "type": "객관식",
+    "content": "1부터 5까지 더한 합",
+    "choices": [
+      "15",
+      "step은 0일 수 없음",
+      "3회",
+      "range(5)는 0~4"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q099",
+    "day": 5,
+    "order": 19,
+    "type": "객관식",
+    "content": "range(1,5,0)을 사용할 수 없는 이유",
+    "choices": [
+      "3회",
+      "range(5)는 0~4",
+      "range(2,5)는 2,3,4",
+      "step은 0일 수 없음"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q100",
+    "day": 5,
+    "order": 20,
+    "type": "객관식",
+    "content": "range(2,11,3)의 반복 횟수",
+    "choices": [
+      "range(5)는 0~4",
+      "range(2,5)는 2,3,4",
+      "3회",
+      "range(1,6,2)는 1,3,5"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q101",
+    "day": 6,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 '모듈 준비'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.forward(100)",
+      "t.backward(50)",
+      "import turtle as t",
+      "t.left(90)"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q102",
+    "day": 6,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 '앞으로 이동'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.backward(50)",
+      "t.forward(100)",
+      "t.left(90)",
+      "t.right(90)"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q103",
+    "day": 6,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 '뒤로 이동'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.backward(50)",
+      "t.left(90)",
+      "t.right(90)",
+      "t.penup()"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q104",
+    "day": 6,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '왼쪽 회전'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.right(90)",
+      "t.penup()",
+      "t.pendown()",
+      "t.left(90)"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q105",
+    "day": 6,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '오른쪽 회전'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.penup()",
+      "t.pendown()",
+      "t.right(90)",
+      "t.pencolor(\"red\")"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q106",
+    "day": 6,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '펜 올리기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.pendown()",
+      "t.penup()",
+      "t.pencolor(\"red\")",
+      "t.fillcolor(\"blue\")"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q107",
+    "day": 6,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '펜 내리기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.pendown()",
+      "t.pencolor(\"red\")",
+      "t.fillcolor(\"blue\")",
+      "t.pensize(3)"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q108",
+    "day": 6,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '펜 색상'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.fillcolor(\"blue\")",
+      "t.pensize(3)",
+      "t.shape(\"turtle\")",
+      "t.pencolor(\"red\")"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q109",
+    "day": 6,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '채우기 색상'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.pensize(3)",
+      "t.shape(\"turtle\")",
+      "t.fillcolor(\"blue\")",
+      "t.circle(50)"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q110",
+    "day": 6,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '펜 굵기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.shape(\"turtle\")",
+      "t.pensize(3)",
+      "t.circle(50)",
+      "t.done()"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q111",
+    "day": 6,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '거북이 모양'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.shape(\"turtle\")",
+      "t.circle(50)",
+      "t.done()",
+      "90도"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q112",
+    "day": 6,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 '원 그리기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "t.done()",
+      "90도",
+      "120도",
+      "t.circle(50)"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q113",
+    "day": 6,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 '화면 유지'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "90도",
+      "120도",
+      "t.done()",
+      "4번"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q114",
+    "day": 6,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 '사각형 회전각'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "120도",
+      "90도",
+      "4번",
+      "penup → 이동 → pendown"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q115",
+    "day": 6,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 '삼각형 회전각'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "120도",
+      "4번",
+      "penup → 이동 → pendown",
+      "100만큼 전진 후 오른쪽 90도 회전"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q116",
+    "day": 6,
+    "order": 16,
+    "type": "객관식",
+    "content": "정사각형은 전진과 90도 회전을 몇 번 반복?",
+    "choices": [
+      "penup → 이동 → pendown",
+      "100만큼 전진 후 오른쪽 90도 회전",
+      "72도",
+      "4번"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q117",
+    "day": 6,
+    "order": 17,
+    "type": "객관식",
+    "content": "선 없이 위치를 옮긴 뒤 다시 그리는 순서",
+    "choices": [
+      "100만큼 전진 후 오른쪽 90도 회전",
+      "72도",
+      "penup → 이동 → pendown",
+      "t.pencolor(\"red\"); t.circle(30)"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q118",
+    "day": 6,
+    "order": 18,
+    "type": "객관식",
+    "content": "forward(100) 뒤 right(90)의 동작",
+    "choices": [
+      "72도",
+      "100만큼 전진 후 오른쪽 90도 회전",
+      "t.pencolor(\"red\"); t.circle(30)",
+      "import turtle as t"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q119",
+    "day": 6,
+    "order": 19,
+    "type": "객관식",
+    "content": "정오각형의 바깥 회전각",
+    "choices": [
+      "72도",
+      "t.pencolor(\"red\"); t.circle(30)",
+      "import turtle as t",
+      "t.forward(100)"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q120",
+    "day": 6,
+    "order": 20,
+    "type": "객관식",
+    "content": "빨간 선으로 반지름 30인 원 그리기",
+    "choices": [
+      "import turtle as t",
+      "t.forward(100)",
+      "t.backward(50)",
+      "t.pencolor(\"red\"); t.circle(30)"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q121",
+    "day": 7,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 'input()'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "input(\"이름: \")",
+      "str",
+      "int(input())",
+      "input()"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q122",
+    "day": 7,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 '안내 문구'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "str",
+      "int(input())",
+      "input(\"이름: \")",
+      "float(input())"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q123",
+    "day": 7,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 '반환 자료형'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "int(input())",
+      "str",
+      "float(input())",
+      "str()"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q124",
+    "day": 7,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '정수 변환'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "int(input())",
+      "float(input())",
+      "str()",
+      "name = input()"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q125",
+    "day": 7,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '실수 변환'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "str()",
+      "name = input()",
+      "int 또는 float",
+      "float(input())"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q126",
+    "day": 7,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '문자열 변환'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "name = input()",
+      "int 또는 float",
+      "str()",
+      "사용자 입력 대기"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q127",
+    "day": 7,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '변수 저장'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "int 또는 float",
+      "name = input()",
+      "사용자 입력 대기",
+      "친절한 프로그램"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q128",
+    "day": 7,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '숫자 계산'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "int 또는 float",
+      "사용자 입력 대기",
+      "친절한 프로그램",
+      "변환 오류"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q129",
+    "day": 7,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '입력 순서'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "친절한 프로그램",
+      "변환 오류",
+      "예외 처리",
+      "사용자 입력 대기"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q130",
+    "day": 7,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '안내의 장점'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "변환 오류",
+      "예외 처리",
+      "친절한 프로그램",
+      "try:"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q131",
+    "day": 7,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '정수 오류'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "예외 처리",
+      "변환 오류",
+      "try:",
+      "except:"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q132",
+    "day": 7,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 'try/except'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "예외 처리",
+      "try:",
+      "except:",
+      "print(name)"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q133",
+    "day": 7,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 'try 블록'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "except:",
+      "print(name)",
+      "정수",
+      "try:"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q134",
+    "day": 7,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 'except 블록'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print(name)",
+      "정수",
+      "except:",
+      "\"23\""
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q135",
+    "day": 7,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 '출력 연결'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "정수",
+      "print(name)",
+      "\"23\"",
+      "a=int(input()); b=int(input())"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q136",
+    "day": 7,
+    "order": 16,
+    "type": "객관식",
+    "content": "age=int(input())에서 14 입력 시 age의 자료형",
+    "choices": [
+      "정수",
+      "\"23\"",
+      "a=int(input()); b=int(input())",
+      "try/except 사용"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q137",
+    "day": 7,
+    "order": 17,
+    "type": "객관식",
+    "content": "a=input(); b=input()에 2와 3 입력 후 a+b",
+    "choices": [
+      "a=int(input()); b=int(input())",
+      "try/except 사용",
+      "float(input())",
+      "\"23\""
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q138",
+    "day": 7,
+    "order": 18,
+    "type": "객관식",
+    "content": "두 정수를 더하기 위한 입력 코드",
+    "choices": [
+      "try/except 사용",
+      "float(input())",
+      "a=int(input()); b=int(input())",
+      "input()"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q139",
+    "day": 7,
+    "order": 19,
+    "type": "객관식",
+    "content": "나이 칸에 글자를 입력해도 멈추지 않게 할 방법",
+    "choices": [
+      "float(input())",
+      "try/except 사용",
+      "input()",
+      "input(\"이름: \")"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q140",
+    "day": 7,
+    "order": 20,
+    "type": "객관식",
+    "content": "키를 165.5처럼 입력받을 때 알맞은 변환",
+    "choices": [
+      "float(input())",
+      "input()",
+      "input(\"이름: \")",
+      "str"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q141",
+    "day": 8,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 '불리언'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "True와 False",
+      "==",
+      "!=",
+      ">"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q142",
+    "day": 8,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 '같다 비교'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "!=",
+      ">",
+      "<",
+      "=="
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q143",
+    "day": 8,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 '다르다 비교'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      ">",
+      "<",
+      "!=",
+      ">="
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q144",
+    "day": 8,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '크다 비교'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "<",
+      ">",
+      ">=",
+      "<="
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q145",
+    "day": 8,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '작다 비교'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "<",
+      ">=",
+      "<=",
+      "if 조건:"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q146",
+    "day": 8,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '크거나 같다'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "<=",
+      "if 조건:",
+      "else:",
+      ">="
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q147",
+    "day": 8,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '작거나 같다'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "if 조건:",
+      "else:",
+      "<=",
+      "elif 조건:"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q148",
+    "day": 8,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 'if문'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "else:",
+      "if 조건:",
+      "elif 조건:",
+      "공백으로 안쪽 정렬"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q149",
+    "day": 8,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 'else문'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "else:",
+      "elif 조건:",
+      "공백으로 안쪽 정렬",
+      "and"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q150",
+    "day": 8,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 'elif문'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "공백으로 안쪽 정렬",
+      "and",
+      "or",
+      "elif 조건:"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q151",
+    "day": 8,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '들여쓰기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "and",
+      "or",
+      "공백으로 안쪽 정렬",
+      "not"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q152",
+    "day": 8,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 'and'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "or",
+      "and",
+      "not",
+      "=와 ==의 역할이 다름"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q153",
+    "day": 8,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 'or'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "or",
+      "not",
+      "=와 ==의 역할이 다름",
+      "True"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q154",
+    "day": 8,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 'not'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "=와 ==의 역할이 다름",
+      "True",
+      "False",
+      "not"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q155",
+    "day": 8,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 '할당과 비교'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "True",
+      "False",
+      "=와 ==의 역할이 다름",
+      "합격"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q156",
+    "day": 8,
+    "order": 16,
+    "type": "객관식",
+    "content": "5 > 3의 결과",
+    "choices": [
+      "False",
+      "True",
+      "합격",
+      "age >= 14 and age <= 19"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q157",
+    "day": 8,
+    "order": 17,
+    "type": "객관식",
+    "content": "4 == 4 and 2 > 5의 결과",
+    "choices": [
+      "False",
+      "합격",
+      "age >= 14 and age <= 19",
+      "if-elif-else"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q158",
+    "day": 8,
+    "order": 18,
+    "type": "객관식",
+    "content": "score=80; if score>=60: print(\"합격\")의 출력",
+    "choices": [
+      "age >= 14 and age <= 19",
+      "if-elif-else",
+      "True와 False",
+      "합격"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q159",
+    "day": 8,
+    "order": 19,
+    "type": "객관식",
+    "content": "나이가 14 이상 19 이하인지 검사",
+    "choices": [
+      "if-elif-else",
+      "True와 False",
+      "age >= 14 and age <= 19",
+      "=="
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q160",
+    "day": 8,
+    "order": 20,
+    "type": "객관식",
+    "content": "점수에 따라 A, B, C를 나눌 때 알맞은 구조",
+    "choices": [
+      "True와 False",
+      "if-elif-else",
+      "==",
+      "!="
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q161",
+    "day": 9,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 '모듈 준비'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "random.randint(1,6)",
+      "import random",
+      "random.choice(items)",
+      "random.shuffle(items)"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q162",
+    "day": 9,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 'randint'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "random.randint(1,6)",
+      "random.choice(items)",
+      "random.shuffle(items)",
+      "예측하기 어려운 선택"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q163",
+    "day": 9,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 'choice'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "random.shuffle(items)",
+      "예측하기 어려운 선택",
+      "random.randint(1,6)",
+      "random.choice(items)"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q164",
+    "day": 9,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 'shuffle'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "예측하기 어려운 선택",
+      "random.randint(1,6)",
+      "random.shuffle(items)",
+      "random.choice([\"앞\",\"뒤\"])"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q165",
+    "day": 9,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '무작위'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "random.randint(1,6)",
+      "예측하기 어려운 선택",
+      "random.choice([\"앞\",\"뒤\"])",
+      "리스트"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q166",
+    "day": 9,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '주사위'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "random.randint(1,6)",
+      "random.choice([\"앞\",\"뒤\"])",
+      "리스트",
+      "양 끝 포함"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q167",
+    "day": 9,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '동전'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "리스트",
+      "양 끝 포함",
+      "무작위 요소",
+      "random.choice([\"앞\",\"뒤\"])"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q168",
+    "day": 9,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '목록 필요'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "양 끝 포함",
+      "무작위 요소",
+      "리스트",
+      "r.randint(1,10)"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q169",
+    "day": 9,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '포함 범위'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "무작위 요소",
+      "양 끝 포함",
+      "r.randint(1,10)",
+      "random.choice"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q170",
+    "day": 9,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '게임 활용'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "무작위 요소",
+      "r.randint(1,10)",
+      "random.choice",
+      "dice = random.randint(1,6)"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q171",
+    "day": 9,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '별명 사용'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "random.choice",
+      "dice = random.randint(1,6)",
+      "if dice == 6:",
+      "r.randint(1,10)"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q172",
+    "day": 9,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 '호출 형식'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "dice = random.randint(1,6)",
+      "if dice == 6:",
+      "random.choice",
+      "무작위 선택"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q173",
+    "day": 9,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 '결과 저장'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "if dice == 6:",
+      "dice = random.randint(1,6)",
+      "무작위 선택",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q174",
+    "day": 9,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 '조건 결합'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "if dice == 6:",
+      "무작위 선택",
+      "6",
+      "가위, 바위, 보 중 하나"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q175",
+    "day": 9,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 '공정성'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "6",
+      "가위, 바위, 보 중 하나",
+      "score = random.randint(1,10)",
+      "무작위 선택"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q176",
+    "day": 9,
+    "order": 16,
+    "type": "객관식",
+    "content": "random.randint(3,5)에서 나올 수 없는 수",
+    "choices": [
+      "가위, 바위, 보 중 하나",
+      "score = random.randint(1,10)",
+      "6",
+      "원소는 같고 순서가 달라질 수 있음"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q177",
+    "day": 9,
+    "order": 17,
+    "type": "객관식",
+    "content": "random.choice([\"가위\",\"바위\",\"보\"])의 가능한 결과",
+    "choices": [
+      "score = random.randint(1,10)",
+      "가위, 바위, 보 중 하나",
+      "원소는 같고 순서가 달라질 수 있음",
+      "random.randint()"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q178",
+    "day": 9,
+    "order": 18,
+    "type": "객관식",
+    "content": "1~10 중 임의의 정수를 score에 저장",
+    "choices": [
+      "score = random.randint(1,10)",
+      "원소는 같고 순서가 달라질 수 있음",
+      "random.randint()",
+      "import random"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q179",
+    "day": 9,
+    "order": 19,
+    "type": "객관식",
+    "content": "shuffle을 실행한 리스트의 특징",
+    "choices": [
+      "random.randint()",
+      "import random",
+      "random.randint(1,6)",
+      "원소는 같고 순서가 달라질 수 있음"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q180",
+    "day": 9,
+    "order": 20,
+    "type": "객관식",
+    "content": "컴퓨터가 무작위로 숫자를 정하고 사용자가 맞히는 핵심 함수",
+    "choices": [
+      "import random",
+      "random.randint(1,6)",
+      "random.randint()",
+      "random.choice(items)"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q181",
+    "day": 10,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 'while문'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "조건이 유지되는 동안",
+      "무한 반복 방지",
+      "while 조건:",
+      "while True:"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q182",
+    "day": 10,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 'for와 차이'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "무한 반복 방지",
+      "조건이 유지되는 동안",
+      "while True:",
+      "break"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q183",
+    "day": 10,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 '조건 갱신'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "무한 반복 방지",
+      "while True:",
+      "break",
+      "continue"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q184",
+    "day": 10,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '무한 루프'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "break",
+      "continue",
+      ":",
+      "while True:"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q185",
+    "day": 10,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 'break'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "continue",
+      ":",
+      "break",
+      "안쪽 정렬"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q186",
+    "day": 10,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 'continue'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      ":",
+      "continue",
+      "안쪽 정렬",
+      "count"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q187",
+    "day": 10,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '콜론'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      ":",
+      "안쪽 정렬",
+      "count",
+      "count = count + 1"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q188",
+    "day": 10,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '들여쓰기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "count",
+      "count = count + 1",
+      "조건이 False",
+      "안쪽 정렬"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q189",
+    "day": 10,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '카운터'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "count = count + 1",
+      "조건이 False",
+      "count",
+      "while 활용"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q190",
+    "day": 10,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '증가식'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "조건이 False",
+      "count = count + 1",
+      "while 활용",
+      "if 안의 break"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q191",
+    "day": 10,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '종료 조건'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "조건이 False",
+      "while 활용",
+      "if 안의 break",
+      "갱신 순서 확인"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q192",
+    "day": 10,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 '입력 반복'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "if 안의 break",
+      "갱신 순서 확인",
+      "무한 반복 후 조건 탈출",
+      "while 활용"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q193",
+    "day": 10,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 'break 위치'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "갱신 순서 확인",
+      "무한 반복 후 조건 탈출",
+      "if 안의 break",
+      "3회"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q194",
+    "day": 10,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 'continue 주의'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "무한 반복 후 조건 탈출",
+      "갱신 순서 확인",
+      "3회",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q195",
+    "day": 10,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 'while True'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "무한 반복 후 조건 탈출",
+      "3회",
+      "5",
+      "while문"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q196",
+    "day": 10,
+    "order": 16,
+    "type": "객관식",
+    "content": "x=0; while x<3: x+=1 의 반복 횟수",
+    "choices": [
+      "5",
+      "while문",
+      "반복문 바로 다음 코드로 이동",
+      "3회"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q197",
+    "day": 10,
+    "order": 17,
+    "type": "객관식",
+    "content": "n=1; while n<5: n+=2 후 n의 값",
+    "choices": [
+      "while문",
+      "반복문 바로 다음 코드로 이동",
+      "5",
+      "현재 회차의 아래 코드를 건너뛰고 다음 조건 검사"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q198",
+    "day": 10,
+    "order": 18,
+    "type": "객관식",
+    "content": "비밀번호가 맞을 때까지 입력받는 데 알맞은 반복",
+    "choices": [
+      "반복문 바로 다음 코드로 이동",
+      "while문",
+      "현재 회차의 아래 코드를 건너뛰고 다음 조건 검사",
+      "while 조건:"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q199",
+    "day": 10,
+    "order": 19,
+    "type": "객관식",
+    "content": "반복 중 break가 실행된 뒤의 동작",
+    "choices": [
+      "반복문 바로 다음 코드로 이동",
+      "현재 회차의 아래 코드를 건너뛰고 다음 조건 검사",
+      "while 조건:",
+      "조건이 유지되는 동안"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q200",
+    "day": 10,
+    "order": 20,
+    "type": "객관식",
+    "content": "continue가 실행되면 일어나는 일",
+    "choices": [
+      "while 조건:",
+      "조건이 유지되는 동안",
+      "무한 반복 방지",
+      "현재 회차의 아래 코드를 건너뛰고 다음 조건 검사"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q201",
+    "day": 11,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 '함수'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "def",
+      "def hello():",
+      "hello()",
+      "재사용 가능한 명령 묶음"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q202",
+    "day": 11,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 '정의 키워드'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "def hello():",
+      "hello()",
+      "def",
+      "def 아래 안쪽 정렬"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q203",
+    "day": 11,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 '기본 구조'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "hello()",
+      "def hello():",
+      "def 아래 안쪽 정렬",
+      "parameter"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q204",
+    "day": 11,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 '호출'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "hello()",
+      "def 아래 안쪽 정렬",
+      "parameter",
+      "argument"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q205",
+    "day": 11,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 '들여쓰기'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "parameter",
+      "argument",
+      "return",
+      "def 아래 안쪽 정렬"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q206",
+    "day": 11,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 '매개변수'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "argument",
+      "return",
+      "parameter",
+      "중복 감소"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q207",
+    "day": 11,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 '인자'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "return",
+      "argument",
+      "중복 감소",
+      "print_score"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q208",
+    "day": 11,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 'return'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "return",
+      "중복 감소",
+      "print_score",
+      "def add(a, b):"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q209",
+    "day": 11,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '재사용'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "print_score",
+      "def add(a, b):",
+      "정의만으로 본문은 실행되지 않음",
+      "중복 감소"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q210",
+    "day": 11,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '함수 이름'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "def add(a, b):",
+      "정의만으로 본문은 실행되지 않음",
+      "print_score",
+      "함수 내부 범위"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q211",
+    "day": 11,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '여러 매개변수'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "정의만으로 본문은 실행되지 않음",
+      "def add(a, b):",
+      "함수 내부 범위",
+      "result = add(2,3)"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q212",
+    "day": 11,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 '호출 순서'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "정의만으로 본문은 실행되지 않음",
+      "함수 내부 범위",
+      "result = add(2,3)",
+      "한 가지 역할 중심"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q213",
+    "day": 11,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 '지역 변수'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "result = add(2,3)",
+      "한 가지 역할 중심",
+      "5",
+      "함수 내부 범위"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q214",
+    "day": 11,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 '반환값 저장'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "한 가지 역할 중심",
+      "5",
+      "result = add(2,3)",
+      "3회"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q215",
+    "day": 11,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 '문서화 태도'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "5",
+      "한 가지 역할 중심",
+      "3회",
+      ":"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q216",
+    "day": 11,
+    "order": 16,
+    "type": "객관식",
+    "content": "def add(a,b): return a+b; add(2,3)의 결과",
+    "choices": [
+      "5",
+      "3회",
+      ":",
+      "return으로 결과 반환"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q217",
+    "day": 11,
+    "order": 17,
+    "type": "객관식",
+    "content": "hello()를 3번 호출하면 함수 본문 실행 횟수",
+    "choices": [
+      ":",
+      "return으로 결과 반환",
+      "인사 함수를 정의해 호출",
+      "3회"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q218",
+    "day": 11,
+    "order": 18,
+    "type": "객관식",
+    "content": "def hello() 뒤에 빠진 기호",
+    "choices": [
+      "return으로 결과 반환",
+      "인사 함수를 정의해 호출",
+      ":",
+      "재사용 가능한 명령 묶음"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q219",
+    "day": 11,
+    "order": 19,
+    "type": "객관식",
+    "content": "두 수 중 큰 값을 돌려주는 함수에서 필요한 문장",
+    "choices": [
+      "인사 함수를 정의해 호출",
+      "return으로 결과 반환",
+      "재사용 가능한 명령 묶음",
+      "def"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q220",
+    "day": 11,
+    "order": 20,
+    "type": "객관식",
+    "content": "같은 인사 코드를 여러 곳에서 쓸 때 좋은 방법",
+    "choices": [
+      "인사 함수를 정의해 호출",
+      "재사용 가능한 명령 묶음",
+      "def",
+      "def hello():"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q221",
+    "day": 12,
+    "order": 1,
+    "type": "객관식",
+    "content": "다음 중 '리스트'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "[10,20,30]",
+      "첫 원소는 list[0]",
+      "items.append(x)",
+      "items.insert(1,x)"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q222",
+    "day": 12,
+    "order": 2,
+    "type": "객관식",
+    "content": "다음 중 '인덱스'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "items.append(x)",
+      "items.insert(1,x)",
+      "items.remove(x)",
+      "첫 원소는 list[0]"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q223",
+    "day": 12,
+    "order": 3,
+    "type": "객관식",
+    "content": "다음 중 'append'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "items.insert(1,x)",
+      "items.remove(x)",
+      "items.append(x)",
+      "items.pop()"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q224",
+    "day": 12,
+    "order": 4,
+    "type": "객관식",
+    "content": "다음 중 'insert'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "items.remove(x)",
+      "items.insert(1,x)",
+      "items.pop()",
+      "len(items)"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q225",
+    "day": 12,
+    "order": 5,
+    "type": "객관식",
+    "content": "다음 중 'remove'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "items.remove(x)",
+      "items.pop()",
+      "len(items)",
+      "items[1:3]"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q226",
+    "day": 12,
+    "order": 6,
+    "type": "객관식",
+    "content": "다음 중 'pop'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "len(items)",
+      "items[1:3]",
+      "upper(), lower()",
+      "items.pop()"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q227",
+    "day": 12,
+    "order": 7,
+    "type": "객관식",
+    "content": "다음 중 'len'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "items[1:3]",
+      "upper(), lower()",
+      "len(items)",
+      "{\"이름\":\"민수\"}"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q228",
+    "day": 12,
+    "order": 8,
+    "type": "객관식",
+    "content": "다음 중 '슬라이싱'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "upper(), lower()",
+      "items[1:3]",
+      "{\"이름\":\"민수\"}",
+      "student[\"이름\"]"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q229",
+    "day": 12,
+    "order": 9,
+    "type": "객관식",
+    "content": "다음 중 '문자열 메소드'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "upper(), lower()",
+      "{\"이름\":\"민수\"}",
+      "student[\"이름\"]",
+      "student[\"점수\"] = 90"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q230",
+    "day": 12,
+    "order": 10,
+    "type": "객관식",
+    "content": "다음 중 '딕셔너리'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "student[\"이름\"]",
+      "student[\"점수\"] = 90",
+      "student[\"반\"] = 2",
+      "{\"이름\":\"민수\"}"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q231",
+    "day": 12,
+    "order": 11,
+    "type": "객관식",
+    "content": "다음 중 '키 접근'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "student[\"점수\"] = 90",
+      "student[\"반\"] = 2",
+      "student[\"이름\"]",
+      "student.keys()"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q232",
+    "day": 12,
+    "order": 12,
+    "type": "객관식",
+    "content": "다음 중 '값 수정'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "student[\"반\"] = 2",
+      "student[\"점수\"] = 90",
+      "student.keys()",
+      "student.values()"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q233",
+    "day": 12,
+    "order": 13,
+    "type": "객관식",
+    "content": "다음 중 '새 항목'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "student[\"반\"] = 2",
+      "student.keys()",
+      "student.values()",
+      "20"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q234",
+    "day": 12,
+    "order": 14,
+    "type": "객관식",
+    "content": "다음 중 'keys'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "student.values()",
+      "20",
+      "[1,2,3]",
+      "student.keys()"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q235",
+    "day": 12,
+    "order": 15,
+    "type": "객관식",
+    "content": "다음 중 'values'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "20",
+      "[1,2,3]",
+      "student.values()",
+      "[1,2]"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q236",
+    "day": 12,
+    "order": 16,
+    "type": "객관식",
+    "content": "a=[10,20,30]; a[1]의 값",
+    "choices": [
+      "[1,2,3]",
+      "20",
+      "[1,2]",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q237",
+    "day": 12,
+    "order": 17,
+    "type": "객관식",
+    "content": "a=[1,2]; a.append(3) 후 a",
+    "choices": [
+      "[1,2,3]",
+      "[1,2]",
+      "80",
+      "딕셔너리"
+    ],
+    "answer": 0
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q238",
+    "day": 12,
+    "order": 18,
+    "type": "객관식",
+    "content": "a=[0,1,2,3]; a[1:3]의 결과",
+    "choices": [
+      "80",
+      "딕셔너리",
+      "[10,20,30]",
+      "[1,2]"
+    ],
+    "answer": 3
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q239",
+    "day": 12,
+    "order": 19,
+    "type": "객관식",
+    "content": "d={\"점수\":80}; d[\"점수\"]의 값",
+    "choices": [
+      "딕셔너리",
+      "[10,20,30]",
+      "80",
+      "첫 원소는 list[0]"
+    ],
+    "answer": 2
+  },
+  {
+    "item_id": "ROBOME-AVATAR-PY-Q240",
+    "day": 12,
+    "order": 20,
+    "type": "객관식",
+    "content": "학생의 이름·나이·점수를 항목 이름과 함께 저장하기 좋은 것",
+    "choices": [
+      "[10,20,30]",
+      "딕셔너리",
+      "첫 원소는 list[0]",
+      "items.append(x)"
+    ],
+    "answer": 1
+  }
+]
